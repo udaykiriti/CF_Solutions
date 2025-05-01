@@ -1,40 +1,37 @@
 #include <bits/stdc++.h>
+#define FOR(i, a, b) for (int i = (a); i < (b); i++)
 using namespace std;
-
-bool isBeautiful(int a, int b, int c, int d)
-{
-  return (a < b && c < d && a < c && b < d);
-}
+#define endl '\n'
 
 void solve()
 {
-  int a, b, c, d;
-  cin >> a >> b >> c >> d;
+  int n;
+  cin >> n;
+  string row1, row2;
+  cin >> row1 >> row2;
 
-  for (int i = 0; i < 4; ++i)
+  FOR(i, 0, n)
+  if ((row1[i] == 'G' || row1[i] == 'B') && (row2[i] == 'G' || row2[i] == 'B'))
   {
-    if (isBeautiful(a, b, c, d))
-    {
-      cout << "YES\n";
-      return;
-    }
-    tie(a, b, d, c) = make_tuple(c, a, b, d);
+    row1[i] = 'G';
+    row2[i] = 'G';
   }
 
-  cout << "NO\n";
+  if (row1 == row2)
+    cout << "YES\n";
+  else
+    cout << "NO\n";
 }
 
 int main()
 {
-  ios::sync_with_stdio(false);
-  cin.tie(nullptr);
-
+  ios_base::sync_with_stdio(false);
+  cin.tie(0);
+  cout.tie(nullptr);
   int t;
   cin >> t;
   while (t--)
-  {
     solve();
-  }
 
   return 0;
 }
