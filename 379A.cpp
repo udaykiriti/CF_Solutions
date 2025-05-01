@@ -1,24 +1,26 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-
 
 #define ll long long
 #define endl '\n'
-#define debug(n) cout<<(n)<<endl;
+#define debug(n) cout << (n) << endl;
 const ll INF = 2e18 + 99;
 
-int main(){
+int main()
+{
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
+  cin.tie(nullptr);
+  cout.tie(nullptr);
 
   ll a, b;
-  cin>>a>>b;
+  cin >> a >> b;
   ll c = a;
-  while(a/b != 0){
+  while (a / b != 0)
+  {
     ll temp = a;
-    c += a/b;
+    c += a / b;
     a /= b;
     a += temp % b;
   }
-  cout<<c<<endl;
+  cout << c << endl;
 }
