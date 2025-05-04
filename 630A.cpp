@@ -1,17 +1,26 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-
-#define ll long long
 #define endl '\n'
-#define debug(n) cout<<(n)<<endl;
-const ll INF = 2e18 + 99;
+#define FastIO()                    \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr);                 \
+  cout.tie(nullptr);
+#define FOR(i, a, b) for (int i = (a); i <= (b); i++)
+#define FORk(i, a, b, k) for (int i = (a); i <= (b); i += (k))
+#define RFOR(i, a, b) for (int i = (a); i >= (b); i--)
+#define RFORK(i, a, b, k) for (int i = (a); i >= (b); i -= (k))
 
-int main(){
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
+void solve()
+{
+  // Your solution logic here
+}
 
-  int n;
-  cin>>n;
-  cout<<25;
+int main()
+{
+  FastIO();
+  long long n;
+  cin >> n;
+  cout << "25" << endl;
+  return 0;
 }
