@@ -1,21 +1,40 @@
-#include <cstdio>
+#include <bits/stdc++.h>
+using namespace std;
+
+#define endl '\n'
+#define FastIO()                    \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr);                 \
+  cout.tie(nullptr);
+#define FOR(i, a, b) for (int i = (a); i <= (b); i++)
+#define FORk(i, a, b, k) for (int i = (a); i <= (b); i += (k))
+#define RFOR(i, a, b) for (int i = (a); i >= (b); i--)
+#define RFORK(i, a, b, k) for (int i = (a); i >= (b); i -= (k))
+
+void solve()
+{
+  int n;
+  cin >> n;
+  vector<int> arr(n);
+  long long sum = 0;
+  FOR(i, 0, n - 1)
+  {
+    cin >> arr[i];
+    sum += arr[i];
+  }
+
+  if (sum % 2 == 0)
+    cout << "YES" << endl;
+  else
+    cout << "NO" << endl;
+}
 
 int main()
 {
-
-  long t;
-  scanf("%ld", &t);
+  FastIO();
+  int t;
+  cin >> t;
   while (t--)
-  {
-    long n;
-    scanf("%ld", &n);
-    long s(0);
-    for (long p = 0; p < n; p++)
-    {
-      long x;
-      scanf("%ld", &x);
-      s += x;
-    }
-    puts(s % 2 ? "NO" : "YES");
-  }
+    solve();
+  return 0;
 }
