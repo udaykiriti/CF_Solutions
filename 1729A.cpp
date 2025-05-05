@@ -13,30 +13,28 @@ using namespace std;
 
 void solve()
 {
-  int k;
-  cin >> k;
-  vector<int> a(12);
-  FOR(i, 0, 11)
-      cin >> a[i];
+  long a, b, c;
+  cin >> a >> b >> c;
 
-  sort(a.rbegin(), a.rend());
+  long time1 = abs(a - 1);
+  long time2 = abs(b - c) + abs(c - 1);
 
-  int sum = 0, months = 0;
-  for (int i = 0; i < 12 && sum < k; ++i)
-  {
-    sum += a[i];
-    months++;
-  }
-
-  if (sum >= k)
-    cout << months << endl;
+  if (time1 < time2)
+    cout << 1 << endl;
+  else if (time2 < time1)
+    cout << 2 << endl;
   else
-    cout << -1 << endl;
+    cout << 3 << endl;
 }
 
 int main()
 {
   FastIO();
-  solve();
+  int t = 1;
+  cin >> t;
+  while (t--)
+  {
+    solve();
+  }
   return 0;
 }

@@ -13,30 +13,41 @@ using namespace std;
 
 void solve()
 {
-  int k;
-  cin >> k;
-  vector<int> a(12);
-  FOR(i, 0, 11)
-      cin >> a[i];
+  int a, b, c, m;
+  cin >> a >> b >> c;
+  m = -1;
 
-  sort(a.rbegin(), a.rend());
-
-  int sum = 0, months = 0;
-  for (int i = 0; i < 12 && sum < k; ++i)
+  if ((2 * b - c) % a == 0 && (2 * b - c) > 0)
   {
-    sum += a[i];
-    months++;
+    m = (2 * b - c) / a;
+  }
+  else if ((a + c) % (2 * b) == 0)
+  {
+    m = (a + c) / (2 * b);
+  }
+  else if ((2 * b - a) % c == 0 && (2 * b - a) > 0)
+  {
+    m = (2 * b - a) / c;
   }
 
-  if (sum >= k)
-    cout << months << endl;
+  if (m == -1)
+  {
+    cout << "NO\n";
+  }
   else
-    cout << -1 << endl;
+  {
+    cout << "YES\n";
+  }
 }
 
 int main()
 {
   FastIO();
-  solve();
+  int t = 1;
+  cin >> t;
+  while (t--)
+  {
+    solve();
+  }
   return 0;
 }
