@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define SerajOmar                   \
+#define FastIO                   \
   ios_base::sync_with_stdio(false); \
   cin.tie(0), cout.tie(0);
 #define ll long long
@@ -8,7 +8,7 @@
 #define yes cout << "YES\n";
 #define no cout << "NO\n";
 #define is(x) cout << ((x) ? "YES\n" : "NO\n");
-#define SEEYAH return;
+#define THENGEY return;
 #define BYE return 0;
 using namespace std;
 
@@ -34,12 +34,12 @@ void solve()
     can = true;
 
   is(can)
-      SEEYAH
+      THENGEY
 }
 
 int main()
 {
-  SerajOmar
+  FastIO
       ll t = 1;
   cin >> t;
   while (t--)
