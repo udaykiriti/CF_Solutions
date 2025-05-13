@@ -1,16 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n';
+#define FastIO             \
+  ios::sync_with_stdio(0); \
+  cin.tie(0);              \
+  cout.tie(0);
+#define endl '\n'
+#define BYE return 0;
+#define input1(a) cin >> a;
+#define input2(a, b) cin >> a >> b;
+#define FOR(i, a, b) for (int i = a; i < b; i++)
 
 int main()
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0);
-  int n, t;
-  cin >> n >> t;
+  FastIO int n, t;
+  input2(n, t);
   string s;
-  cin >> s;
+  input1(s);
 
   while (t--)
   {
@@ -25,6 +31,5 @@ int main()
   }
 
   cout << s << endl;
-
-  return 0;
+  BYE
 }
