@@ -1,35 +1,74 @@
-#include<bits/stdc++.h>
-using namespace std;
+// Codeforces Username: Polymath__
+// Email: Udaykiriti9@gmail.com
+// Problem link: https://codeforces.com/problemset/problem/58/A
+// github link: https://github.com/udaykiriti
 
+/* Problem: Chat room
+Vasya has recently learned to type and log on to the Internet. He immediately entered a chat room and decided to say hello to everybody.
+Vasya typed the word s. It is considered that Vasya managed to say hello if several letters can be deleted from the typed word so that
+it results in the word "hello". For example, if Vasya types the word "ahhellllloou", it will be considered that he said hello, and if
+he types "hlelo", it will be considered that Vasya got misunderstood and he didn't manage to say hello.
+
+You are required to determine whether Vasya managed to say hello by the given word s.
+
+Input:
+The first and the only line contains the word s, which Vasya typed. This word only consists of lowercase English letters and its length
+is no more than 100 letters.
+
+Output:
+If Vasya managed to say hello, print "YES", otherwise print "NO".
+
+Example:
+Input:
+ahhellllloou
+Output:
+YES
+
+Input:
+hlelo
+Output:
+NO
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
 
 #define ll long long
 #define endl '\n'
-#define debug(n) cout<<(n)<<endl;
+#define debug(n) cout << (n) << endl;
 const ll INF = 2e18 + 99;
+#define BYE return 0;
 
-int main(){
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
+void FastIO()
+{
+  ios_base::sync_with_stdio(0);
+  cin.tie(0);
+  cout.tie(0);
+}
 
+int main()
+{
+  FastIO();
   string s, r = "";
-  cin>>s;
+  cin >> s;
 
-  for(auto i : s){
-    if(i == 'h' && r == ""){
+  // Check if the word contains "hello" in order
+  for (auto i : s)
+  {
+    if (i == 'h' && r == "")
       r += i;
-    }
-    else if(i == 'e' && r[r.length() - 1] == 'h'){
+    else if (i == 'e' && r[r.length() - 1] == 'h')
       r += i;
-    }
-    else if(i == 'l' && r[r.length() - 1] == 'e'){
+    else if (i == 'l' && r[r.length() - 1] == 'e')
       r += i;
-    }
-    else if(i == 'l' && r[r.length() - 2] == 'e' && r[r.length() - 1] == 'l'){
+    else if (i == 'l' && r[r.length() - 2] == 'e' && r[r.length() - 1] == 'l')
       r += i;
-    }
-    else if(i == 'o' && r[r.length() - 1] == 'l' && r[r.length() - 2] == 'l' && r[r.length() - 3] == 'e'){
+    else if (i == 'o' && r[r.length() - 1] == 'l' && r[r.length() - 2] == 'l' && r[r.length() - 3] == 'e')
       r += i;
-    }
   }
-  (r == "hello") ? cout<<"YES"<<endl : cout<<"NO"<<endl;
+
+  // If the resulting string is "hello", print "YES", otherwise print "NO"
+  (r == "hello") ? cout << "YES" << endl : cout << "NO" << endl;
+
+  BYE
 }

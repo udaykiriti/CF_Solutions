@@ -1,9 +1,10 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link:https://codeforces.com/problemset/problem/71/A
-// github link:https://github.com/udaykiriti
+# Codeforces Username: Polymath__
+# Email: Udaykiriti9@gmail.com
+# Problem Link: https://codeforces.com/problemset/problem/71/A
+# github link:https://github.com/udaykiriti
 
-/* Problem: Way Too Long Words
+"""
+Problem: Way Too Long Words
 Sometimes some words like "localization" or "internationalization" are so long that writing them many times in one text is quite tiresome.
 
 Let's consider a word too long, if its length is strictly more than 10 characters. All too long words should be replaced with a special abbreviation.
@@ -33,36 +34,24 @@ word
 l10n
 i18n
 p43s
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
-#define endl '\n'
-#define BYE return 0;
-#define FOR(i, a, b) for (int i = a; i < b; i++)
+def main():
+    # Read the number of words
+    t = int(input())
+    
+    # Process each word
+    for _ in range(t):
+        word = input()
+        
+        # Check if the word is too long
+        if len(word) > 10:
+            # Abbreviate the word
+            abbreviation = word[0] + str(len(word) - 2) + word[-1]
+            print(abbreviation)
+        else:
+            # Print the word as is
+            print(word)
 
-void FastIO()
-{
-  ios_base::sync_with_stdio(0);
-  cin.tie(0);
-  cout.tie(0);
-}
-
-int main()
-{
-  FastIO();
-  int t;
-  cin >> t;
-  string s[t];
-
-  FOR(i, 0, t)
-  cin >> s[i];
-
-  FOR(i, 0, t)
-  if (s[i].size() > 10)
-    cout << s[i][0] << s[i].size() - 2 << s[i][s[i].size() - 1] << endl;
-  else
-    cout << s[i] << endl;
-
-  BYE
-}
+if __name__ == "__main__":
+    main()

@@ -1,3 +1,36 @@
+// Codeforces Username: Polymath__
+// Email: Udaykiriti9@gmail.com
+// Problem link: https://codeforces.com/problemset/problem/131/A
+// github link: https://github.com/udaykiriti
+
+/* Problem: cAPS lOCK
+Sometimes people accidentally leave the Caps Lock key on and type words in uppercase.
+Let us imagine that this mistake is corrected automatically by a program.
+Write a program that applies the following rules:
+
+1. If all characters in the word are uppercase, convert the entire word to lowercase.
+2. If all characters except the first one are uppercase, convert the first character to lowercase
+   and the rest to lowercase.
+3. In all other cases, leave the word unchanged.
+
+Input:
+The input consists of a single word s (1 ≤ |s| ≤ 100), consisting of uppercase and lowercase Latin letters.
+
+Output:
+Print the corrected word.
+
+Example:
+Input:
+cAPS
+Output:
+Caps
+
+Input:
+Lock
+Output:
+Lock
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -5,34 +38,48 @@ using namespace std;
 #define endl '\n'
 #define debug(n) cout << (n) << endl;
 const ll INF = 2e18 + 99;
+#define BYE return 0;
+
+void FastIO()
+{
+  ios_base::sync_with_stdio(0);
+  cin.tie(0);
+  cout.tie(0);
+}
 
 int main()
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-  string s, r = "";
+  FastIO();
+  string s;
   cin >> s;
+
   bool check = true;
+
+  // Check if all characters except the first one are uppercase
   for (int i = 1; i < s.length(); i++)
   {
-    if (s[i] >= 97)
+    if (islower(s[i]))
     {
       check = false;
       break;
     }
   }
-  if (s[0] <= 90 && check)
+
+  // Apply transformations based on the conditions
+  if (isupper(s[0]) && check)
   {
-    transform(s.begin(), s.end(), s.begin(), ::tolower);
+    transform(s.begin(), s.end(), s.begin(), ::tolower); // Convert all to lowercase
   }
-  else if (s[0] >= 97 && check)
+  else if (islower(s[0]) && check)
   {
-    s[0] = toupper(s[0]);
+    s[0] = toupper(s[0]); // Convert the first character to uppercase
     for (int i = 1; i < s.length(); i++)
     {
-      s[i] = tolower(s[i]);
+      s[i] = tolower(s[i]); // Convert the rest to lowercase
     }
   }
+
   cout << s << endl;
+
+  BYE
 }
