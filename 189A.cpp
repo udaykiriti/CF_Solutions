@@ -1,3 +1,29 @@
+// Codeforces Username: Polymath__
+// Email: Udaykiriti9@gmail.com
+// Problem link: https://codeforces.com/problemset/problem/189/A
+// github link: https://github.com/udaykiriti
+
+/* Problem: Cut Ribbon
+Kirito has a ribbon of length `n`. He wants to cut the ribbon into pieces of lengths `a`, `b`, and `c` such that the total number of pieces is maximized. Each piece must have a positive length.
+
+Input:
+The first line contains four integers `n`, `a`, `b`, and `c` (1 ≤ n, a, b, c ≤ 4000) — the length of the ribbon and the lengths of the pieces.
+
+Output:
+Print a single integer — the maximum number of pieces that the ribbon can be cut into.
+
+Example:
+Input:
+5 5 3 2
+Output:
+2
+
+Input:
+7 5 5 2
+Output:
+2
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

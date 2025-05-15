@@ -1,9 +1,10 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/50/A
-// github link: https://github.com/udaykiriti
+# Codeforces Username: Polymath__
+# Email: Udaykiriti9@gmail.com
+# Problem link: https://codeforces.com/problemset/problem/50/A
+# github link: https://github.com/udaykiriti
 
-/* Problem: Domino piling
+"""
+Problem: Domino piling
 You are given a rectangular board of M × N squares. Also you are given an unlimited number of standard domino pieces of 2 × 1 squares.
 You are allowed to rotate the pieces. You need to place as many dominoes as possible on the board so as to meet the following conditions:
 1. Each domino completely covers two squares.
@@ -28,27 +29,13 @@ Input:
 3 3
 Output:
 4
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
+def main():
+    m, n = map(int, input().split())
+    
+    # Calculate the maximum number of dominoes that can fit
+    domino_area = 2
+    print((m * n) // domino_area)
 
-#define FastIO                  \
-  ios_base::sync_with_stdio(0); \
-  cin.tie(0);                   \
-  cout.tie(0);
-#define BYE return 0;
-
-int main()
-{
-  FastIO;
-
-  int m, n;
-  cin >> m >> n;
-
-  // Calculate the maximum number of dominoes that can fit
-  int domino_area = 2;
-  cout << (m * n) / domino_area << endl;
-
-  BYE;
-}
+main()
