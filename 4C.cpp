@@ -1,5 +1,27 @@
+
+// Codeforces Username: Polymath__
+// Problem link:https://codeforces.com/problemset/problem/4/C
+// github link: https://github.com/udaykiriti
+
+/*
+Problem: 4C - Registration System (Codeforces)
+Link: https://codeforces.com/problemset/problem/4/C
+
+Description:
+A new e-mail service "Berlandesk" is being developed. The system should be able to process requests for registration of new users.
+Each request has a name. If the name is not yet registered, the system should register it and respond with "OK".
+If the name is already taken, the system should append the smallest integer such that the new name is not taken, and respond with this new name.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
+
+#define fast_io                     \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(0);                       \
+  cout.tie(0)
+#define endl '\n'
+#define int long long
 
 void solve()
 {
@@ -14,7 +36,7 @@ void solve()
 
     if (usernames.count(name) == 0)
     {
-      cout << "OK\n";
+      cout << "OK" << endl;
       usernames[name] = 1;
     }
     else
@@ -25,20 +47,16 @@ void solve()
         usernames[name]++;
         new_name = name + to_string(usernames[name]);
       }
-      cout << new_name << '\n';
+      cout << new_name << endl;
       usernames[new_name] = 1;
       usernames[name]++;
     }
   }
 }
 
-int main()
+int32_t main()
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0);
-
+  fast_io;
   solve();
-
   return 0;
 }

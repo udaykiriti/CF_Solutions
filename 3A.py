@@ -1,9 +1,8 @@
-// Codeforces Username: Polymath__
-// Problem link:https://codeforces.com/problemset/problem/3/A
-// github link: https://github.com/udaykiriti
+# Codeforces Username: Polymath__
+# Problem link: https://codeforces.com/problemset/problem/3/A
+# GitHub link: https://github.com/udaykiriti
 
-
-/*
+"""
 --------------------------------------------
 Codeforces Problem 3A - "Shortest path of the king"
 --------------------------------------------
@@ -58,70 +57,38 @@ RU
 RU
 RU
 --------------------------------------------
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
+def main():
+    s = input()
+    t = input()
 
-#define endl '\n'
-#define INPUT(s, t) cin >> s >> t
-#define OUTPUT(x) cout << x << endl
-#define MOVE_X(c1, c2, move1, move2) \
-    if (c1 < c2) { cout << move1; c1++; } \
-    else if (c1 > c2) { cout << move2; c1--; }
+    x1, y1 = ord(s[0]), int(s[1])
+    x2, y2 = ord(t[0]), int(t[1])
 
-int main()
-{
-    string s, t;
-    INPUT(s, t);
+    moves = []
 
-    OUTPUT(max(abs(s[0] - t[0]), abs(s[1] - t[1])));
+    while (x1, y1) != (x2, y2):
+        move = ""
+        if x1 < x2:
+            move += "R"
+            x1 += 1
+        elif x1 > x2:
+            move += "L"
+            x1 -= 1
 
-    while (s != t)
-    {
-        MOVE_X(s[0], t[0], "R", "L");
-        MOVE_X(s[1], t[1], "U", "D");
-        cout << endl;
-    }
+        if y1 < y2:
+            move += "U"
+            y1 += 1
+        elif y1 > y2:
+            move += "D"
+            y1 -= 1
 
-    return 0;
-}
+        moves.append(move)
 
+    print(len(moves))
+    for m in moves:
+        print(m)
 
-// #include <bits/stdc++.h>
-// using namespace std;
-// #define endl '\n'
-
-// int main()
-// {
-//   string s, t;
-//   cin >> s >> t;
-//   cout << max(abs(s[0] - t[0]), abs(s[1] - t[1])) << endl;
-//   while (s != t)
-//   {
-//     if (s[0] < t[0])
-//     {
-//       cout << "R";
-//       s[0] += 1;
-//     }
-//     else if (s[0] > t[0])
-//     {
-//       cout << "L";
-//       s[0] -= 1;
-//     }
-
-//     if (s[1] < t[1])
-//     {
-//       cout << "U";
-//       s[1] += 1;
-//     }
-//     else if (s[1] > t[1])
-//     {
-//       cout << "D";
-//       s[1] -= 1;
-//     }
-
-//     cout << endl;
-//   }
-//   return 0;
-// }
+if __name__ == "__main__":
+    main()
