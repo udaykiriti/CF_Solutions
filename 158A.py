@@ -1,8 +1,8 @@
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/158/A
-// github link: https://github.com/udaykiriti
+# Codeforces Username: Polymath__
+# Problem link: https://codeforces.com/problemset/problem/158/A
+# github link: https://github.com/udaykiriti
 
-/*
+"""
 Problem: A. Next Round
 Contest: VK Cup 2012 Qualification Round 1
 Link: https://codeforces.com/contest/158/problem/A
@@ -28,42 +28,15 @@ Input:
 
 Output:
 6
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
+def main():
+    n, k = map(int, input().split())
+    scores = list(map(int, input().split()))
+    threshold = scores[k - 1]
 
-#define endl '\n';
-#define FastIO                      \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(0);                       \
-  cout.tie(0);
+    count = sum(1 for score in scores if score >= threshold and score > 0)
+    print(count)
 
-#define input1(x) cin >> x
-#define input2(x, y) cin >> x >> y
-#define FOR(i, a, b) for (int i = a; i < b; ++i)
-#define output1(x) cout << x << endl
-
-int main()
-{
-  FastIO int n, k;
-  input2(n, k);
-
-  vector<int> scores(n);
-  FOR(i, 0, n)
-  {
-    input1(scores[i]);
-  }
-
-  int threshold = scores[k - 1];
-  int count = 0;
-
-  FOR(i, 0, n)
-  {
-    if (scores[i] >= threshold && scores[i] > 0)
-      ++count;
-  }
-
-  output1(count);
-  return 0;
-}
+if __name__ == "__main__":
+    main()
