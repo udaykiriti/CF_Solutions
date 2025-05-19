@@ -1,16 +1,30 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define EXIT return 0
+#define input(x) cin >> x
+#define FOR(i, a, b) for (int i = a; i < b; i++)
 
-int main(){
+void solve()
+{
     int t;
-    cin>>t;
+    input(t);
     int x;
     int n;
-    for(int i = 0; i < t; i++){
-        cin>>n;
+    FOR(i, 0, t)
+    {
+        input(n);
         n += 1;
         x = n / 10;
-        cout<<x<<endl;
+        cout << x << endl;
     }
-    return 0;
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    solve();
+    EXIT;
 }
