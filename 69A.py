@@ -1,8 +1,8 @@
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/69/A
-// github link: https://github.com/udaykiriti
+# Codeforces Username: Polymath__
+# Problem link: https://codeforces.com/problemset/problem/69/A
+# GitHub link: https://github.com/udaykiriti
 
-/*
+"""
     Codeforces Beta Round 63 (Div. 2) - Problem A: Young Physicist
 
     A guy named Vasya attends the final grade of a high school. One day Vasya decided to
@@ -27,73 +27,22 @@
 
     Output:
     Print the word "YES" if the body is in equilibrium, or the word "NO" if it is not.
+"""
 
-    Examples:
+def main():
+    n = int(input())
+    x_sum = y_sum = z_sum = 0
 
-    Input:
-    3
-    4 1 7
-    -2 4 -1
-    1 -5 -3
+    for _ in range(n):
+        x, y, z = map(int, input().split())
+        x_sum += x
+        y_sum += y
+        z_sum += z
 
-    Output:
-    NO
+    if x_sum == 0 and y_sum == 0 and z_sum == 0:
+        print("YES")
+    else:
+        print("NO")
 
-    Input:
-    3
-    3 -1 7
-    -5 2 -4
-    2 -1 -3
-
-    Output:
-    YES
-*/
-
-#include <bits/stdc++.h>
-using namespace std;
-
-#define ll long long
-
-const ll INF = 2e18 + 99;
-
-#define endl '\n'
-#define FastIO()                    \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);                    \
-  cout.tie(NULL)
-#define input(x) cin >> x
-#define output(x) cout << x
-#define debug(x) cout << (x) << endl
-
-#define FOR(i, a, b) for (int i = a; i < b; i++)
-#define FORR(i, a) for (int i = 0; i < a; i++)
-#define EXIT return 0
-
-int main()
-{
-  FastIO();
-  int n;
-  input(n);
-
-  int arr[n][3];
-
-  FORR(i, n)
-  input(arr[i][0]), input(arr[i][1]), input(arr[i][2]);
-
-  int sum = 0;
-  FOR(i, 0, 3)
-  {
-    sum = 0;
-    FORR(j, n)
-    sum += arr[j][i];
-
-    if (sum)
-    {
-      output("NO\n");
-      EXIT;
-    }
-  }
-
-  output("YES\n");
-  EXIT;
-}
+if __name__ == "__main__":
+    main()
