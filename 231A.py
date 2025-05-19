@@ -1,8 +1,8 @@
-//  ID: Polymath__
-//  Problem: 231A - Team (Codeforces Round #143 Div. 2)
-//  github: https://github.com/udaykiriti/codeforces-solutions-master
+# ID: Polymath__
+# Problem: 231A - Team (Codeforces Round #143 Div. 2)
+# GitHub: https://github.com/udaykiriti/codeforces-solutions-master
 
-/*
+"""
 Codeforces Round #143 (Div. 2) - Problem A: Team
 
 One day three best friends Petya, Vasya and Tonya decided to form a team
@@ -33,41 +33,18 @@ Input:
 
 Output:
 2
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
-#define endl '\n'
-#define FOR(i, a, b) for (int i = a; i < b; i++)
-#define FastIO                      \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);                    \
-  cout.tie(NULL)
-#define input(x) cin >> x
-#define EXIT return 0
-#define output(x) cout << x << endl
+def main():
+    n = int(input())
+    count = 0
 
-int main()
-{
-  FastIO;
-  int n;
-  input(n);
-  int count = 0;
+    for _ in range(n):
+        votes = list(map(int, input().split()))
+        if sum(votes) >= 2:
+            count += 1
 
-  FOR(i, 0, n)
-  {
-    int sure = 0, surity;
-    FOR(j, 0, 3)
-    {
-      cin >> surity;
-      sure += surity;
-    }
-    if (sure >= 2)
-    {
-      count++;
-    }
-  }
+    print(count)
 
-  output(count);
-  EXIT;
-}
+if __name__ == "__main__":
+    main()
