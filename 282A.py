@@ -1,8 +1,8 @@
-// CF Problem No: 282A
-// CF Author: Polymath__
-// github link :https://github.com/udaykiriti/codeforces-solutions-master
+# CF Problem No: 282A
+# CF Author: Polymath__
+# GitHub link: https://github.com/udaykiriti/codeforces-solutions-master
 
-/*
+"""
     Codeforces Round 173 (Div. 2) - Problem A: Bit++
 
     The classic programming language of Bitland is Bit++.
@@ -52,38 +52,18 @@
 
     Output:
     0
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
-#define FOR(i, a, b) for (int i = a; i < b; i++)
-#define endl '\n'
-#define input(x) cin >> x
-#define output(x) cout << x << endl
-#define EXIT return 0
+def main():
+    n = int(input())  
+    x = 0            
+    for _ in range(n):
+        statement = input()
+        if statement == "++X" or statement == "X++":
+            x += 1
+        else:
+            x -= 1
+    print(x)         
 
-void FastIO()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(NULL);
-}
-
-int main()
-{
-  FastIO();
-  int n;
-  input(n);
-  string s;
-  int x = 0;
-  FOR(i, 0, n)
-  {
-    input(s);
-    if (s == "++X" || s == "X++")
-      x++;
-    else
-      x--;
-  }
-  output(x);
-  EXIT;
-}
+if __name__ == "__main__":
+    main()

@@ -1,8 +1,8 @@
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/41/A
-// github link: https://github.com/udaykiriti/codeforces-solutions-master
+# Codeforces Username: Polymath__
+# Problem link: https://codeforces.com/problemset/problem/41/A
+# GitHub link: https://github.com/udaykiriti/codeforces-solutions-master
 
-/*
+"""
     Codeforces Beta Round 40 (Div. 2) - Problem A: Translation
 
     The translation from the Berland language into the Birland language is not an easy task.
@@ -43,30 +43,16 @@
 
     Output:
     NO
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
-#define endl '\n'
-#define FastIO()                    \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);                    \
-  cout.tie(NULL)
-#define input2(x, y) cin >> x >> y
-#define EXIT return 0
-#define REVERSE(s) reverse(s.begin(), s.end())
+def main():
+    s = input().strip()
+    t = input().strip()
 
-int main()
-{
-  FastIO();
-  string s, t;
-  input2(s, t);
-  REVERSE(s);
+    if s[::-1] == t:
+        print("YES")
+    else:
+        print("NO")
 
-  if (s == t)
-    cout << "YES" << endl;
-  else
-    cout << "NO" << endl;
-
-  EXIT;
-}
+if __name__ == "__main__":
+    main()

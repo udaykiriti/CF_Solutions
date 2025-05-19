@@ -1,8 +1,8 @@
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/59/A
-// github link: https://github.com/udaykiriti/codeforces-solutions-master
+# Codeforces Username: Polymath__
+# Problem link: https://codeforces.com/problemset/problem/59/A
+# GitHub link: https://github.com/udaykiriti/codeforces-solutions-master
 
-/*
+"""
     Codeforces Beta Round 55 (Div. 2) - Problem A: Word
 
     Vasya is very upset that many people on the Net mix uppercase and lowercase
@@ -47,43 +47,17 @@
 
     Output:
     matrix
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
+def main():
+    s = input().strip()
+    lower = sum(1 for ch in s if ch.islower())
+    upper = len(s) - lower
 
-#define endl '\n'
-#define input(x) cin >> x
-#define output(x) cout << x
-#define FastIO()                    \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);                    \
-  cout.tie(NULL)
-#define FOR(i, a, b) for (int i = a; i < b; i++)
-#define TO_LOWER(s) transform(s.begin(), s.end(), s.begin(), ::tolower)
-#define TO_UPPER(s) transform(s.begin(), s.end(), s.begin(), ::toupper)
+    if lower >= upper:
+        print(s.lower())
+    else:
+        print(s.upper())
 
-int main()
-{
-  FastIO();
-
-  string s;
-  input(s);
-
-  int low = 0, up = 0;
-
-  FOR(i, 0, s.size())
-  {
-    if (s[i] >= 'a')
-      low++;
-    else
-      up++;
-  }
-
-  if (low >= up)
-    TO_LOWER(s);
-  else
-    TO_UPPER(s);
-
-  output(s);
-}
+if __name__ == "__main__":
+    main()
