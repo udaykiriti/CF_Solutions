@@ -1,7 +1,7 @@
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/281/A
-// github link: https://github.com/udaykiriti
-/*
+# Codeforces Username: Polymath__
+# Problem link: https://codeforces.com/problemset/problem/281/A
+# github link: https://github.com/udaykiriti
+"""
 Codeforces Problem: 339A
 Problem: A. Helpful Maths
 Link: https://codeforces.com/problemset/problem/197/A
@@ -35,48 +35,14 @@ Output: 1+1+1+3+3
 
 Input: 2
 Output: 2
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
+def main():
+    s = input()  
+    numbers = [int(c) for c in s if c != '+'] 
+    numbers.sort()  
 
-#define endl '\n'
-#define FOR(i, a, b) for (int i = (a); i < (b); ++i)
-#define RFOR(i, a, b) for (int i = (a); i >= (b); --i)
-#define ALL(x) (x).begin(), (x).end()
+    print("+".join(map(str, numbers)))
 
-void Fast()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-}
-
-int main()
-{
-  Fast();
-
-  string s1;
-  cin >> s1;
-
-  vector<int> numbers;
-
-  FOR(i, 0, s1.size())
-  {
-    if (s1[i] != '+')
-    {
-      numbers.push_back(s1[i] - '0');
-    }
-  }
-
-  sort(ALL(numbers));
-
-  FOR(i, 0, numbers.size())
-  {
-    if (i != 0)
-      cout << "+";
-    cout << numbers[i];
-  }
-
-  return 0;
-}
+if __name__ == "__main__":
+    main()
