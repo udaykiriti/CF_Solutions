@@ -1,4 +1,4 @@
-/*
+"""
 Problem Number: 617A
 Contest: Codeforces Round 340 (Div. 2)
 Problem Link: https://codeforces.com/problemset/problem/617/A
@@ -32,24 +32,12 @@ Output:
 Note:
 - In the first example, the elephant can make one step of length 5.
 - In the second, he can take steps of 5, 5, and 2 or 4, 4, 4 — all optimal with 3 steps.
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
-#define EXIT return 0
-void FastIO()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-}
+def main():
+    n = int(input())
+    steps = n // 5 if n % 5 == 0 else (n // 5) + 1
+    print(steps)
 
-int main()
-{
-  int n;
-  cin >> n;
-
-  int steps = n % 5 == 0 ? n / 5 : (n / 5) + 1;
-  cout << steps;
-  EXIT;
-}
+if __name__ == "__main__":
+    main()

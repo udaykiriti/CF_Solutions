@@ -1,4 +1,4 @@
-/*
+"""
 Problem Number: 118A
 Contest: Codeforces Beta Round 89 (Div. 2)
 Problem Link: https://codeforces.com/problemset/problem/118/A
@@ -39,36 +39,18 @@ Input:
 aBAcAba
 Output:
 .b.c.b
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
+def main():
+    s = input().lower()
+    vowels = set('aoyeui')
+    result = ''
+    
+    for ch in s:
+        if ch not in vowels:
+            result += '.' + ch
 
-#define ll long long
-#define endl '\n'
-#define debug(n) cout << (n) << endl;
-const ll INF = 2e18 + 99;
+    print(result)
 
-int main()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-
-  string s, r = "";
-  cin >> s;
-  transform(s.begin(), s.end(), s.begin(), ::tolower);
-  for (auto i : s)
-  {
-    if (i == 'a' || i == 'e' || i == 'i' || i == 'o' || i == 'y' || i == 'u')
-    {
-      continue;
-    }
-    else
-    {
-      r += ".";
-      r += i;
-    }
-  }
-  cout << r << endl;
-}
+if __name__ == "__main__":
+    main()
