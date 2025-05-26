@@ -1,4 +1,4 @@
-/*
+"""
     Codeforces - 1030A - In Search of an Easy Problem
     Problem link: https://codeforces.com/problemset/problem/1030/A
     CodeForces Id: Polymath__
@@ -37,35 +37,11 @@
     Output:
     EASY
     ---------------------------------------------------------------
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
-#define endl '\n'
-#define FOR(i, a, b) for (int i = a; i < b; i++)
-#define EXIT return 0
-void FastIO()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-}
-
-int main()
-{
-  FastIO();
-  int n, m, r = 0;
-  cin >> n;
-  FOR(i, 0, n)
-  {
-    cin >> m;
-    r |= m;
-    if (r == 1)
-    {
-      cout << "HARD";
-      return 0;
-    }
-  }
-  cout << "EASY";
-  EXIT;
-}
+n = int(input())
+opinions = list(map(int, input().split()))
+if 1 in opinions:
+    print("HARD")
+else:
+    print("EASY")

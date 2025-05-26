@@ -1,4 +1,4 @@
-/*
+"""
     Codeforces - 271A - Beautiful Year
     Problem link: https://codeforces.com/problemset/problem/271/A
     CodeForces Id: Polymath__
@@ -31,35 +31,15 @@
     Output:
     2014
     ---------------------------------------------------------------
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
-#define endl '\n'
+def has_distinct_digits(year):
+    s = str(year)
+    return len(set(s)) == 4
 
-void FastIO()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-}
-
-int main()
-{
-  FastIO();
-  int n;
-  cin >> n;
-  int a, b, c, d;
-  while (true)
-  {
-    n++;
-    a = n / 1000;
-    b = n / 100 % 10;
-    c = n / 10 % 10;
-    d = n % 10;
-    if (a != b && a != c && a != d && b != c && b != d && c != d)
-      break;
-  }
-  cout << n;
-  return 0;
-}
+n = int(input())
+while True:
+    n += 1
+    if has_distinct_digits(n):
+        print(n)
+        break
