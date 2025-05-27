@@ -1,6 +1,4 @@
-/*
-
-Problem: B. Queue at the School
+"""Problem: B. Queue at the School
 Contest: Codeforces Round 163 (Div. 2)
 Link: https://codeforces.com/problemset/problem/266/B
 CodeForces ID: Polymath__
@@ -41,41 +39,18 @@ Input:
 GGGB
 
 Output:
-GGGB
-*/
-// ...existing code...
-#include <bits/stdc++.h>
-using namespace std;
-#define endl '\n';
-#define FastIO             \
-  ios::sync_with_stdio(0); \
-  cin.tie(0);              \
-  cout.tie(0);
-#define endl '\n'
-#define BYE return 0;
-#define input1(a) cin >> a;
-#define input2(a, b) cin >> a >> b;
-#define FOR(i, a, b) for (int i = a; i < b; i++)
+GGGB"""
 
-int main()
-{
-  FastIO int n, t;
-  input2(n, t);
-  string s;
-  input1(s);
+n, t = map(int, input().split())
+s = list(input())
 
-  while (t--)
-  {
-    for (int i = 0; i < n - 1; ++i)
-    {
-      if (s[i] == 'B' && s[i + 1] == 'G')
-      {
-        swap(s[i], s[i + 1]);
-        i++;
-      }
-    }
-  }
+for _ in range(t):
+    i = 0
+    while i < n - 1:
+        if s[i] == 'B' and s[i + 1] == 'G':
+            s[i], s[i + 1] = s[i + 1], s[i]
+            i += 2
+        else:
+            i += 1
 
-  cout << s << endl;
-  BYE
-}
+print(''.join(s))
