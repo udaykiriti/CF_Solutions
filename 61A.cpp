@@ -1,27 +1,23 @@
+#include <string>
 #include <iostream>
 using namespace std;
-#define endl '\n';
 
 int main()
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-  const int MAX = 100;
-  char *a = new char[MAX];
-  char *b = new char[MAX];
-  char *r = new char[MAX];
-
-  cin >> a;
-  cin >> b;
-  int i = 0;
-  while (a[i] != '\0')
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+  cout.tie(nullptr);
+  string s, s1, s2;
+  cin >> s >> s1;
+  int len = s.length();
+  for (int i = 0; i < len; i++)
   {
-    r[i] = ((a[i] - '0') ^ (b[i] - '0')) + '0';
-    cout << r[i];
-    i++;
+    if (s[i] != s1[i])
+      s2 += '1';
+    else
+      s2 += '0';
   }
-  delete a;
-  delete b;
-  delete r;
+  cout << s2;
+
+  return 0;
 }
