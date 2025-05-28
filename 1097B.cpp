@@ -18,9 +18,7 @@ int main()
   cin >> n;
   vector<int> angles(n);
   for (int i = 0; i < n; ++i)
-  {
     cin >> angles[i];
-  }
 
   if (isPossible(angles))
     cout << "YES" << endl;
