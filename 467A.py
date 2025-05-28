@@ -1,9 +1,9 @@
-/*
- 467A - George and Accommodation
- Problem link: https://codeforces.com/problemset/problem/467/A
-*/
+"""
+ Problem: George and Accommodation (467A)
+ Link: https://codeforces.com/problemset/problem/467/A
+"""
 
-/*
+"""
 Problem Description:
 George has recently entered the BSUCP (Berland State University for Cool Programmers). George has a friend Alex who has also entered the university. Now they are moving into a dormitory.
 
@@ -33,24 +33,16 @@ Input
 10 10
 Output
 2
-*/
+"""
 
-#include <bits/stdc++.h>
-using namespace std;
 
-int main()
-{
-  int n, p, q, count = 0;
-  cin >> n;
-  for (int i = 0; i < n; i++)
-  {
-    cin >> p;
-    cin >> q;
-    if (q - p >= 2)
-    {
-      count++;
-    }
-  }
-  cout << count;
-  return 0;
-}
+n = int(input())
+
+count = 0
+
+for _ in range(n):
+    p, q = map(int, input().split())
+    if q - p >= 2:
+        count += 1
+
+print(count)
