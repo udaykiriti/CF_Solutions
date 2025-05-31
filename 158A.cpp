@@ -1,6 +1,4 @@
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/158/A
-// github link: https://github.com/udaykiriti
+
 
 /*
 Problem: A. Next Round

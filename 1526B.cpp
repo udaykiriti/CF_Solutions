@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/1526/B
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: I Hate 1111
 You are given an integer `n`. You need to determine if it is possible to represent `n` as the sum of some number of 11s and 111s.

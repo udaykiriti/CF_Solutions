@@ -1,7 +1,3 @@
-# Codeforces Username: Polymath__
-# Email: Udaykiriti9@gmail.com
-# Problem Link: https://codeforces.com/problemset/problem/1/A
-# github link:https://github.com/udaykiriti
 
 """
 Problem: Theatre Square

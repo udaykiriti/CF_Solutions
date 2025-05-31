@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/50/A
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: Domino piling
 You are given a rectangular board of M × N squares. Also you are given an unlimited number of standard domino pieces of 2 × 1 squares.

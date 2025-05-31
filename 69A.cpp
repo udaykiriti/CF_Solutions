@@ -1,6 +1,4 @@
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/69/A
-// github link: https://github.com/udaykiriti
+
 
 /*
     Codeforces Beta Round 63 (Div. 2) - Problem A: Young Physicist

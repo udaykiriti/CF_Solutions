@@ -1,7 +1,6 @@
 // Codeforces Username: Polymath__
 // Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/112/A
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: Petya and Strings
 Petya loves comparing strings lexicographically. He has two strings `s1` and `s2` and wants to compare them in a case-insensitive manner.

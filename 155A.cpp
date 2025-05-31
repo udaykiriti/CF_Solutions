@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/155/A
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: I_love_%username%
 Petya loves competitive programming and participates in contests regularly. His friend Vasya admires Petya's progress and keeps track of his performance. After each contest, Vasya writes down Petya's score. Over time, Vasya noticed that Petya's performance is sometimes extraordinary, breaking his previous records (either the highest or the lowest score).

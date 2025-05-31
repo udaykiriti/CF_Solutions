@@ -1,7 +1,3 @@
-# Codeforces Username: Polymath__
-# Problem link: https://codeforces.com/problemset/problem/3/A
-# GitHub link: https://github.com/udaykiriti
-
 """
 --------------------------------------------
 Codeforces Problem 3A - "Shortest path of the king"

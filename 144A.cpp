@@ -1,29 +1,30 @@
-#include<iostream>
-#include<algorithm>
+#include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define FOR(i, a, b) for (int i = (a); i < (b); i++)
 
-int main(){
+int main()
+{
   int n;
-  cin>>n;
+  cin >> n;
   int x, minindex, maxindex, maxi = 0, mini = 1000;
-  for(int i = 0; i < n; i++){
-    cin>>x;
-    if(x > maxi){
+  FOR(i, 0, n)
+  {
+    cin >> x;
+    if (x > maxi)
+    {
       maxindex = i;
       maxi = x;
     }
-    if(x <= mini){
+    if (x <= mini)
+    {
       minindex = i;
       mini = x;
     }
   }
 
-  if(maxindex>minindex){
-	cout<<(maxindex-1)+(n-minindex)-1;
-}
-else{
-	cout<<(maxindex-1)+(n-minindex);
-
-}
-
+  if (maxindex > minindex)
+    cout << (maxindex - 1) + (n - minindex) - 1;
+  else
+    cout << (maxindex - 1) + (n - minindex);
 }

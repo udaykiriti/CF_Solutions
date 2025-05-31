@@ -1,6 +1,4 @@
-// Codeforces Username: Polymath__
-// Problem link:https://codeforces.com/problemset/problem/4/A
-// github link: https://github.com/udaykiriti
+
 
 /*Problem: Watermelon
 One hot summer day Pete and his friend Billy decided to buy a watermelon.

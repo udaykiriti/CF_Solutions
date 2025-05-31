@@ -1,7 +1,5 @@
 
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/2/A
-// github link: https://github.com/udaykiriti
+
 /*
     Problem: Codeforces 2A - Winner
     --------------------------------

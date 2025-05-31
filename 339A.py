@@ -1,6 +1,4 @@
-# Codeforces Username: Polymath__
-# Problem link: https://codeforces.com/problemset/problem/281/A
-# github link: https://github.com/udaykiriti
+
 """
 Codeforces Problem: 339A
 Problem: A. Helpful Maths

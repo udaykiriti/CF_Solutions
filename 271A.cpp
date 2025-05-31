@@ -1,8 +1,7 @@
 /*
     Codeforces - 271A - Beautiful Year
     Problem link: https://codeforces.com/problemset/problem/271/A
-    CodeForces Id: Polymath__
-    github link: https://github.com/udaykiriti
+  
 
     ---------------------------------------------------------------
     Problem description:

@@ -1,6 +1,4 @@
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/263/A
-// GitHub link: https://github.com/udaykiriti
+
 
 /*
 Problem: 263A - Beautiful Matrix

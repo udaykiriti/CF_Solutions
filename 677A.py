@@ -1,6 +1,5 @@
 """Problem Number: 677A
 Problem Name: A. Vanya and Fence
-Codeforces Username: Polymath__
 Problem Link: https://codeforces.com/problemset/problem/677/A
 
 Problem Statement:

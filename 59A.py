@@ -1,6 +1,4 @@
-# Codeforces Username: Polymath__
-# Problem link: https://codeforces.com/problemset/problem/59/A
-# GitHub link: https://github.com/udaykiriti/codeforces-solutions-master
+
 
 """
     Codeforces Beta Round 55 (Div. 2) - Problem A: Word

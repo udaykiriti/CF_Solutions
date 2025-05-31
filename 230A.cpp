@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/230/A
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: Dragons
 Kirito is stuck in a video game and needs to defeat dragons to progress. Each dragon has a strength and a bonus.

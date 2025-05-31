@@ -1,9 +1,4 @@
-/*
-    Codeforces ID: Polymath__
-    Problem No  : 9A
-    Problem Link: https://codeforces.com/problemset/problem/9/A
-    GitHub      : https://github.com/udaykiriti
-*/
+
 
 /*
     Codeforces Problem 9A - Die Roll

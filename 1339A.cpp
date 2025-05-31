@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/1339/A
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: Filling the Grid
 You are given a grid of size `n × n`. Your task is to fill the grid in such a way that each row and each column contains exactly one number from 1 to n.

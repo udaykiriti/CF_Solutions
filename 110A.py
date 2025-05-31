@@ -1,7 +1,5 @@
 # Problem Number: A. Nearly Lucky Number
 # Problem Link: https://codeforces.com/problemset/problem/110/A
-# GitHub Link : https://github.com/udaykiriti
-# CodeForces ID: Polymath__
 
 # Problem Description:
 # Petya loves lucky numbers. We all know that lucky numbers are the positive integers whose decimal representations contain only the lucky digits 4 and 7. 

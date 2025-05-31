@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link:https://codeforces.com/problemset/problem/71/A
-// github link:https://github.com/udaykiriti
+
 
 /* Problem: Way Too Long Words
 Sometimes some words like "localization" or "internationalization" are so long that writing them many times in one text is quite tiresome.

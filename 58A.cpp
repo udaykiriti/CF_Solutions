@@ -1,8 +1,3 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/58/A
-// github link: https://github.com/udaykiriti
-
 /* Problem: Chat room
 Vasya has recently learned to type and log on to the Internet. He immediately entered a chat room and decided to say hello to everybody.
 Vasya typed the word s. It is considered that Vasya managed to say hello if several letters can be deleted from the typed word so that

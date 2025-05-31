@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/1472/C
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: Fair Division
 You are given `t` test cases. For each test case, you are given an integer `n` (the number of candies) and an array of integers representing the candies. Each candy is either of weight `1` or `2`. Your task is to determine if it is possible to divide the candies into two groups such that:

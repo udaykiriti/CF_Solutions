@@ -2,8 +2,7 @@
     Problem Number: 977A
     Problem Name: A. Wrong Subtraction
     Problem Link: https://codeforces.com/problemset/problem/977/A
-    GitHub Link : https://github.com/udaykiriti
-    CodeForces ID: Polymath__
+  
 
     Problem Description:
 

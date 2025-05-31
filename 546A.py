@@ -1,8 +1,7 @@
 # Problem Number: 546A
 # Problem Name: A. Soldier and Bananas
 # Problem Link: https://codeforces.com/problemset/problem/546/A
-# GitHub Link : https://github.com/udaykiriti
-# CodeForces ID: Polymath__
+
 
 # Problem Description:
 # A soldier wants to buy `w` bananas in the shop. He has to pay `k` dollars for the first banana,

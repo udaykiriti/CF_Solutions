@@ -1,5 +1,4 @@
-
-#include <iostream>
+#include <bits/stdc++.h>
 
 int main()
 {
@@ -20,13 +19,9 @@ int main()
     else
     {
       if (c > i_cr)
-      {
         d_ch++;
-      }
       else
-      {
         i_cr -= c;
-      }
     }
   }
 

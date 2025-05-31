@@ -1,8 +1,3 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link:https://codeforces.com/problemset/problem/1/A
-// github link:https://github.com/udaykiriti
-
 /* Problem: Theatre Square
 Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters.
 On the occasion of the city's anniversary, a decision was taken to pave the Square with square granite flagstones.

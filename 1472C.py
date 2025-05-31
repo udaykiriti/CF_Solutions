@@ -1,7 +1,4 @@
-# Codeforces Username: Polymath__
-# Email: Udaykiriti9@gmail.com
-# Problem link: https://codeforces.com/problemset/problem/1472/C
-# github link: https://github.com/udaykiriti
+
 
 """
 Problem: Fair Division

@@ -1,9 +1,4 @@
-/*Problem Number: 266A
-Contest: Codeforces Round 163 (Div. 2)
-Problem Link: https://codeforces.com/problemset/problem/266/A
-codeforces : Polymath__
-github link : https://github.com/udaykiriti
-*/
+
 
 /*Problem: A. Stones on the Table
 Source: Codeforces Round 163 (Div. 2)

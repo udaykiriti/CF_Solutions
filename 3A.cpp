@@ -1,6 +1,3 @@
-// Codeforces Username: Polymath__
-// Problem link:https://codeforces.com/problemset/problem/3/A
-// github link: https://github.com/udaykiriti
 
 
 /*

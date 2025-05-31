@@ -1,9 +1,3 @@
-# Codeforces Username: Polymath__
-# Email: Udaykiriti9@gmail.com
-# Problem Link: https://codeforces.com/problemset/problem/4/A
-# Problem Name: Watermelon
-# Problem Code: 4A
-# github link:https://github.com/udaykiriti
 
 """
 Problem: Watermelon

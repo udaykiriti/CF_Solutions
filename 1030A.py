@@ -1,8 +1,6 @@
 """
     Codeforces - 1030A - In Search of an Easy Problem
     Problem link: https://codeforces.com/problemset/problem/1030/A
-    CodeForces Id: Polymath__
-    github link: https://github.com/udaykiriti
 
     ---------------------------------------------------------------
     Problem description:

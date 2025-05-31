@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/136/A
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: Presents
 Little Petya very much likes gifts. Recently he has received a gift from each of his n friends.

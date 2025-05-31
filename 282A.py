@@ -1,6 +1,4 @@
-# CF Problem No: 282A
-# CF Author: Polymath__
-# GitHub link: https://github.com/udaykiriti/codeforces-solutions-master
+
 
 """
     Codeforces Round 173 (Div. 2) - Problem A: Bit++

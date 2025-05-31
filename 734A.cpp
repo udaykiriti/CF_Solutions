@@ -1,7 +1,6 @@
 /*
     Problem Number:734A
     Problem Name: A. Anton and Danik
-    Codeforces Username: Polymath__
     Problem Link: https://codeforces.com/problemset/problem/734/A
 
     Problem Statement:

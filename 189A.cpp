@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/189/A
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: Cut Ribbon
 Kirito has a ribbon of length `n`. He wants to cut the ribbon into pieces of lengths `a`, `b`, and `c` such that the total number of pieces is maximized. Each piece must have a positive length.

@@ -1,7 +1,3 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/116/A
-// github link: https://github.com/udaykiriti
 
 /* Problem: Tram
 A tram has `n` stops, and at each stop, some passengers exit the tram, and some enter.

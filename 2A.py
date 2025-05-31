@@ -1,7 +1,3 @@
-# Codeforces Username: Polymath__
-# Problem link: https://codeforces.com/problemset/problem/2/A
-# github link: https://github.com/udaykiriti
-
 # Problem: Codeforces 2A - Winner
 # --------------------------------
 # In the end of the competition, each participant has a total score, which is the sum of points he earned during all rounds.

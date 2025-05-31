@@ -1,7 +1,4 @@
-# Codeforces Username: Polymath__
-# Email: Udaykiriti9@gmail.com
-# Problem Link: https://codeforces.com/problemset/problem/71/A
-# github link:https://github.com/udaykiriti
+
 
 """
 Problem: Way Too Long Words

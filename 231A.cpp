@@ -1,6 +1,4 @@
-//  ID: Polymath__
-//  Problem: 231A - Team (Codeforces Round #143 Div. 2)
-//  github: https://github.com/udaykiriti/codeforces-solutions-master
+
 
 /*
 Codeforces Round #143 (Div. 2) - Problem A: Team

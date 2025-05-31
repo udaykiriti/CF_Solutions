@@ -7,9 +7,7 @@ void solve()
   cin >> n >> m;
   vector<string> matrix(n);
   for (int i = 0; i < n; ++i)
-  {
     cin >> matrix[i];
-  }
 
   vector<int> rowXOR(n, 0), colXOR(m, 0);
 
@@ -37,8 +35,6 @@ int main()
   int t;
   cin >> t;
   while (t--)
-  {
     solve();
-  }
   return 0;
 }

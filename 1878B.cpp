@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/1878/B
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: Filling the Grid
 You are given `t` test cases. For each test case, you are given an integer `n`. You need to generate a sequence of `n` integers such that:

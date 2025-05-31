@@ -1,6 +1,6 @@
-//4240326   Aug 7, 2013 5:13:59 PM	fuwutu	 26A - Almost Prime	 GNU C++0x	Accepted	 30 ms	 0 KB
+
 #include <cstdio>
-#include<math.h>
+#include <math.h>
 
 int main()
 {

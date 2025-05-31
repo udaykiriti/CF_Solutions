@@ -1,6 +1,4 @@
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/25/A
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: IQ test
 Bob is preparing to pass an IQ test. The most frequent task in this test is to find out which one of the given n numbers differs from the others. Bob observed that one number usually differs from the others in evenness. Help Bob — to check his answers, he needs a program that among the given n numbers finds one that is different in evenness.

@@ -2,8 +2,7 @@
 Problem Number: 118A
 Contest: Codeforces Beta Round 89 (Div. 2)
 Problem Link: https://codeforces.com/problemset/problem/118/A
-Codeforces: Polymath__
-GitHub link: https://github.com/udaykiriti
+
 
 Problem: A. String Task
 

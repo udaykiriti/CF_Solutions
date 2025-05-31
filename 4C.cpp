@@ -1,7 +1,4 @@
 
-// Codeforces Username: Polymath__
-// Problem link:https://codeforces.com/problemset/problem/4/C
-// github link: https://github.com/udaykiriti
 
 /*
 Problem: 4C - Registration System (Codeforces)

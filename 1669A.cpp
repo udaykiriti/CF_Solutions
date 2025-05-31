@@ -1,7 +1,4 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/1669/A
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: Division
 Codeforces has a rating system that divides participants into divisions based on their ratings.

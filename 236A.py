@@ -1,6 +1,4 @@
-# Author: Polymath__
-# GitHub: https://github.com/udaykiriti
-# Link: https://codeforces.com/problemset/problem/236/A
+
 
 """
 Problem: Boy or Girl (Codeforces 236A)

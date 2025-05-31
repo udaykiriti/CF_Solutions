@@ -1,7 +1,6 @@
 """Problem: B. Queue at the School
 Contest: Codeforces Round 163 (Div. 2)
-Link: https://codeforces.com/problemset/problem/266/B
-CodeForces ID: Polymath__
+
 
 Description:
 During the break the schoolchildren, boys and girls, formed a queue of n people in the canteen.

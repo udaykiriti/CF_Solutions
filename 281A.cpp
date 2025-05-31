@@ -1,6 +1,4 @@
-// Codeforces Username: Polymath__
-// Problem link: https://codeforces.com/problemset/problem/281/A
-// github link: https://github.com/udaykiriti
+
 
 /* Problem: Word Capitalization
 Petya has a string `s` of lowercase and uppercase Latin letters.

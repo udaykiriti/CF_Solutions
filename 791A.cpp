@@ -1,5 +1,3 @@
-// codefordes ID:Polymath__
-// github link: https://github.com/udaykiriti
 // problem link: https://codeforces.com/problemset/problem/791/A
 
 /*

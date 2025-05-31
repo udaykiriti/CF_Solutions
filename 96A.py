@@ -1,7 +1,6 @@
 # Problem Number: A. Football
 # Problem Link: https://codeforces.com/problemset/problem/96/A
-# GitHub Link : https://github.com/udaykiriti
-# CodeForces ID: Polymath__
+
 
 # Problem Description:
 

@@ -2,8 +2,7 @@
 Problem Number: 617A
 Contest: Codeforces Round 340 (Div. 2)
 Problem Link: https://codeforces.com/problemset/problem/617/A
-Codeforces: Polymath__
-GitHub link: https://github.com/udaykiriti
+
 
 Problem: A. Elephant
 

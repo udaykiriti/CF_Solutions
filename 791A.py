@@ -1,5 +1,4 @@
-# Codeforces ID: Polymath__
-# GitHub link: https://github.com/udaykiriti
+
 # Problem link: https://codeforces.com/problemset/problem/791/A
 
 """
