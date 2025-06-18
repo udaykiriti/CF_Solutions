@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
 
 void solve()
 {
@@ -7,17 +8,11 @@ void solve()
   cin >> a >> b >> c;
 
   if (a == b)
-  {
     cout << c << endl;
-  }
   else if (a == c)
-  {
     cout << b << endl;
-  }
   else
-  {
     cout << a << endl;
-  }
 }
 
 int main()
@@ -27,11 +22,7 @@ int main()
   cout.tie(0);
   int t;
   cin >> t;
-
   while (t--)
-  {
     solve();
-  }
-
   return 0;
 }
