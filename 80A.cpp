@@ -1,44 +1,49 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-
-
-#define ll long long
 #define endl '\n'
-#define debug(n) cout<<(n)<<endl;
-const ll INF = 2e18 + 99;
+#define vi vector<int>
 
-bool prime_check(int m){
+const int N = 51;
+vector<bool> p(N);
+vi primes;
 
-  if(m % 2 == 0){
-    return false;
-  }
-  bool check = true;
-  for(int i = 2; i*i <= m; i++){
-    if(m % i == 0){
-      check = false;
-      break;
-    }
-  }
-  return check;
+void sieve()
+{
+  for (int i = 0; i < N; i++)
+    p[i] = true;
+
+  p[0] = p[1] = false;
+
+  for (int i = 2; i * i < N; i++)
+    if (p[i])
+      for (int j = i * i; j < N; j += i)
+        p[j] = false;
+
+  for (int i = 0; i < N; i++)
+    if (p[i])
+      primes.push_back(i);
 }
 
-int main(){
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(0);
-  int n, m;
-  cin>>n>>m;
-
-  int real_m;
-  for(int i = n+1; i <= m; i++){
-    if(prime_check(i)){
-      real_m = i;
-      break;
+void solve(int now, int next)
+{
+  for (int i = 0; i < primes.size(); i++)
+  {
+    if (primes[i] == now)
+    {
+      if (i + 1 < primes.size() && primes[i + 1] == next)
+        cout << "YES\n";
+      else
+        cout << "NO\n";
+      return;
     }
   }
+  cout << "NO\n";
+}
 
-  (real_m == m) ? cout<<"YES"<<endl : cout<<"NO"<<endl;
-
-
-
+int main()
+{
+  int now, next;
+  cin >> now >> next;
+  sieve();
+  solve(now, next);
 }
