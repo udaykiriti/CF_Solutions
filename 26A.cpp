@@ -1,30 +1,26 @@
-
-#include <cstdio>
-#include <math.h>
+#include <bits/stdc++.h>
+using namespace std;
+#define endl '\n'
 
 int main()
 {
-    int n, amount(0);
-    scanf("%d", &n);
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    int n;
+    cin >> n;
+    vector<int> cnt(n + 1, 0);
 
-    bool b[3001] = {false};
-    int pfactors[3001] = {0};
-    for (int i = 2; i <= n; ++i)
-    {
-        if (!b[i])
-        {
-            for (int j = i + i; j <= n; j += i)
-            {
-                b[j] = true;
-                pfactors[j] += 1;
-            }
-        }
+    for (int i = 2; i <= n; i++)
+        if (cnt[i] == 0)
+            for (int j = i; j <= n; j += i)
+                cnt[j]++;
 
-        if (pfactors[i] == 2)
-        {
-            amount += 1;
-        }
-    }
-    printf("%d\n", amount);
+    int result = 0;
+    for (int i = 1; i <= n; i++)
+        if (cnt[i] == 2)
+            result++;
+
+    cout << result << endl;
     return 0;
 }
