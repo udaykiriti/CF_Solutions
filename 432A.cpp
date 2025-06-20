@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
+#define debug(x) cout << (x) << endl;
 
 int main()
 {
@@ -9,21 +10,16 @@ int main()
   cout.tie(0);
   int n, k;
   cin >> n >> k;
-
-  int count = 0;
-
+  int c = 0;
   for (int i = 0; i < n; ++i)
   {
-    int participation;
-    cin >> participation;
-
-    if (participation <= 5 - k)
-    {
-      count++;
-    }
+    int p;
+    cin >> p;
+    if (p <= 5 - k)
+      c++;
   }
 
-  cout << count / 3 << endl;
+  cout << c / 3 << endl;
 
   return 0;
 }
