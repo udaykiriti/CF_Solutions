@@ -16,19 +16,13 @@ void solve()
     for (int i = 0; i < 3; i++)
     {
       if (s[i] != "abc"[i])
-      {
         mismatches++;
-      }
     }
 
     if (mismatches == 2)
-    {
       cout << "YES" << endl;
-    }
     else
-    {
       cout << "NO" << endl;
-    }
   }
 }
 
@@ -40,8 +34,6 @@ int main()
   int t;
   cin >> t;
   while (t--)
-  {
     solve();
-  }
   return 0;
 }
