@@ -1,25 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
+#define ll long long 
+#define debug(x) cout<<(x)<<endl
+#define FOR(i,a,b) for(int i=(a);i<(b);i++)
 
 int main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(0);
   cout.tie(0);
-  int n, k;
-  cin >> n >> k;
+  int n, k; cin >> n >> k;
   vector<int> h(n);
-  for (int i = 0; i < n; ++i)
+  FOR (i,0,n)
     cin >> h[i];
 
   int sum = 0;
-  for (int i = 0; i < k; ++i)
+  FOR (i,0,k)
     sum += h[i];
 
   int min_sum = sum, min_index = 0;
 
-  for (int i = k; i < n; ++i)
+  FOR (i,k,n)
   {
     sum = sum - h[i - k] + h[i];
     if (sum < min_sum)
