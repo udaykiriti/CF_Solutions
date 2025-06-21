@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define debug(x) cout<<(x)<<endl;
+
 
 void solve()
 {
@@ -7,9 +10,7 @@ void solve()
   cin >> n >> t;
   vector<int> books(n);
   for (int i = 0; i < n; ++i)
-  {
     cin >> books[i];
-  }
 
   int left = 0, current_time = 0, max_books = 0;
 
