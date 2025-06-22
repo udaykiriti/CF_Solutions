@@ -4,6 +4,8 @@ using namespace std;
 #define ll long long
 #define endl '\n'
 const ll INF = 2e18 + 99;
+#define debug(x) cout<<x<<endl
+
 
 int main()
 {
