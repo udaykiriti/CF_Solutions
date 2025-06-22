@@ -6,23 +6,23 @@ using namespace std;
 #define endl '\n'
 #define debug(n) cout<<(n)<<endl;
 const ll INF = 2e18 + 99;
+#define mod 1000000007
+#define FOR(i,a,b) for(int i=(a);i<(b);i++)
+
 
 int main(){
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
-
-  int n, m;
-  cin>>n>>m;
+  cout.tie(NULL);
+  
+  int n, m; cin>>n>>m;
   int arr[n];
-  for(int i = 0; i < n; i++){
+  FOR(i,0,n)
     cin>>arr[i];
-  }
   sort(arr, arr+n);
   int count = 0;
-  for(int i = 0; i < m; i++){
-    if(arr[i] < 0){
+  FOR(i,0,m)
+    if(arr[i] < 0)
       count -= arr[i];
-    }
-  }
   cout<<count<<endl;
 }
