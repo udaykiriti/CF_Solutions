@@ -38,10 +38,8 @@ int main()
   while (i < m && a[i] == '0')
     i++;
   if (i < m)
-  {
     a[i]--;
     a[0]++;
-  }
 
   cout << a << " " << b << endl;
   return 0;
