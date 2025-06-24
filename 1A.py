@@ -1,4 +1,3 @@
-
 """
 Problem: Theatre Square
 Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters.
