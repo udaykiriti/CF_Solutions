@@ -1,9 +1,10 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define debug(x) cout<<(x)<<endl
 
 int main(){
-  int n;
-  cin>>n;
+  int n; cin>>n;
   int x, pcnt = 0, ccnt = 0;
   while(n--){
     cin>>x;
