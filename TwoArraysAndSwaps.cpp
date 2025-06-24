@@ -1,9 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define debug(x) cout<<(x)<<endl
 
 int main(){
-  int t, n, k;
-  cin>>t;
+  int t, n, k; cin>>t;
   while(t--){
     cin>>n>>k;
     int arr1[n], arr2[n];
