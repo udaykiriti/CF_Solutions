@@ -1,5 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define debug(x) cout<<(x)<<endl
+#define FOR(i,a,b) for(int i=(a);i<(b);i++)
 
 int main(){
   ios_base::sync_with_stdio(false);
@@ -17,7 +20,7 @@ int main(){
       i++;
     }
     cout<<count<<endl;
-    for(int j = 0; j < i; j++){
+    FOR(j,0,i){
       if(arr[j] != 0){
         cout<<arr[j] * pow(10, j)<<" ";
       }
