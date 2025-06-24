@@ -1,10 +1,10 @@
-#include<iostream>
-#include<math.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main(){
-  int t;
-  cin>>t;
+  ios_base::sync_with_stdio(false);
+  cin.tie(0); cout.tie(0);
+  int t; cin>>t;
   int n;
   while(t--){
     cin>>n;
