@@ -3,7 +3,7 @@
 Codeforces Problem 3A - "Shortest path of the king"
 --------------------------------------------
 
-Chess is a game played on a square board of 8×8 cells. Every cell has a unique coordinate,
+Chess is a game played on a square board of 8x8 cells. Every cell has a unique coordinate,
 which is identified by a string consisting of two characters. The first character is a letter 
 from 'a' to 'h' (denoting the column), and the second one is a digit from '1' to '8' (denoting the row).
 
