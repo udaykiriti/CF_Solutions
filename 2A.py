@@ -6,7 +6,7 @@ Your task is to find the name of the participant who won the competition.
 If there are multiple participants with the maximum score, the winner is the one who reached that score first.
 
 Input:
-- The first line contains an integer n (1 ≤ n ≤ 1000) — the number of rounds.
+- The first line contains an integer n (1≤n≤1000) — the number of rounds.
 - The next n lines contain a player's name and the score he earned in that round.
 
 Output:
