@@ -1,5 +1,7 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define debug(x) cout<<(x)<<endl
 
 int main(){
   int k, l, m, n, d;
