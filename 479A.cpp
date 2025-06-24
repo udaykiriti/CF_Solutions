@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n';
+#define debug(x) cout<<(x)<<endl
+#define EXIT return 0
 
 int main()
 {
@@ -9,5 +11,5 @@ int main()
   int a, b, c; cin >> a >> b >> c;
   int result = max({a + b + c,a + (b * c), (a + b) * c,a * b * c,a * (b + c),(a * b) + c});
   cout << result << endl;
-  return 0;
+  EXIT;
 }
