@@ -1,17 +1,19 @@
-#include<iostream>
-#include<string>
+#include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define FOR(i,a,b) for(int i=(a);i<(b);i++)
 
 int main(){
-  int t;
-  cin>>t;
+  ios_base::sync_with_stdio(false);
+  cin.tie(0); cout.tie(0);
+  int t; cin>>t;
   string s;
   char elem;
-  for(int i = 0; i < t; i++){
+  FOR(i,0,t){
     cin>>s;
     elem = '4';
     int count = 0;
-    for(int j = 0; j < s.size(); j++){
+    FOR(j,0,s.size()){
       if(s[j] != elem){
         elem = s[j];
         if(elem == '0'){
