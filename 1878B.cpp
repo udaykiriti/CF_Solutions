@@ -38,24 +38,19 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
 
   int current = 3;
   FOR(i, 0, n)
   {
     while (current % 3 == 0)
-    {
       current++;
-    }
     cout << current << ' ';
     current++;
   }
   {
     while ((current + 1) % 3 == 0)
-    {
       current++;
-    }
     cout << current << ' ';
     current++;
   }
@@ -65,11 +60,8 @@ void solve()
 int main()
 {
   FastIO;
-
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
     solve();
-
   BYE;
 }
