@@ -4,6 +4,7 @@ using namespace std;
 #define debug(x) cout<<(x)<<endl
 #define FOR(i, a, b) for (int i = (a); i < (b); i++)
 
+
 int main()
 {
   int n, m, pairs = 0;
