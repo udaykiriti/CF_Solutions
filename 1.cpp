@@ -6,13 +6,10 @@
 using namespace std;
 using namespace __gnu_pbds;
 
-#define endl '\n'
-
 //=======================TIMER========================
 #define START_TIMER auto start_time = chrono::high_resolution_clock::now();
 #define END_TIMER auto end_time = chrono::high_resolution_clock::now(); \
-    cerr << "Time: " << chrono::duration<double, milli>(end_time - start_time).count() << " ms"<<endl;
-
+    cerr << "Time: " << chrono::duration<double, milli>(end_time - start_time).count() << " ms\n";
 
 // Typedefs
 using ll = long long;
@@ -29,26 +26,23 @@ using sc = set<char>;
 
 // ========== PBDS Shortcuts ==========
 #define ordered_set(T) tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>
+#define ordered_set_splay(T) tree<T,null_type,less<T>,splay_tree_tag,tree_order_statistics_node_update>
+#define ordered_map(K, V) tree<K, V, less<K>, rb_tree_tag, tree_order_statistics_node_update>
+#define ordered_map_splay(K,V) tree<K,V, less<K>,splay_tree_tag,tree_order_statistics_node_update>
 #define ordered_multiset tree<pair<int, int>, null_type, less<pair<int, int>>, rb_tree_tag, tree_order_statistics_node_update>
-
 #define os_insert(s, val) s.insert(val)
 #define os_erase(s, val) s.erase(val)
-#define os_kth(s, k) *s.find_by_order(k)       // 0-based kth smallest
-#define os_rank(s, val) s.order_of_key(val)    // Count of elements < val
+#define os_kth(s, k) *s.find_by_order(k)
+#define os_rank(s, val) s.order_of_key(val)
 #define os_size(s) ((int)s.size())
-
 #define oms_insert(ms, val) ms.insert({val, timer++})
 #define oms_erase(ms, val) ms.erase(ms.lower_bound({val, 0}))
 #define oms_kth(ms, k) ms.find_by_order(k)->first
 #define oms_rank(ms, val) ms.order_of_key({val, 0})
 
-// Policy-Based Data Structures
-template<typename T>
-using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
-
 // Fast I/O
-#define FastIO() ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
-
+#define stop_sync ios::sync_with_stdio(false)
+#define untie_ios cin.tie(nullptr)
 
 // Output Utilities
 #define FIXED(x) cout << fixed << setprecision(x)
@@ -60,18 +54,18 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define prints(s) do { cout << "{"; for (auto i : s) cout << i << ' '; cout << "}\n"; } while(0)
 
 // Macros & Constants
-#define MOD 1e+7
+#define MOD 1000000007
 #define PI 3.1415926535897932384626433832795
 #define INF 1e18
 #define EPS 1e-9
-#define MAX 1e+7
-#define MIN -1e+7
+#define MAX 1000000000
+#define MIN -1000000000
 
 // STL Shorthand
 #define pb push_back
 #define eb emplace_back
-#define F first
-#define S second
+#define f first
+#define s second
 #define all(a) (a).begin(), (a).end()
 #define rall(a) (a).rbegin(), (a).rend()
 
@@ -102,21 +96,14 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define ubd(a, x) upper_bound(all(a), x)
 
 // Utility Functions
-ll gcd(ll a, ll b) {
-    return b == 0 ? a : gcd(b, a % b);
-}
-
+ll gcd(ll a, ll b) { return b == 0 ? a : gcd(b, a % b); }
 bool isPrime(int n) {
     if (n <= 1) return false;
     for (int i = 2; i * i <= n; ++i)
         if (n % i == 0) return false;
     return true;
 }
-
-bool isUp(char ch) {
-    locale loc;
-    return isupper(ch, loc);
-}
+bool isUp(char ch) { locale loc; return isupper(ch, loc); }
 
 // Power & Combinatorics
 ll binpow(ll a, ll b) {
@@ -140,9 +127,7 @@ ll binpow(ll a, ll b, ll m) {
     return res;
 }
 
-ll powerMod(ll base, ll exp, ll mod) {
-    return binpow(base, exp, mod);
-}
+ll powerMod(ll base, ll exp, ll mod) { return binpow(base, exp, mod); }
 
 ll factorialMod(ll n, ll mod) {
     ll res = 1;
@@ -181,20 +166,33 @@ int XOR1toN(int N) {
     return 0;
 }
 
-int XORLtoR(int L, int R) {
-    return XOR1toN(R) ^ XOR1toN(max(L - 1, 0));
-}
+int XORLtoR(int L, int R) { return XOR1toN(R) ^ XOR1toN(max(L - 1, 0)); }
 
 // Solution Function
 void solve() {
     // Write your solution logic here
+    int n; cin>>n;
+    // ordered_set(int) os;
+    // unordered_set<int> os1(n);
+    // unordered_map<int,string> os2(n);
     
+    // FOR(i,0,n){
+    //     int val; cin>>val;
+    //     os.insert(val);
+    // }
+    // prints(os);
+    // cout<<*os.find_by_order(2)<<endl;
+    // cout<<os.order_of_key(10)<<endl;
+    unordered_map<int, string> om;
+
 }
 
 // Main Function
 int main() {
-    FastIO();
-    int t; cin >> t;
+    stop_sync;
+    untie_ios;
+    int t;
+    cin >> t;
     while (t--) solve();
     return 0;
 }
