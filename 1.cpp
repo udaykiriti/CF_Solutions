@@ -24,6 +24,9 @@ using mii = map<int, int>;
 using si = set<int>;
 using sc = set<char>;
 
+//input as 2d matrix
+#define matrix2d(name, rows, cols) vector<vector<int>> name(rows, vector<int>(cols))
+
 // ========== PBDS Shortcuts ==========
 #define ordered_set(T) tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>
 #define ordered_set_splay(T) tree<T,null_type,less<T>,splay_tree_tag,tree_order_statistics_node_update>
