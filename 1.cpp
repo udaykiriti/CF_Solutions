@@ -56,12 +56,12 @@ using sc = set<char>;
 #define prints(s) do { cout << "{"; for (auto i : s) cout << i << ' '; cout << "}\n"; } while(0)
 
 // Macros & Constants
-#define MOD 1000000007
-#define PI 3.1415926535897932384626433832795
-#define INF 1e18
+#define MOD 1000000000
+#define PI 3.141592653589793
+#define INF 1000000000000000000LL
 #define EPS 1e-9
-#define MAX 1000000000
-#define MIN -1000000000
+#define MAX 10000000000000000LL
+#define MIN -10000000
 
 // STL Shorthand
 #define pb push_back
