@@ -28,7 +28,6 @@ def main():
     n = int(input())
     rounds = []
     total_scores = defaultdict(int)
-
     for _ in range(n):
         name, score = input().split()
         score = int(score)
