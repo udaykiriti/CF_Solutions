@@ -52,9 +52,7 @@ void Fast()
 int main()
 {
   Fast();
-
   string s1; cin >> s1;
-
   vector<int> numbers;
 
   FOR(i, 0, s1.size())
