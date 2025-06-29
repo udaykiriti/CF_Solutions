@@ -1,9 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define debug(x) cout<<(x)<<endl
+
 
 int main(){
-  int n;
-  cin>>n;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int n; cin>>n;
   list <int> listn;
   int x;
   for(int i = 0; i < n; i++){
