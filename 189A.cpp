@@ -1,5 +1,3 @@
-
-
 /* Problem: Cut Ribbon
 Kirito has a ribbon of length `n`. He wants to cut the ribbon into pieces of lengths `a`, `b`, and `c` such that the total number of pieces is maximized. Each piece must have a positive length.
 
