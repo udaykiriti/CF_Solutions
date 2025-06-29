@@ -1,19 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define debug(x) cout<<(x)<<endl
+#define FOR(i,a,b) for(int i=a;i<b;i++)
+
 int main()
 {
   long int tf, fy, hn, n, c, i, a[100001];
   while (cin >> n)
   {
-    for (i = 0; i < n; i++)
-    {
+    FOR (i ,0,n)
       cin >> a[i];
-    }
-    c = 1;
-    tf = 0;
-    hn = 0;
-    fy = 0;
-    for (i = 0; i < n; i++)
+
+    c = 1; tf = 0; hn = 0; fy = 0;
+    FOR (i , 0, n)
     {
       if (a[i] == 25)
         tf++;
