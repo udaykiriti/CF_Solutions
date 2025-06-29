@@ -57,22 +57,16 @@ using namespace std;
 void FastIO()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
+  cin.tie(NULL); cout.tie(NULL);
 }
 
 int main()
 {
-
-  int n, k;
-  cin >> n;
-  cin >> k;
+  int n, k;cin >> n>>k;
   FOR(i, 0, k)
   {
-    if (n % 10 == 0)
-      n /= 10;
-    else
-      n--;
+    if (n % 10 == 0) n /= 10;
+    else n--;
   }
   cout << n;
 }
