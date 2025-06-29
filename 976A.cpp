@@ -3,11 +3,9 @@ using namespace std;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  int n;
-  cin>>n;
-  string s;
-  cin>>s;
+  cin.tie(NULL); cout.tie(NULL);
+  int n; cin>>n;
+  string s; cin>>s;
   if(s == "0"){
     cout<<s<<endl;
     return 0;
@@ -21,9 +19,8 @@ int main(){
   char s1[zerocnt+1];
   s1[0] = '1';
   int i = 1;
-  for(int i = 1; i <= zerocnt; i++){
+  for(int i = 1; i <= zerocnt; i++)
     s1[i] = '0';
-  }
   s1[zerocnt + 1] = '\0';
   cout<<s1;
 }
