@@ -10,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  string s;
+  int n; string s;
   cin >> n >> s;
 
   map<string, int> freq;
