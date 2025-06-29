@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+#define endl '\n'
+#define debug(x) cout<<(x)<<endl
+#define FOR(i,a,b) for(int i=a;i<b;i++)
 
 #define ll long long
 #define endl "\n"
@@ -10,25 +12,18 @@ const ll INF = 2e18 + 99;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
+  cin.tie(NULL); cout.tie(NULL);
 
   stack<char> st;
-  string s;
-  cin>>s;
+  string s; cin>>s;
 
-  for(int i = 0; i < s.size(); i++){
-    if(!st.empty() && st.top() == s[i]){
+  FOR(i,0,s.size())
+    if(!st.empty() && st.top() == s[i])
       st.pop();
-    }
-    else{
+    else
       st.push(s[i]);
-    }
-  }
-  if(st.empty()){
+  if(st.empty())
     cout<<"Yes"<<endl;
-  }
-  else{
+  else
     cout<<"No"<<endl;
-  }
-
 }
