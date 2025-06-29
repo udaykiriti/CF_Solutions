@@ -46,26 +46,20 @@ using namespace std;
 void Fast()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
+  cin.tie(NULL); cout.tie(NULL);
 }
 
 int main()
 {
   Fast();
 
-  string s1;
-  cin >> s1;
+  string s1; cin >> s1;
 
   vector<int> numbers;
 
   FOR(i, 0, s1.size())
-  {
     if (s1[i] != '+')
-    {
       numbers.push_back(s1[i] - '0');
-    }
-  }
 
   sort(ALL(numbers));
 
