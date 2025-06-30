@@ -5,15 +5,13 @@ using namespace std;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0);
+  cin.tie(0); cout.tie(0);
   int t; cin>>t;
   int n;
   while(t--){
     cin>>n;
     if(n%2 != 0){
-      n--;
-      cout<<(n/2)<<endl;
+      n--; cout<<(n/2)<<endl;
       continue;
     }
     cout<<(n/2)<<endl;
