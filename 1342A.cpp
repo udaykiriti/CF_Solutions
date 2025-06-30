@@ -19,7 +19,5 @@ int main(){
     else{
       cout<<((max(x, y) - min(x, y)) * a + min(x, y) * b)<<endl;
     }
-
   }
-
 }
