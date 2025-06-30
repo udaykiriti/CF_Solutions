@@ -19,9 +19,7 @@ void solve()
   }
 
   long long res = 0;
-  for (auto &[key, count] : freq)
-    res += count * (count - 1) / 2;
-
+  for (auto &[key, count] : freq) res += count * (count - 1) / 2;
   cout << res << endl;
 }
 
