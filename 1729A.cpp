@@ -13,8 +13,7 @@ using namespace std;
 
 void solve()
 {
-  long a, b, c;
-  cin >> a >> b >> c;
+  long a, b, c; cin >> a >> b >> c;
 
   long time1 = abs(a - 1);
   long time2 = abs(b - c) + abs(c - 1);
@@ -30,11 +29,8 @@ void solve()
 int main()
 {
   FastIO();
-  int t = 1;
-  cin >> t;
+  int t ;cin >> t;
   while (t--)
-  {
     solve();
-  }
   return 0;
 }
