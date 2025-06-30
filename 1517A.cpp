@@ -4,13 +4,10 @@ using namespace std;
 
 void solve()
 {
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
   {
-    ll n;
-    cin >> n;
-
+    ll n; cin >> n;
     if (n % 2050 != 0)
     {
       cout << -1 << '\n';
@@ -25,7 +22,6 @@ void solve()
       sum += quotient % 10;
       quotient /= 10;
     }
-
     cout << sum << '\n';
   }
 }
@@ -33,7 +29,7 @@ void solve()
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(nullptr);
+  cin.tie(nullptr); cout.tie(NULL);
   solve();
   return 0;
 }
