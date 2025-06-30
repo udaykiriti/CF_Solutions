@@ -22,7 +22,6 @@ Output:
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ll long long
 #define endl '\n'
 #define FastIO                  \
@@ -34,16 +33,11 @@ using namespace std;
 int main()
 {
   FastIO;
-
-  int t;
-  cin >> t;
-
+  int t; cin >> t;
   while (t--)
   {
-    int n;
-    cin >> n;
+    int n; cin >> n;
     cout << n << endl;
   }
-
   BYE;
 }
