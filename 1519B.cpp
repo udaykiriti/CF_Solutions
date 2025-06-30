@@ -3,7 +3,6 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define fastio                 \
   ios::sync_with_stdio(false); \
   cin.tie(nullptr);
@@ -13,8 +12,7 @@ using namespace std;
 
 void solve()
 {
-  int n, m, k;
-  cin >> n >> m >> k;
+  int n, m, k; cin >> n >> m >> k;
   if (k == (n - 1) + (m - 1) * n)
     yes;
   else
@@ -24,8 +22,7 @@ void solve()
 int main()
 {
   fastio;
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
     solve();
   return 0;
