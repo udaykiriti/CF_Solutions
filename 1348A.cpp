@@ -1,9 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define debug(x) cout<<(x)<<endl
 
 int main(){
-  int t;
-  cin>>t;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin>>t;
   int n;
   int arr[30];
   int r = 2;
