@@ -1,15 +1,14 @@
-#include <bits\stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 #define endl '\n'
 #define IO()                        \
   ios_base::sync_with_stdio(false); \
   cin.tie(0);                       \
-  cout.tie(NULL);
+  cout.tie(NULL)
 int main(int argc, char const *argv[])
 {
-  IO()
-  int t, length, x, sum = 0;
-  cin >> t;
+  IO();
+  int t, length, x, sum = 0; cin >> t;
   while (t--)
   {
     cin >> length;
@@ -24,6 +23,5 @@ int main(int argc, char const *argv[])
     else
       cout << sum - length << "\n";
   }
-
   return 0;
 }
