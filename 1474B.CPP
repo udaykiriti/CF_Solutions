@@ -19,18 +19,14 @@ bool isPrime(int x)
   if (x < 2)
     return false;
   FOR(i, 2, sqrt(x))
-  {
     if (x % i == 0)
       return false;
-  }
   return true;
 }
 
 void solve()
 {
-  int d;
-  cin >> d;
-
+  int d; cin >> d;
   int p1 = d + 1;
   while (!isPrime(p1))
     ++p1;
@@ -46,8 +42,7 @@ void solve()
 int32_t main()
 {
   FastIO;
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
     solve();
   EXIT;
