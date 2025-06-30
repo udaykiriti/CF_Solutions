@@ -12,9 +12,7 @@ void FastIO()
 
 void solve()
 {
-  ll a, b;
-  ll d = 0;
-  cin >> a >> b;
+  ll a, b; ll d = 0; cin >> a >> b;
   d = a ^ b;
   cout << d << endl;
 }
@@ -22,8 +20,7 @@ void solve()
 int main()
 {
   FastIO();
-  ll t;
-  cin >> t;
+  ll t; cin >> t;
   while (t--)
     solve();
   return 0;
