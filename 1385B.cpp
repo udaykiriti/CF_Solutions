@@ -1,12 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
 
 int main(){
-  int t;
-  cin>>t;
+  int t; cin>>t;
   while(t--){
-    int n;
-    cin>>n;
+    int n; cin>>n;
     int arr[n];
     map<int, bool> inp;
     int x, k = 0;
@@ -18,9 +17,8 @@ int main(){
         k++;
       }
     }
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n; i++)
       cout<<arr[i]<<" ";
-    }
     cout<<endl;
   }
 }
