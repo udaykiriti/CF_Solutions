@@ -10,38 +10,26 @@ using namespace std;
 #define FORk(i, a, b, k) for (int i = (a); i <= (b); i += (k))
 #define RFOR(i, a, b) for (int i = (a); i >= (b); i--)
 #define RFORK(i, a, b, k) for (int i = (a); i >= (b); i -= (k))
+#define ll long long
 
 void solve()
 {
-  long long int n, k, r;
-  cin >> n >> k;
-
+  long long int n, k, r; cin >> n >> k;
   if (n % k == 0)
-  {
     cout << "1" << endl;
-  }
   else if (k % n == 0)
-  {
     cout << k / n << endl;
-  }
   else if (n > k)
-  {
     cout << "2" << endl;
-  }
   else
-  {
     cout << (k / n) + 1 << endl;
-  }
 }
 
 int main()
 {
   FastIO();
-  long long int t;
-  cin >> t;
+  ll int t; cin >> t;
   while (t--)
-  {
     solve();
-  }
   return 0;
 }
