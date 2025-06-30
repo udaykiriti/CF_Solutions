@@ -20,7 +20,6 @@ int main(){
       cout<<a[0]<<" "<<a[2]<<" "<<a[2]<<endl;
       continue;
     }
-
     cout<<"NO"<<endl;
   }
 }
