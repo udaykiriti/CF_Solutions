@@ -16,16 +16,14 @@ void solve()
 
   while (t--)
   {
-    i64 n;
-    cin >> n;
+    i64 n; cin >> n;
 
     vector<set<string>> v(N);
     for (int p = 0; p < N; p++)
     {
       for (int q = 0; q < n; q++)
       {
-        string s;
-        cin >> s;
+        string s; cin >> s;
         v[p].insert(s);
       }
     }
@@ -44,20 +42,14 @@ void solve()
         }
 
         if (cnt == 0)
-        {
           score[p] += 3;
-        }
         else if (cnt == 1)
-        {
           score[p] += 1;
-        }
       }
     }
 
     for (int p = 0; p < N; p++)
-    {
       cout << score[p] << " ";
-    }
     cout << ln;
   }
 }
@@ -66,8 +58,6 @@ int main()
 {
   stop_sync;
   untie_ios;
-
   solve();
-
   return 0;
 }
