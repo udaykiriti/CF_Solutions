@@ -9,8 +9,7 @@ using namespace std;
 #define RFORK(i, a, b, k) for (int i = (a); i >= (b); i -= (k))
 
 void solve() {
-    int a, b;
-    cin >> a >> b;
+    int a, b; cin >> a >> b;
     int diff = abs(a - b);
     int moves = diff / 10 + (diff % 10 != 0);
     cout << moves << endl;
@@ -18,10 +17,8 @@ void solve() {
 
 int main() {
     FastIO();
-    int t = 1;
-    cin >> t;
-    while (t--) {
+    int t ; cin >> t;
+    while (t--) 
         solve();
-    }
     return 0;
 }
