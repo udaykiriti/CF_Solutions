@@ -9,8 +9,7 @@ using namespace std;
 
 int main()
 {
-  int t, n, a[101];
-  INPUT(t);
+  int t, n, a[101]; INPUT(t);
 
   while (t--)
   {
@@ -42,13 +41,9 @@ int main()
     else if (even % 2 == 1 && odd % 2 == 1)
     {
       if (diff >= 1)
-      {
         PRINT_YES;
-      }
       else
-      {
         PRINT_NO;
-      }
     }
     else
     {
