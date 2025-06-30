@@ -1,5 +1,3 @@
-
-
 /* Problem: I Hate 1111
 You are given an integer `n`. You need to determine if it is possible to represent `n` as the sum of some number of 11s and 111s.
 
@@ -24,7 +22,6 @@ NO
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define FastIO                  \
   ios_base::sync_with_stdio(0); \
   cin.tie(0);                   \
@@ -35,16 +32,10 @@ using namespace std;
 
 int main() {
   FastIO;
-
-  int t;
-  cin >> t;
-
+  int t; cin >> t;
   while (t--) {
-    int n;
-    cin >> n;
+    int n; cin >> n;
     bool ok = false;
-
-    // Check if n can be represented as the sum of 11s and 111s
     while (n > 0) {
       if (n % 11 == 0 || n % 111 == 0) {
         ok = true;
@@ -53,13 +44,10 @@ int main() {
         n -= 111;
       }
     }
-
-    // Output the result
     if (ok)
       PRINT_YES;
     else
       PRINT_NO;
   }
-
   BYE;
 }
