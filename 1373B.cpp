@@ -14,10 +14,9 @@ using namespace std;
 void solve()
 {
   int one = 0, zero = 0;
-  string s;
-  cin >> s;
+  string s; cin >> s;
   int n = s.length();
-  for (int i = 0; i < n; i++)
+  FOR ( i ,0, n)
   {
     if (s[i] == '1')
       one++;
@@ -26,23 +25,16 @@ void solve()
   }
   int turn = min(zero, one);
   if (turn == 0 || turn % 2 == 0)
-  {
     cout << "NET\n";
-  }
   else
-  {
     cout << "DA\n";
-  }
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
-  {
     solve();
-  }
   return 0;
 }
