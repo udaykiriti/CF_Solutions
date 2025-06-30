@@ -1,16 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define debug(x) cout<<(x)<endl
 
 int main(){
-  int t;
-  cin>>t;
+  int t; cin>>t;
   int n;
   while(t--){
     cin>>n;
     int arr[n];
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n; i++)
       cin>>arr[i];
-    }
     for(int i = 0; i < n; i++){
       if(i == 0 && arr[i] != arr[i+1] && arr[i] != arr[i+2] ){
         cout<<(i+1)<<endl;
