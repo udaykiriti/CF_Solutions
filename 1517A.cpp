@@ -13,10 +13,8 @@ void solve()
       cout << -1 << '\n';
       continue;
     }
-
     ll quotient = n / 2050;
     int sum = 0;
-
     while (quotient > 0)
     {
       sum += quotient % 10;
