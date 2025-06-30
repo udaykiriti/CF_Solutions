@@ -1,22 +1,17 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   unordered_map<char, int> freq;
 
   for (int i = 0; i < n; i++)
   {
-    string s;
-    cin >> s;
+    string s; cin >> s;
     for (char c : s)
-    {
       freq[c]++;
-    }
   }
 
   bool possible = true;
@@ -30,27 +25,17 @@ void solve()
   }
 
   if (possible)
-  {
     cout << "YES" << endl;
-  }
   else
-  {
     cout << "NO" << endl;
-  }
 }
 
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(0);
-  int t;
-  cin >> t;
-
+  cin.tie(NULL); cout.tie(0);
+  int t; cin >> t;
   while (t--)
-  {
     solve();
-  }
-
   return 0;
 }
