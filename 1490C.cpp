@@ -22,27 +22,19 @@ bool isCube(i64 num)
     i64 mid = (left + right) / 2;
     i64 cube = mid * mid * mid;
     if (cube == num)
-    {
       return true;
-    }
     else if (cube < num)
-    {
       left = mid + 1;
-    }
     else
-    {
       right = mid - 1;
-    }
   }
   return false;
 }
 
 void solve()
 {
-  i64 x;
-  cin >> x;
+  i64 x; cin >> x;
   bool ans = false;
-
   for (i64 p = 1; p * p * p <= x; p++)
   {
     i64 y = x - p * p * p;
@@ -52,7 +44,6 @@ void solve()
       break;
     }
   }
-
   cout << (ans ? "YES" : "NO") << ln;
 }
 
