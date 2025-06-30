@@ -16,7 +16,6 @@ void solve()
     row1[i] = 'G';
     row2[i] = 'G';
   }
-
   if (row1 == row2)
     cout << "YES\n";
   else
