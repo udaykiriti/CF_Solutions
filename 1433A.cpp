@@ -4,10 +4,8 @@ using namespace std;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(0);
-  int t;
-  cin>>t;
+  cin.tie(NULL); cout.tie(0);
+  int t; cin>>t;
   string n;
   int count = 0;
   while(t--){
