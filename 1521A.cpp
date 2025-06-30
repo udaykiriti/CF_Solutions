@@ -5,21 +5,18 @@ using namespace std;
 
 void solve()
 {
-  ll a, b;
-  cin >> a >> b;
+  ll a, b; cin >> a >> b;
   if (b == 1)
     cout << "No\n";
   else
-    cout << "Yes\n"
-         << a << " " << (a * b) << " " << a * (b + 1) << nline;
+    cout << "Yes\n" << a << " " << (a * b) << " " << a * (b + 1) << nline;
 }
 
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  ll t = 1;
-  cin >> t;
+  cin.tie(NULL); cout.tie(NULL);
+  ll t = 1; cin >> t;
   while (t--)
     solve();
 }
