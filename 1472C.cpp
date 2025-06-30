@@ -1,5 +1,3 @@
-
-
 /* Problem: Fair Division
 You are given `t` test cases. For each test case, you are given an integer `n` (the number of candies) and an array of integers representing the candies. Each candy is either of weight `1` or `2`. Your task is to determine if it is possible to divide the candies into two groups such that:
 1. The total weight of candies in both groups is the same.
@@ -42,12 +40,10 @@ using namespace std;
 int main()
 {
   optimize();
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
   {
-    int n, i;
-    cin >> n;
+    int n, i; cin >> n;
     int a[n];
     vector<int> dp(n);
     for (auto &u : a)
