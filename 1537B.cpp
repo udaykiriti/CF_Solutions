@@ -74,9 +74,6 @@ int main()
   ll i, j, n, m, k, t;
   cin >> t;
   while (t--)
-  {
     solve();
-  }
-
   return 0;
 }
