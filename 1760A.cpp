@@ -3,8 +3,7 @@ using namespace std;
 
 void solve()
 {
-  int a, b, c;
-  cin >> a >> b >> c;
+  int a, b, c; cin >> a >> b >> c;
   int arr[3] = {a, b, c};
   sort(arr, arr + 3);
   cout << arr[1] << endl;
@@ -25,10 +24,8 @@ void solve()
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-  int t;
-  cin >> t;
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin >> t;
   while (t--)
     solve();
   return 0;
