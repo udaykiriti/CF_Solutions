@@ -2,10 +2,8 @@
 
 void solve()
 {
-  long n;
-  std::cin >> n;
-  std::string s;
-  std::cin >> s;
+  long n; std::cin >> n;
+  std::string s; std::cin >> s;
   long a = 0, b = 0, c = 0, d = 0;
   for (char ch : s)
   {
@@ -25,9 +23,8 @@ void solve()
 int main()
 {
   std::ios_base::sync_with_stdio(false);
-  std::cin.tie(nullptr);
-  long t;
-  std::cin >> t;
+  std::cin.tie(nullptr); std::cout.tie(NULL);
+  long t; std::cin >> t;
   while (t--)
     solve();
   return 0;
