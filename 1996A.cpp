@@ -4,8 +4,7 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   int cows = n / 4;
   if (n % 4 == 2)
     cout << cows + 1 << "\n";
@@ -16,10 +15,8 @@ void solve()
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(nullptr);
-  int t;
-  cin >> t;
+  cin.tie(nullptr); cout.tie(nullptr);
+  int t; cin >> t;
   while (t--)
     solve();
   return 0;
