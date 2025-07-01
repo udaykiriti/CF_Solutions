@@ -6,8 +6,7 @@ using namespace std;
 #define PRINT(x) cout << x
 int main()
 {
-  string s;
-  SCAN(s);
+  string s; SCAN(s);
   string s2 = s;
   reverse(s2);
   string s3 = s + s2;
