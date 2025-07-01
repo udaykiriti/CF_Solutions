@@ -1,15 +1,12 @@
 #include <bits/stdc++.h>
+using namespace std;
 
 int main(){
-
-    long t; std::cin>>t;
+    long t; cin>>t;
     while(t--){
-        long a, b, c; std::cin>>a>>b>>c;
-        for(long p = 0; p < 5; p++){
-            if(a <= b && a <= c){++a;}
-            else if(b <= a && b <= c){++b;}
-            else if(c <= a && c <= b){++c;}
-        }
-       std::cout<<a*b*c<<std::endl;
+        long n, m, k; cin>>n>>m>>k;
+        for(long p = n; p > m; p--) cout<<p;
+        for(long p = 1; p <= m; p++) cout<<p;
+        puts("");
     }
 }
