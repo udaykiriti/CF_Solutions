@@ -21,6 +21,5 @@ int main()
   }
   result += " it";
   cout << result << endl;
-
   return 0;
 }
