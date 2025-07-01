@@ -7,7 +7,6 @@ int main()
   long long int n, b, d;
 
   cin >> n >> b >> d;
-
   long long int a[n];
   for (i = 0; i < n; i++)
     cin >> a[i];

@@ -36,14 +36,11 @@ int main()
   {
     cout << "YES\n";
     for (const string &row : bus)
-    {
       cout << row << '\n';
-    }
   }
   else
   {
     cout << "NO\n";
   }
-
   return 0;
 }
