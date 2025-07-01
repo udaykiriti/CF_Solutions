@@ -11,7 +11,6 @@ int main()
   for (unsigned int i = 0; i < n; ++i)
   {
     std::cin >> op >> c;
-
     if (op == '+')
     {
       i_cr += c;
@@ -24,8 +23,6 @@ int main()
         i_cr -= c;
     }
   }
-
   std::cout << i_cr << " " << d_ch << std::endl;
-
   return 0;
 }
