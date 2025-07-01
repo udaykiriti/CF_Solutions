@@ -13,9 +13,7 @@ using namespace std;
 
 void solve()
 {
-  int a, b, c;
-  cin >> a >> b >> c;
-
+  int a, b, c; cin >> a >> b >> c;
   vector<int> nums = {a, b, c};
   sort(nums.begin(), nums.end());
 
@@ -24,15 +22,13 @@ void solve()
     nums[0]++;
     sort(nums.begin(), nums.end());
   }
-
   cout << nums[0] * nums[1] * nums[2] << endl;
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
     solve();
   return 0;
