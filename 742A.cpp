@@ -13,8 +13,7 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   if (n == 0)
   {
     cout << 1 << endl;
