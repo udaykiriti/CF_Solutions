@@ -6,9 +6,7 @@ using namespace std;
 
 void solve()
 {
-  string s1, s2;
-  cin >> s1 >> s2;
-
+  string s1, s2; cin >> s1 >> s2;
   if (s1.size() != s2.size())
     cout << max(s1.size(), s2.size()) << endl;
   else if (s1 == s2)
