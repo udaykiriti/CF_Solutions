@@ -17,8 +17,7 @@ using i64 = long long;
 
 void solve()
 {
-  i64 n, x;
-  cin >> n >> x;
+  i64 n, x; cin >> n >> x;
 
   i64 left = x - 1, right = x + 1;
   bool rule = true;

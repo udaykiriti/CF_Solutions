@@ -17,8 +17,7 @@ int main()
 {
   ios::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
 
-  int t;
-  cin >> t;
+  int t; cin >> t;
   vi q(t), a;
   a.reserve(t);
   int m = 0;
@@ -50,7 +49,6 @@ int main()
         f[i] = min(f[i], f[x] + s[j]);
     }
   }
-
   for (int i : q)
     cout << (i == 1 ? 1 : (f[i] >= I ? -1 : 1 + f[i])) << endl;
 }

@@ -68,12 +68,10 @@ In the first example, the original array is [1, 3, 5, 5, 2], to make all its ele
 int main()
 {
 
-  long t;
-  scanf("%ld", &t);
+  long t; scanf("%ld", &t);
   while (t--)
   {
-    long n;
-    scanf("%ld", &n);
+    long n; scanf("%ld", &n);
     std::vector<long> a(n);
     for (long p = 0; p < n; p++)
     {

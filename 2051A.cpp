@@ -6,8 +6,7 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   vi a(n), b(n);
   FOR(i, n)
       cin >> a[i];
@@ -31,9 +30,9 @@ void solve()
 
 int32_t main()
 {
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

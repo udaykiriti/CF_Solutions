@@ -9,14 +9,10 @@ using namespace std;
 
 int main()
 {
-  ll t;
-  INPUT(t);
-
+  ll t; INPUT(t);
   while (t--)
   {
-    ll n;
-    INPUT(n);
-
+    ll n; INPUT(n);
     bool one = false;
     int s = 0;
 
@@ -27,7 +23,6 @@ int main()
 
       if (x % 3 == 1)
         one = true;
-
       s += x;
       s %= 3;
     }
@@ -39,6 +34,5 @@ int main()
     else
       PRINT(0);
   }
-
   return 0;
 }

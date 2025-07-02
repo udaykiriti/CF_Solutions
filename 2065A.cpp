@@ -13,8 +13,7 @@ using namespace std;
 
 void solve()
 {
-  string w;
-  cin >> w;
+  string w; cin >> w;
   w = w.substr(0, w.size() - 2);
   w += 'i';
   cout << w << endl;
@@ -23,9 +22,7 @@ void solve()
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

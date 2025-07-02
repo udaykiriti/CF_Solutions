@@ -3,8 +3,7 @@ using namespace std;
 
 void solve()
 {
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
   {
     set<int> x, y;

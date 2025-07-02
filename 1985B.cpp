@@ -5,8 +5,7 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   int maxSum = 0, bestX = 2;
   FOR(x, 2, n + 1)
   {
@@ -21,11 +20,8 @@ void solve()
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0);
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  cin.tie(0);cout.tie(0);
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define FastIO()                    \
   ios_base::sync_with_stdio(false); \
-  cin.tie(0), cout.tie(0);
+  cin.tie(0), cout.tie(0)
 #define ll long long
 #define vi vector<int>
 #define vii vector<vector<int>>
@@ -37,7 +37,7 @@
 #define point(x) cout << fixed << setprecision(x);
 #define endd '\n'
 #define SEEYAH return;
-#define BYE return 0;
+#define BYE return 0
 using namespace std;
 vp directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
 void solve()
@@ -69,12 +69,8 @@ void solve()
 }
 int main()
 {
-  FastIO()
-      ll t = 1;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
-  BYE
+  FastIO();
+  ll t = 1;cin >> t;
+  while (t--) solve();
+  BYE;
 }

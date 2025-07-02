@@ -4,16 +4,10 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
-  string log;
-  cin >> log;
-
+  int n; cin >> n;
+  string log; cin >> log;
   map<char, int> time_spent;
-  for (char ch : log)
-  {
-    time_spent[ch]++;
-  }
+  for (char ch : log) time_spent[ch]++;
 
   int solved = 0;
   for (auto [ch, time] : time_spent)
@@ -24,21 +18,14 @@ void solve()
       solved++;
     }
   }
-
   cout << solved << endl;
 }
 
 int main(void)
 {
   ios::sync_with_stdio(false);
-  cin.tie(nullptr);
-
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
-
+  cin.tie(nullptr); cout.tie(NULL);
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

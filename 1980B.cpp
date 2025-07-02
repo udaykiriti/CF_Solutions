@@ -15,15 +15,11 @@ using namespace std;
 using i64 = long long;
 
 void solve() {
-    i64 n, f, k;
-    cin >> n >> f >> k;
+    i64 n, f, k; cin >> n >> f >> k;
     vector<i64> v(n);
     --f;
 
-    for (i64 p = 0; p < n; p++) {
-        cin >> v[p];
-    }
-
+    for (i64 p = 0; p < n; p++) cin >> v[p];
     i64 scnt = 0, bcnt = 0, cnt = 0;
     for (i64 p = 0; p < n; p++) {
         if (v[p] > v[f])

@@ -13,8 +13,7 @@ using namespace std;
 
 void solve()
 {
-  int n, m, k;
-  cin >> n >> m >> k;
+  int n, m, k; cin >> n >> m >> k;
   vector<int> b(n + 1), c(m + 1);
 
   FOR(i, 1, n)
@@ -24,27 +23,16 @@ void solve()
 
   int count = 0;
   FOR(i, 1, n)
-  {
     FOR(j, 1, m)
-    {
       if (b[i] + c[j] <= k)
-      {
         count++;
-      }
-    }
-  }
-
   cout << count << endl;
 }
 
 int main()
 {
   FastIO();
-  int t = 1;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t = 1; cin >> t;
+  while (t--) solve();
   return 0;
 }

@@ -5,7 +5,7 @@ const char nl = '\n';
 #define FAST_IO                     \
   ios_base::sync_with_stdio(false); \
   cin.tie(NULL);                    \
-  cout.tie(NULL);
+  cout.tie(NULL)
 #define isVowel(c) ((c) == 'a' || (c) == 'e')
 #define REVERSE(s) reverse(s.begin(), s.end())
 #define FOR(i, a, b) for (int i = a; i < b; ++i)
@@ -13,8 +13,7 @@ const char nl = '\n';
 void solve()
 {
   ll n;
-  string s, ans = "";
-  cin >> n >> s;
+  string s, ans = ""; cin >> n >> s;
   REVERSE(s);
 
   FOR(i, 0, n)
@@ -43,9 +42,8 @@ void solve()
 
 int main()
 {
-  FAST_IO
-  int T = 1;
-  cin >> T;
+  FAST_IO;
+  int T = 1; cin >> T;
   while (T--)
     solve();
   return 0;

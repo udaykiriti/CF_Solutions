@@ -1,9 +1,8 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main(){
-  int n, k, i = 1;
-  cin>>n>>k;
+  int n, k, i = 1; cin>>n>>k;
   int r = n;
   while(true){
     n = r * i;

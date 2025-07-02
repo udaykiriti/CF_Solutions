@@ -16,12 +16,10 @@ const ll linf = 1e18;
 int main()
 {
   fio;
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
   {
-    ll n;
-    cin >> n;
+    ll n; cin >> n;
     vector<ll> v(n);
     ll sum = 0;
     for (auto &i : v)

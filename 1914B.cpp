@@ -8,8 +8,8 @@ using namespace std;
   int t;          \
   cin >> t;       \
   while (t--)
-#define loop(i, a, b) for (long i = (a); i <= (b); ++i)
-#define rloop(i, a, b) for (long i = (a); i > (b); --i)
+#define FOR(i, a, b) for (long i = (a); i <= (b); ++i)
+#define RFOR(i, a, b) for (long i = (a); i > (b); --i)
 #define endl '\n'
 
 int main()
@@ -18,19 +18,12 @@ int main()
 
   testcases
   {
-    long n, k;
-    cin >> n >> k;
-
-    loop(p, 1, k)
-    {
+    long n, k; cin >> n >> k;
+    FOR(p, 1, k)
       cout << p << " ";
-    }
-    rloop(p, n, k)
-    {
+    RFOR(p, n, k)
       cout << p << " ";
-    }
     cout << endl;
   }
-
   return 0;
 }

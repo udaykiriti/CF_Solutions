@@ -3,9 +3,7 @@ using namespace std;
 
 void solve()
 {
-  int x;
-  cin >> x;
-
+  int x; cin >> x;
   int maxVal = 0, bestY = 1;
   for (int y = 1; y < x; ++y)
   {
@@ -16,21 +14,14 @@ void solve()
       bestY = y;
     }
   }
-
   cout << bestY << '\n';
 }
 
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(nullptr);
-
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
-
+  cin.tie(nullptr); cout.tie(NULL);
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

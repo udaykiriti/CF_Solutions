@@ -13,17 +13,15 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
-
-  FOR(i, 1, 27)
-  FOR(j, 1, 27)
-  {
-    int third = n - (i + j);
-    if (third >= 1 && third <= 26)
-    {
-      cout << char('a' + i - 1) << char('a' + j - 1) << char('a' + third - 1) << endl;
-      return;
+  int n; cin >> n;
+  FOR(i, 1, 27){
+    FOR(j, 1, 27){
+      int third = n - (i + j);
+      if (third >= 1 && third <= 26)
+      {
+        cout << char('a' + i - 1) << char('a' + j - 1) << char('a' + third - 1) << endl;
+        return;
+     }
     }
   }
 }

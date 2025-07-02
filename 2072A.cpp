@@ -15,8 +15,7 @@ using i64 = long long;
 #define PRINT(x) cout << x << ln 
 
 void solve() {
-    int n, k, p;
-    cin >> n >> k >> p;
+    int n, k, p; cin >> n >> k >> p;
 
     if (k < (-n * p) || k > (n * p)) {
         PRINT(-1);

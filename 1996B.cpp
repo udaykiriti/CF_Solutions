@@ -15,22 +15,16 @@ using namespace std;
 
 void solve()
 {
-  int n, k;
-  scan(n);
-  scan(k);
-
+  int n, k; scan(n); scan(k);
   vector<string> v(n);
   FOR(i, 0, n)
   scan(v[i]);
 
   vector<string> w(n / k, string(n / k, '0'));
   for (int row = 0; row < n; row += k)
-  {
     for (int col = 0; col < n; col += k)
-    {
       w[row / k][col / k] = v[row][col];
-    }
-  }
+
 
   FOR(i, 0, w.size())
   print(w[i]);

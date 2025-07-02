@@ -8,8 +8,7 @@ using namespace std;
 
 void solve()
 {
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
   {
     vector<string> grid(3);
@@ -27,13 +26,8 @@ void solve()
         }
       }
     }
-
     set<char> letters = {'A', 'B', 'C'};
-    for (char ch : grid[row])
-    {
-      letters.erase(ch);
-    }
-
+    for (char ch : grid[row]) letters.erase(ch);
     cout << *letters.begin() << '\n';
   }
 }

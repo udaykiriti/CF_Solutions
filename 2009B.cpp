@@ -13,14 +13,11 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   vector<string> grid(n);
 
   FOR(i, 0, n - 1)
-  {
     cin >> grid[i];
-  }
 
   RFOR(i, n - 1, 0)
   {
@@ -39,11 +36,7 @@ void solve()
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

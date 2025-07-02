@@ -13,11 +13,9 @@ using namespace std;
 
 void solve()
 {
-  string s;
-  cin >> s;
+  string s; cin >> s;
 
-  if (all_of(s.begin(), s.end(), [&](char c)
-             { return c == s[0]; }))
+  if (all_of(s.begin(), s.end(), [&](char c){ return c == s[0]; }))
   {
     cout << "NO" << endl;
     return;
@@ -28,29 +26,21 @@ void solve()
 
   if (r != s)
   {
-    cout << "YES" << endl
-         << r << endl;
+    cout << "YES" << endl << r << endl;
   }
   else
   {
     if (next_permutation(r.begin(), r.end()))
-    {
-      cout << "YES" << endl
-           << r << endl;
-    }
+      cout << "YES" << endl << r << endl;
     else
-    {
       cout << "NO" << endl;
-    }
   }
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

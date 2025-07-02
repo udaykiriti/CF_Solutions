@@ -1,16 +1,12 @@
-#include<iostream>
-#include<string>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main(){
-  int t;
-  cin>>t;
+  int t; cin>>t;
   string s1, s2;
   int n, j, count;
   for(int i = 0; i < t; i++){
-    cin>>n;
-    cin>>s1;
-    cin>>s2;
+    cin>>n; cin>>s1; cin>>s2;
     j = 0;
     count = 0;
     while(j < n){
@@ -44,6 +40,5 @@ int main(){
       }
     }
     cout<<count<<endl;
-
   }
 }

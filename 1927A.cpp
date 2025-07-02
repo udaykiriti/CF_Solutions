@@ -11,9 +11,7 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  string s;
-  cin >> n >> s;
+  int n; string s; cin >> n >> s;
 
   int l = -1, r = -1;
   FOR(i, 0, n - 1)
@@ -32,11 +30,7 @@ void solve()
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

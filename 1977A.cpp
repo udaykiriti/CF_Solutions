@@ -19,13 +19,10 @@ using i64 = long long;
 #define NO cout << "NO" << ln
 void solve()
 {
-  int n, m;
-  cin >> n >> m;
+  int n, m; cin >> n >> m;
 
-  if (m <= n && (n - m) % 2 == 0)
-    YES;
-  else
-    NO;
+  if (m <= n && (n - m) % 2 == 0) YES;
+  else NO;
 }
 
 int main()

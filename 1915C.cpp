@@ -19,8 +19,7 @@ bool isPerfectSquare(long long x)
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   long long total = 0;
   FOR(i, 0, n - 1)
   {
@@ -30,23 +29,15 @@ void solve()
   }
 
   if (isPerfectSquare(total))
-  {
     cout << "YES" << endl;
-  }
   else
-  {
     cout << "NO" << endl;
-  }
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

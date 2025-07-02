@@ -11,12 +11,10 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   vector<int> v(n);
   FOR(i, 0, n)
       cin >> v[i];
-
   sort(all(v));
   int g = v[n - 1], s = v[n - 2];
   ll a = 0;
@@ -39,8 +37,8 @@ void solve()
 
 int main()
 {
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin >> t;
+  while (t--) solve();
 }

@@ -7,13 +7,11 @@ using namespace std;
 #define all(x) (x).begin(), (x).end()
 #define fast                   \
   ios::sync_with_stdio(false); \
-  cin.tie(nullptr);
+  cin.tie(nullptr)
 
 void solve()
 {
-  int n;
-  string b;
-  cin >> n >> b;
+  int n; string b; cin >> n >> b;
 
   set<char> chars_set(all(b));
   vector<char> r(all(chars_set));
@@ -31,9 +29,7 @@ void solve()
 
 int32_t main()
 {
-  fast int t;
-  cin >> t;
-  while (t--)
-    solve();
+  fast; int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

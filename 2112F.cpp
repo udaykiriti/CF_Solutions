@@ -59,10 +59,8 @@ bool scc_has_cycle(const vector<int> &comp, const vector<vector<Edge>> &g)
     return true;
   int u = comp[0];
   for (auto &e : g[u])
-  {
     if (e.to == u)
       return true;
-  }
   return false;
 }
 

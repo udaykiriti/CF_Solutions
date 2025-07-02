@@ -2,8 +2,7 @@
 using namespace std;
 
 int main(){
-  int n, k;
-  cin>>n>>k;
+  int n, k; cin>>n>>k;
   int x, count = 0, team;
   for(int i = 0; i < n; i++){
     cin>>x;

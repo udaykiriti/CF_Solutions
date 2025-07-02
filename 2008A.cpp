@@ -10,12 +10,10 @@ using namespace std;
 
 void solve()
 {
-  ll t;
-  cin >> t;
+  ll t; cin >> t;
   while (t--)
   {
-    ll a, b;
-    cin >> a >> b;
+    ll a, b; cin >> a >> b;
     cout << (((a % 2) || (b % 2 && a < 2)) ? "NO" : "YES") << nline;
   }
 }

@@ -3,9 +3,7 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  string s;
-  cin >> n >> s;
+  int n; string s; cin >> n >> s;
   for (int i = 1; i < n; ++i)
   {
     if (s[i] != s[0])
@@ -20,14 +18,8 @@ void solve()
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(nullptr);
-
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
-
+  cin.tie(nullptr); cout.tie(NULL);
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

@@ -5,9 +5,7 @@ using namespace std;
 
 void solve()
 {
-  ll a, b;
-  cin >> a >> b;
-
+  ll a, b; cin >> a >> b;
   ll sum = a + b;
 
   if (sum & 1)
@@ -19,10 +17,7 @@ void solve()
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-  ll T = 1;
-  cin >> T;
-  while (T--)
-    solve();
+  cin.tie(NULL); cout.tie(NULL);
+  ll T = 1; cin >> T;
+  while (T--) solve();
 }

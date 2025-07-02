@@ -11,8 +11,7 @@ int main()
 {
   FastIO;
   long long t, n, m, i, sum, p, ans;
-  string s;
-  cin >> t;
+  string s; cin >> t;
   while (t--)
   {
     sum = 0;

@@ -13,25 +13,17 @@ using namespace std;
 
 void solve()
 {
-  int n, a, b;
-  cin >> n >> a >> b;
-
+  int n, a, b; cin >> n >> a >> b;
   int pairs = n / 2;
   int singles = n % 2;
-
   int cost = pairs * min(2 * a, b) + singles * a;
-
   cout << cost << endl;
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

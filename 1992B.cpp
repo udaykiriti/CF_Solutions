@@ -16,7 +16,6 @@ using i64 = long long;
 void solve()
 {
   i64 n, k; cin >> n >> k;
-
   i64 total = 0, mx = 0;
   for (i64 p = 0; p < k; p++)
   {

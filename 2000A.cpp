@@ -24,8 +24,7 @@ void precompute()
 
 void solve()
 {
-  int a;
-  cin >> a;
+  int a; cin >> a;
   cout << (important.count(a) ? "YES" : "NO") << endl;
 }
 
@@ -34,12 +33,7 @@ int main()
   FastIO();
   precompute();
 
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
-
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

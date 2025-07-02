@@ -3,8 +3,7 @@ using namespace std;
 
 void solve()
 {
-  int n, m;
-  cin >> n >> m;
+  int n, m; cin >> n >> m;
   vector<string> matrix(n);
   for (int i = 0; i < n; ++i)
     cin >> matrix[i];
@@ -23,18 +22,14 @@ void solve()
 
   int oddRows = count(rowXOR.begin(), rowXOR.end(), 1);
   int oddCols = count(colXOR.begin(), colXOR.end(), 1);
-
   cout << max(oddRows, oddCols) << '\n';
 }
 
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

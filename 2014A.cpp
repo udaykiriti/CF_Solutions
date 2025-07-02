@@ -10,13 +10,10 @@ using namespace std;
 
 void solve()
 {
-  int n, k;
-  cin >> n >> k;
+  int n, k; cin >> n >> k;
   vector<int> gold(n);
   FOR(i, 0, n - 1)
-  {
     cin >> gold[i];
-  }
 
   int robinGold = 0;
   int count = 0;
@@ -33,18 +30,14 @@ void solve()
       count++;
     }
   }
-
   cout << count << endl;
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
-  {
     solve();
-  }
   return 0;
 }

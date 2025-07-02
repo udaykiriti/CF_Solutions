@@ -18,8 +18,7 @@ using vi = vector<int>;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   int x = 0, move = 1, turn = 0;
   while (abs(x) <= n)
   {

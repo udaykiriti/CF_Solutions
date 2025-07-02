@@ -70,37 +70,28 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  input(n);
+  int n; input(n);
   map<int, int> freq;
   FOR(i, 0, n)
   {
-    int x;
-    input(x);
+    int x; input(x);
     freq[x]++;
   }
-
   int score = 0;
-  for (auto &entry : freq)
-  {
-    score += entry.second / 2;
-  }
-
+  for (auto &entry : freq) score += entry.second / 2;
   cout << score << ln;
 }
 
 void FastIO()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(nullptr);
+  cin.tie(nullptr); cout.tie(nullptr);
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
     solve();
   EXIT;

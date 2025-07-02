@@ -5,27 +5,17 @@ using namespace std;
 
 void solve()
 {
-  ll n;
-  cin >> n;
-
+  ll n; cin >> n;
   for (int i = 0; i < 2 * n; i++)
-  {
     for (int j = 0; j < 2 * n; j++)
-    {
       cout << (i / 2 + j / 2 & 1 ? '.' : '#');
-    }
     cout << nline;
-  }
 }
 
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  ll T = 1;
-  cin >> T;
-  while (T--)
-  {
-    solve();
-  }
+  cin.tie(NULL); cout.tie(NULL);
+  ll T = 1; cin >> T;
+  while (T--) solve();
 }

@@ -9,9 +9,7 @@ using namespace std;
 
 void solve()
 {
-  string s;
-  cin >> s;
-
+  string s; cin >> s;
   int hour = stoi(s.substr(0, 2));
   string minute = s.substr(3, 2);
   string period;
@@ -34,18 +32,13 @@ void solve()
     hour -= 12;
     period = "PM";
   }
-
   cout << setw(2) << setfill('0') << hour << ":" << minute << " " << period << endl;
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

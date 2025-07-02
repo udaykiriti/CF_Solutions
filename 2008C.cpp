@@ -7,12 +7,11 @@ using i64 = long long int;
 #define untie_ios cin.tie(nullptr)
 #define FIXED(x) cout << fixed << setprecision(x)
 #define FOR(i, a, b) for (int i = a; i < b; i++)
-#define BYE return 0;
+#define BYE return 0
 
 void solve()
 {
-  i64 a, b;
-  cin >> a >> b;
+  i64 a, b; cin >> a >> b;
 
   i64 dist = b - a;
   i64 left = 1, right = dist + 7, res = 1;
@@ -32,19 +31,13 @@ void solve()
       right = mid - 1;
     }
   }
-
   cout << res << ln;
 }
 
 int main()
 {
-  stop_sync;
-  untie_ios;
-
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
-
-  BYE
+  stop_sync; untie_ios;
+  int t; cin >> t;
+  while (t--) solve();
+  BYE;
 }

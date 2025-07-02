@@ -1,25 +1,20 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 int typing_time(const string &s)
 {
   int time = 2;
   for (int i = 1; i < s.size(); i++)
-  {
     time += (s[i] == s[i - 1]) ? 1 : 2;
-  }
   return time;
 }
 
 int main()
 {
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
   {
-    string s;
-    cin >> s;
+    string s; cin >> s;
     string best;
     int max_time = 0;
 

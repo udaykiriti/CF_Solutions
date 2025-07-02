@@ -1,5 +1,4 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 bool pwd(const string &s)
@@ -31,13 +30,10 @@ bool pwd(const string &s)
 
 int main()
 {
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
   {
-    int n;
-    string s;
-    cin >> n >> s;
+    int n; string s; cin >> n >> s;
     cout << (pwd(s) ? "YES" : "NO") << '\n';
   }
   return 0;

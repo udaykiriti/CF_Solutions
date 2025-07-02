@@ -17,19 +17,13 @@ typedef long long ll;
 
 void solve()
 {
-  ll n;
-  cin >> n;
-  string s;
-  cin >> s;
+  ll n; cin >> n;
+  string s; cin >> s;
 
   ll no_of_dots = 0;
   for (char c : s)
-  {
     if (c == '.')
-    {
       no_of_dots++;
-    }
-  }
 
   ll max_dots = 0, curr_dots = 0;
   for (char c : s)

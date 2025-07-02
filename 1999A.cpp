@@ -96,8 +96,7 @@ bool isPrime(int n)
 // Solve Function
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   int sum = (n / 10) + (n % 10);
   cout << sum << endl;
 }
@@ -105,9 +104,7 @@ void solve()
 int main()
 {
   FAST_IO;
-  int t = 1;
-  cin >> t;
-  while (t--)
-    solve();
+  int t = 1; cin >> t;
+  while (t--) solve();
   return 0;
 }

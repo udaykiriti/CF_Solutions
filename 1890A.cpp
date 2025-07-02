@@ -18,11 +18,9 @@ using i64 = long long;
 
 void solve()
 {
-  i64 n;
-  scan(n);
+  i64 n; scan(n);
   vector<i64> a(n);
-  FOR(i, 0, n)
-  scan(a[i]);
+  FOR(i, 0, n) scan(a[i]);
 
   bool possible = true;
   i64 first = a[0], count_first = 1, second = 0, count_second = 0;
@@ -49,12 +47,8 @@ void solve()
   }
 
   if (count_second > 0)
-  {
-    if (count_first > count_second + 1 || count_second > count_first + 1)
-    {
+    if (count_first > count_second + 1 || count_second > count_first + 1) 
       possible = false;
-    }
-  }
 
   cout << (possible ? "Yes" : "No") << ln;
 }

@@ -13,19 +13,14 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   cout << n - 1 << endl;
 }
 
 int main()
 {
   FastIO();
-  int t = 1;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

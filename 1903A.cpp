@@ -18,13 +18,9 @@ int main()
 {
   fastio multicase
   {
-    ll n, k;
-    cin >> n >> k;
+    ll n, k; cin >> n >> k;
     vector<ll> v(n);
-    for (ll i = 0; i < n; i++)
-    {
-      cin >> v[i];
-    }
+    for (ll i = 0; i < n; i++) cin >> v[i];
 
     if (is_sorted(v.begin(), v.end()))
     {
@@ -40,6 +36,5 @@ int main()
 
     cout << "YES" << nl;
   }
-
   return 0;
 }

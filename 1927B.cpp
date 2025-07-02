@@ -23,8 +23,7 @@ void solve()
 
   FOR(p, 0, n)
   {
-    int x;
-    cin >> x;
+    int x; cin >> x;
     char cur;
     if (x == 0)
     {
