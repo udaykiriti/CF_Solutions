@@ -1,16 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
+#define FOR(i,a,b) for(int i=a;i<b;i++)
 
 void solve()
 {
   int n, k; cin >> n >> k;
   vector<int> a(n), b(n);
-  for (int i = 0; i < n; ++i) cin >> a[i];
-  for (int i = 0; i < n; ++i) cin >> b[i];
+  FOR (i,0,n) cin >> a[i];
+  FOR (i, 0, n) cin >> b[i];
   sort(a.begin(), a.end());
   sort(b.begin(), b.end(), greater<>());
-  for (int i = 0; i < k; ++i)
+  FOR (i,0,k)
     if (a[i] < b[i])
       swap(a[i], b[i]);
     else
