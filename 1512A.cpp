@@ -4,8 +4,7 @@ using namespace std;
 #define debug(x) cout<<(x)<endl
 
 int main(){
-  int t; cin>>t;
-  int n;
+  int t; cin>>t;int n;
   while(t--){
     cin>>n;
     int arr[n];
