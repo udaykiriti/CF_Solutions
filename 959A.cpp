@@ -9,10 +9,8 @@ const ll INF = 2e18 + 99;
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int n;
-  cin >> n;
+  cin.tie(NULL); cout.tie(NULL);
+  int n; cin >> n;
   // n & 1 == 0 (bitwise AND)
   // (n >> 1) * 2 == n (right shift)
   // (n / 2) * 2 == n (integer division)
@@ -22,13 +20,6 @@ int main()
   // format(n, 'b')[-1] == '0' (binary format)
   // isqrt(n * n) % 2 == 0 (sqrt trick)
   // len([x for x in range(n) if x % 2 == 0]) % 2 == 0 (list comprehension)
-
-  if (n & 1)
-  {
-    cout << "Ehab" << endl;
-  }
-  else
-  {
-    cout << "Mahmoud" << endl;
-  }
+  if (n & 1) cout << "Ehab" << endl;
+  else cout << "Mahmoud" << endl;
 }
