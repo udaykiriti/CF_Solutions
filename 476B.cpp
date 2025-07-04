@@ -9,9 +9,7 @@ using i64 = long long int;
 
 void solve()
 {
-  string a, b;
-  cin >> a >> b;
-
+  string a, b; cin >> a >> b;
   int t = 0, d = 0, w = 0;
 
   for (int i = 0; i < a.length(); i++)
@@ -44,8 +42,6 @@ int main()
 {
   stop_sync;
   untie_ios;
-
   solve();
-
   return 0;
 }

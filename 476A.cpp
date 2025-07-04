@@ -13,11 +13,8 @@ using namespace std;
 
 void solve()
 {
-  int n, m;
-  cin >> n >> m;
-
+  int n, m; cin >> n >> m;
   int min_moves = (n + 1) / 2;
-
   for (int k = min_moves; k <= n; k++)
   {
     if (k % m == 0)
@@ -26,7 +23,6 @@ void solve()
       return;
     }
   }
-
   cout << -1 << endl;
 }
 
