@@ -17,32 +17,20 @@ using i64 = long long;
 
 void solve()
 {
-  i64 n;
-  cin >> n;
-
+  i64 n; cin >> n;
   map<i64, i64> freq;
   i64 maxFreq = 0;
-
   for (i64 i = 0; i < n; i++)
   {
-    i64 a;
-    cin >> a;
+    i64 a; cin >> a;
     freq[a]++;
     maxFreq = max(maxFreq, freq[a]);
   }
 
   i64 distinct = freq.size();
   i64 result = 0;
-
-  if (distinct == maxFreq)
-  {
-    result = distinct - 1;
-  }
-  else
-  {
-    result = min(distinct, maxFreq);
-  }
-
+  if (distinct == maxFreq) result = distinct - 1;
+  else result = min(distinct, maxFreq);
   cout << result << ln;
 }
 
