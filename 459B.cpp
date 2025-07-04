@@ -4,13 +4,9 @@ using namespace std;
 void solve()
 {
 
-  int n;
-  cin >> n;
+  int n; cin >> n;
   vector<long long> b(n);
-  for (int i = 0; i < n; ++i)
-  {
-    cin >> b[i];
-  }
+  for (int i = 0; i < n; ++i) cin >> b[i];
 
   auto minmax = minmax_element(b.begin(), b.end());
   long long diff = *minmax.second - *minmax.first;
@@ -31,7 +27,7 @@ void solve()
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(nullptr);
+  cin.tie(nullptr); cout.tie(NULL);
   solve();
   return 0;
 }
