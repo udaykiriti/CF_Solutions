@@ -8,13 +8,10 @@ using namespace std;
 
 void solve()
 {
-  ll a, b;
-  cin >> a >> b;
-
+  ll a, b; cin >> a >> b;
   ll A = 1;
   for (ll i = 2; i <= min(a, b); i++)
     A *= i;
-
   PRINT(A)
 }
 
