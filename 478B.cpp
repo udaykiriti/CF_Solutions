@@ -15,8 +15,7 @@ long long int pairs(long long int n)
 int main()
 {
   fastio;
-  long long int n, m;
-  cin >> n >> m;
+  long long int n, m; cin >> n >> m;
   long long int a(n / m), b(n % m);
   long long int min = pairs(a) * (m - b) + pairs(a + 1) * b;
   long long int max = pairs(n - m + 1);

@@ -7,18 +7,11 @@ using namespace std;
 
 int main()
 {
-  int n, m, pairs = 0;
-  cin >> n;
+  int n, m, pairs = 0; cin >> n;
   int a[n];
-
-  FOR(i, 0, n)
-  cin >> a[i];
-
-  cin >> m;
-  int b[m];
-
-  FOR(i, 0, m)
-  cin >> b[i];
+  FOR(i, 0, n) cin >> a[i];
+  cin >> m; int b[m];
+  FOR(i, 0, m) cin >> b[i];
 
   sort(a, a + n);
   sort(b, b + m);
