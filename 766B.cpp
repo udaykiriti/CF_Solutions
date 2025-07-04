@@ -16,11 +16,9 @@ using namespace std;
 int main()
 {
   fastIO;
-  long n;
-  scan(n);
+  long n; scan(n);
   vector a(n);
-  FOR(p, 0, n)
-  scan(a[p]);
+  FOR(p, 0, n) scan(a[p]);
   sort(a);
 
   string res = "NO";
