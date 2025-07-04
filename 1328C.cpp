@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,15 +8,11 @@ using namespace std;
   ios::sync_with_stdio(false); \
   cin.tie(0);                  \
   cout.tie(0);
-
+#define endl '\n'
 void solve()
 {
-  int n;
-  cin >> n;
-
-  string s;
-  cin >> s;
-
+  int n; cin >> n;
+  string s; cin >> s;
   string a = "", b = "";
   bool flag = false;
 
@@ -48,21 +43,17 @@ void solve()
       b.pb(s[i]);
     }
   }
-
-  cout << a << '\n'
-       << b;
+  cout << a <<endl<< b;
 }
 
 int32_t main()
 {
   FastIO;
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
   {
     solve();
-    cout << '\n';
+    cout << endl;
   }
-
   return 0;
 }
