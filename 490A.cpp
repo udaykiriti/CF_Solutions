@@ -3,7 +3,6 @@
 
 int main()
 {
-
     const int B = 3;
     std::vector<std::vector<int>> ability(B);
 
@@ -28,6 +27,5 @@ int main()
             printf("%d ", ability[q][p]);
         puts("");
     }
-
     return 0;
 }
