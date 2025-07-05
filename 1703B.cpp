@@ -13,8 +13,7 @@ int main(){
     int n; cin>>n;
     string s; cin>>s;
     unordered_set<char> uos;
-    for(char c : s)
-      uos.insert(c);
+    for(char c : s)  uos.insert(c);
     cout<<n+uos.size()<<endl;
   }
 }

@@ -31,32 +31,22 @@ using namespace std;
   cout.tie(0);
 #define PRINT_YES cout << "YES" << endl
 #define PRINT_NO cout << "NO" << endl
-#define BYE return 0;
+#define BYE return 0
 #define Input(x) cin >> x
 
 void solve()
 {
   string s;
   Input(s);
-
-  // Convert the string to uppercase
-  for (char &c : s)
-    c = toupper(c);
-
-  // Check if the string matches "YES"
-  if (s == "YES")
-    PRINT_YES;
-  else
-    PRINT_NO;
+  for (char &c : s) c = toupper(c);
+  if (s == "YES") PRINT_YES;
+  else PRINT_NO;
 }
 
 int main()
 {
-  FastIO;
-  int t;
+  FastIO; int t;
   Input(t);
-  while (t--)
-    solve();
-
-  BYE
+  while (t--) solve();
+  BYE;
 }

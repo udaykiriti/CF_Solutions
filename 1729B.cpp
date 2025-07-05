@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define input(x) cin >> x
 #define output(x) cout << x << '\n'
 #define FAST_IO()                   \
@@ -9,11 +8,8 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  input(n);
-  string s;
-  input(s);
-
+  int n; input(n);
+  string s;input(s);
   string ans;
   for (int i = n - 1; i >= 0;)
   {
@@ -29,7 +25,6 @@ void solve()
       i--;
     }
   }
-
   reverse(ans.begin(), ans.end());
   output(ans);
 }
@@ -37,9 +32,7 @@ void solve()
 int main()
 {
   FAST_IO();
-  int t;
-  input(t);
-  while (t--)
-    solve();
+  int t; input(t);
+  while (t--) solve();
   return 0;
 }

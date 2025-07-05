@@ -195,9 +195,8 @@ void solve() {
    for(auto &x:vec) cin>>x;
    int least=*min_element(vec.begin(),vec.end());
    ll total=0;
-   for(auto x:vec){
-    total+=x-least;
-   }cout<<total<<endl;
+   for(auto x:vec) total+=x-least;
+   cout<<total<<endl;
 }
 
 // Main Function

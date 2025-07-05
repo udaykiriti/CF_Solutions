@@ -1,16 +1,13 @@
-// Doors and Keys.
-#include <bits\stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main(int argc, char const *argv[])
 {
   int t, len;
   bool flag;
-  string str;
-  cin >> t;
+  string str; cin >> t;
   while (t--)
   {
-    flag = true;
-    cin >> str;
+    flag = true; cin >> str;
     len = str.size();
     for (int i = 0; i < len; i++)
     {
@@ -34,13 +31,8 @@ int main(int argc, char const *argv[])
       if (!flag)
         break;
     }
-    if (flag)
-      cout << "YES"
-           << "\n";
-    else
-      cout << "NO"
-           << "\n";
+    if (flag) cout << "YES"<< "\n";
+    else cout << "NO"<< "\n";
   }
-
   return 0;
 }

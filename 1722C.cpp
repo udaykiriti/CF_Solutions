@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 using i64 = long long int;
 #define ln "\n"
 #define stop_sync ios::sync_with_stdio(false)
@@ -11,13 +10,11 @@ using i64 = long long int;
 void solve()
 {
   const int N = 3;
-  i64 t;
-  cin >> t;
+  i64 t; cin >> t;
 
   while (t--)
   {
     i64 n; cin >> n;
-
     vector<set<string>> v(N);
     for (int p = 0; p < N; p++)
     {
@@ -36,20 +33,16 @@ void solve()
         i64 cnt = 0;
         for (int q = 0; q < N; q++)
         {
-          if (q == p)
-            continue;
+          if (q == p) continue;
           cnt += v[q].count(x);
         }
 
-        if (cnt == 0)
-          score[p] += 3;
-        else if (cnt == 1)
-          score[p] += 1;
+        if (cnt == 0) score[p] += 3;
+        else if (cnt == 1) score[p] += 1;
       }
     }
 
-    for (int p = 0; p < N; p++)
-      cout << score[p] << " ";
+    for (int p = 0; p < N; p++) cout << score[p] << " ";
     cout << ln;
   }
 }

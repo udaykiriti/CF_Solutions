@@ -24,19 +24,13 @@ int main()
   FASTIO();
   TESTCASES()
   {
-    READ(ll, n);
-    READ(char, c);
-    READSTR(s);
-
+    READ(ll, n);READ(char, c);READSTR(s);
     s += s;
     vector<ll> g_pos;
 
     for (ll i = 0; i < s.size(); ++i)
-    {
       if (s[i] == 'g')
         g_pos.push_back(i);
-    }
-
     ll ans = 0;
 
     for (ll i = 0; i < n; ++i)
@@ -44,13 +38,9 @@ int main()
       if (s[i] == c)
       {
         auto it = lower_bound(g_pos.begin(), g_pos.end(), i);
-        if (it != g_pos.end())
-        {
-          ans = MAX(ans, *it - i);
-        }
+        if (it != g_pos.end()) ans = MAX(ans, *it - i);
       }
     }
-
     PRINT(ans);
   }
   return 0;

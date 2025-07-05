@@ -11,31 +11,22 @@ using namespace std;
 
 void solve()
 {
-  int n, i;
-  cin >> n;
+  int n, i; cin >> n;
   int a[n];
   map<int, int> m;
-
-  for (i = 0; i < n; i++)
-    cin >> a[i];
-
+  for (i = 0; i < n; i++) cin >> a[i];
   for (i = n - 1; i >= 0; i--)
   {
-    if (m[a[i]] > 0)
-      break;
-    else
-      m[a[i]]++;
+    if (m[a[i]] > 0) break;
+    else m[a[i]]++;
   }
-
   cout << i + 1 << endl;
 }
 
 int main()
 {
   optimize();
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

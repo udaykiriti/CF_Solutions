@@ -16,14 +16,11 @@ using i64 = long long;
 
 void solve()
 {
-  i64 n;
-  cin >> n;
+  i64 n; cin >> n;
   vector<i64> arr(n);
-  FOR(i, 0, n)
-    cin >> arr[i];
+  FOR(i, 0, n) cin >> arr[i];
   i64 res = arr[0];
-  FOR(i, 1, n)
-    res &= arr[i];
+  FOR(i, 1, n) res &= arr[i];
   cout << res << ln;
 }
 

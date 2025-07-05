@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define endl '\n'
 #define debug(n) cout<<(n)<<endl;
@@ -9,13 +7,10 @@ const ll INF = 2e18 + 99;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  ll t;
-  cin>>t;
+  cin.tie(NULL); cout.tie(NULL);
+  ll t; cin>>t;
   while(t--){
-    ll n, moves;
-    cin>>n>>moves;
+    ll n, moves; cin>>n>>moves;
     if(n % 2 == 0){
       if(moves % 4 == 0){
         cout<<n<<endl;
@@ -52,5 +47,4 @@ int main(){
       }
     }
   }
-
 }

@@ -1,5 +1,3 @@
-
-
 """
 Problem: Division
 Codeforces has a rating system that divides participants into divisions based on their ratings.
@@ -31,10 +29,7 @@ Division 4
 """
 
 def solve():
-    # Read the rating
     rating = int(input())
-    
-    # Determine the division based on the rating
     if rating >= 1900:
         print("Division 1")
     elif rating >= 1600:
@@ -45,10 +40,8 @@ def solve():
         print("Division 4")
 
 def main():
-    # Read the number of test cases
     t = int(input())
     for _ in range(t):
         solve()
 
-if __name__ == "__main__":
-    main()
+main()

@@ -4,8 +4,7 @@ using namespace std;
 
 void solve()
 {
-  string s;
-  cin >> s;
+  string s; cin >> s;
   int n = s.size();
   // n & 1 == 0 (bitwise AND)
   // (n >> 1) * 2 == n (right shift)
@@ -34,11 +33,8 @@ void solve()
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(0);
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  cin.tie(nullptr); cout.tie(0);
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

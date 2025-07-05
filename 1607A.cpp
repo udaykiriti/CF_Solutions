@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define endl '\n'
 #define debug(n) cout<<(n)<<endl;
@@ -9,13 +7,10 @@ const ll INF = 2e18 + 99;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int t;
-  cin>>t;
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin>>t;
   while(t--){
-    string k, s;
-    cin>>k>>s;
+    string k, s; cin>>k>>s;
     int move = 0;
     for(int i = 0; i < s.length() - 1; i++){
       char curr = s[i];
@@ -26,5 +21,4 @@ int main(){
     }
     cout<<move<<endl;
   }
-
 }

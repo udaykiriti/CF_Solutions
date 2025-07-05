@@ -1,5 +1,3 @@
-
-
 /* Problem: Division
 Codeforces has a rating system that divides participants into divisions based on their ratings.
 The divisions are defined as follows:
@@ -39,26 +37,17 @@ using namespace std;
 
 void solve()
 {
-  int rating;
-  cin >> rating;
-
-  // Determine the division based on the rating
-  if (rating >= 1900)
-    cout << "Division 1" << endl;
-  else if (rating >= 1600)
-    cout << "Division 2" << endl;
-  else if (rating >= 1400)
-    cout << "Division 3" << endl;
-  else
-    cout << "Division 4" << endl;
+  int rating; cin >> rating;
+  if (rating >= 1900) cout << "Division 1" << endl;
+  else if (rating >= 1600) cout << "Division 2" << endl;
+  else if (rating >= 1400) cout << "Division 3" << endl;
+  else cout << "Division 4" << endl;
 }
 
 int main()
 {
   FastIO;
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  int t;cin >> t;
+  while (t--) solve();
   BYE;
 }

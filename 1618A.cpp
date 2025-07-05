@@ -10,23 +10,16 @@ using namespace std;
 int main()
 {
   ios_base::sync_with_stdio(0);
-  cin.tie(0);
-  cout.tie(0);
-
+  cin.tie(0); cout.tie(0);
   // #ifndef ONLINE_JUDGE
   // freopen("input.txt", "r", stdin);
   // freopen("/E:/problem_solving/output.txt", "w", stdout);
   // #endif
-
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
   { 
     int b[7];
-    for (int i = 0; i < 7; i++)
-    {
-      cin >> b[i];
-    }
+    for (int i = 0; i < 7; i++) cin >> b[i];
     int a1 = b[0];
     int x = b[6] - b[0];
     int a2 = b[1];

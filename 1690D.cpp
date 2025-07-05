@@ -1,48 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define ll long long 
 
-using i64 = long long;
-#define ln "\n"
-#define fast_io                \
-  ios::sync_with_stdio(false); \
-  cin.tie(nullptr)
-#define FOR(i, a, b) for (int i = (a); i < (b); i++)
-#define scan(x) cin >> x
-#define multicase \
-  int t;          \
-  scan(t);        \
-  while (t--)     \
-    solve();
-
-void solve()
-{
-  i64 n, k;
-  scan(n);
-  scan(k);
-
-  string s;
-  scan(s);
-
-  vector<i64> prefix_sum(n + 1, 0);
-
-  FOR(i, 1, n + 1)
-  {
-    prefix_sum[i] = prefix_sum[i - 1] + (s[i - 1] == 'W' ? 1 : 0);
-  }
-
-  i64 result = LLONG_MAX;
-
-  FOR(i, k, n + 1)
-  {
-    i64 current = prefix_sum[i] - prefix_sum[i - k];
-    result = min(result, current);
-  }
-
-  cout << result << ln;
+void solve() {
+    ll n, k; cin >> n >> k;
+    string s; cin >> s;
+    vector<ll> prefix_sum(n + 1, 0);
+    for (int i = 1; i <= n; ++i)
+        prefix_sum[i] = prefix_sum[i - 1] + (s[i - 1] == 'W');
+    ll result = LLONG_MAX;
+    for (int i = k; i <= n; ++i)
+        result = min(result, prefix_sum[i] - prefix_sum[i - k]);
+    cout << result << '\n';
 }
 
-int main()
-{
-  fast_io;
-  multicase return 0;
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr); cout.tie(NULL);
+    int t; cin >> t;
+    while (t--) solve();
+    return 0;
 }

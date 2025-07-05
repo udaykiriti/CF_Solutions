@@ -9,7 +9,6 @@ long long MOD = 1e9 + 7;
 const ll INF = 2e18 + 99;
 
 ull mypow(ull n, ull i) {
-
     ull res = 1;
     ull k = n;
     while(i--){
@@ -30,22 +29,16 @@ ull binary(ull arr[], ull n){
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int t;
-  cin>>t;
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin>>t;
   ull n, k;
   while(t--){
     cin>>n>>k;
     ull ans = 0;
-
     ull s[32];
     ull bit = binary(s, k);
-    for(ull i=0;i< bit;i++){
-        if(s[i]== 1){
-            ans = (ans + mypow(n,i)%MOD);
-        }
-    }
+    for(ull i=0;i< bit;i++)
+        if(s[i]== 1)ans = (ans + mypow(n,i)%MOD);
     cout<<(ans%MOD)<<endl;
   }
 }

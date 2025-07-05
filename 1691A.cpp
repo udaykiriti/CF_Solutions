@@ -1,34 +1,19 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-
-#define ll long long
-#define endl '\n'
-#define debug(n) cout<<(n)<<endl;
-const ll INF = 2e18 + 99;
-
-int main(){
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int t;
-  cin>>t;
-  while(t--){
-    int n;
-    cin>>n;
-    int eve = 0, odd = 0;
-    int x;
-    while(n--){
-      cin>>x;
-      if(x % 2 == 0){
-        eve++;
-      }
-      else{
-        odd++;
-      }
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr); cout.tie(NULL);
+    int t; cin >> t;
+    while (t--) {
+        int n, x, even = 0, odd = 0;
+        cin >> n;
+        while (n--) {
+            cin >> x;
+            if (x & 1) odd++;
+            else even++;  
+        }
+        cout << min(even, odd) << '\n';
     }
-
-    cout<<min(odd, eve)<<endl;
-  }
-
+    return 0;
 }

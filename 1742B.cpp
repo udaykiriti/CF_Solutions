@@ -3,11 +3,9 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   vector<int> a(n);
-  for (int &x : a)
-    cin >> x;
+  for (int &x : a) cin >> x;
   sort(a.begin(), a.end());
   for (int i = 1; i < n; i++)
     if (a[i] == a[i - 1])
@@ -21,10 +19,8 @@ void solve()
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(nullptr);
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  cin.tie(nullptr); cout.tie(NULL);
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

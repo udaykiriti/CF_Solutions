@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define LL long long
-
 const LL MOD = 1e9 + 7;
 const int maxn = 100005;
+#define endl '\n'
 
 int mu[maxn];
 bool not_prime[maxn];
@@ -47,6 +46,5 @@ int main() {
         ans = (ans + temp * f[x] % MOD) % MOD;
     }
     cout << ans << endl;
-
     return 0;
 }

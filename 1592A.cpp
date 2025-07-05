@@ -3,17 +3,12 @@ using namespace std;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int t;
-  cin>>t;
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin>>t;
   int n, h;
   while(t--){
-    cin>>n>>h;
-    int arr[n];
-    for(int i = 0; i < n; i++){
-      cin>>arr[i];
-    }
+    cin>>n>>h; int arr[n];
+    for(int i = 0; i < n; i++) cin>>arr[i];
     sort(arr, arr+n, greater<int>());
     int w1 = arr[0] + arr[1];
     int move = 0;

@@ -13,8 +13,7 @@ int main(){
   while(t--){
     int n; cin>>n;
     int drr[n];
-    for(int i = 0; i < n; i++)
-      cin>>drr[i];
+    for(int i = 0; i < n; i++) cin>>drr[i];
     int arr[n];
     int check = 0;
     arr[0] = drr[0];
@@ -27,10 +26,8 @@ int main(){
         break;
       }
       else{
-        if(a > 0)
-          arr[i] = a;
-        else
-          arr[i] = b;
+        if(a > 0) arr[i] = a;
+        else arr[i] = b;
     }
     if(check)
       continue;

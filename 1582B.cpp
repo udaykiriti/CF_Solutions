@@ -8,24 +8,17 @@ using namespace std;
 const ll INF = 2e18 + 99;
 
 ll powd(ll a, ll b){
-  if(b == 0){
-    return 1;
-  }
-  for(ll i = 1; i < b; i++){
-    a = a * 2;
-  }
+  if(b == 0) return 1;
+  for(ll i = 1; i < b; i++) a = a * 2;
   return a;
 }
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int t;
-  cin>>t;
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin>>t;
   while(t--){
-    ll n;
-    cin>>n;
+    ll n; cin>>n;
     ll x = 0, y = 0, k;
     for(ll i = 0; i < n; i++){
       cin>>k;
@@ -41,5 +34,4 @@ int main(){
     }
     cout<<(x * powd(2,y))<<endl;
   }
-
 }

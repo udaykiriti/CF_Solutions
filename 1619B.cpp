@@ -5,8 +5,7 @@ using namespace std;
 
 void solve()
 {
-  int n, a, b, c;
-  cin >> n;
+  int n, a, b, c; cin >> n;
   a = sqrt(n);
   b = cbrt(n);
   c = sqrt(cbrt(n));
@@ -16,12 +15,8 @@ void solve()
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

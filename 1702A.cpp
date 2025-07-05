@@ -17,12 +17,9 @@ using i64 = long long;
 
 void solve()
 {
-  i64 m;
-  cin >> m;
-
+  i64 m; cin >> m;
   i64 digits = log10(m);
   i64 power = pow(10, digits);
-
   cout << (m - power) << ln;
 }
 
