@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define endl "\n"
 #define debug(n) cout<<(n)<<endl;
@@ -19,13 +17,10 @@ int sum(int n){
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int t;
-  cin>>t;
+  cin.tie(NULL); cout.tie(NULL);
+  int t; cin>>t;
   while(t--){
-    int n;
-    cin>>n;
+    int n; cin>>n;
     int i = 0;
     bool check = false;
     int ndigts[10];
