@@ -30,10 +30,11 @@ int solve_case(int n, int mod) {
 }
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    
     int t; cin >> t;
     while (t--) {
-        int n, m;
-        cin >> n >> m;
+        int n, m; cin >> n >> m;
         cout << solve_case(n, m) << '\n';
     }
     return 0;
