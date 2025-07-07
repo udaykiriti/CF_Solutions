@@ -13,48 +13,31 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   vector<int> candies(n);
   for (int i = 0; i < n; i++)
-  {
     cin >> candies[i];
-  }
-
   sort(candies.rbegin(), candies.rend());
-
   int mihaiCandies = 0, biancaCandies = 0;
 
   for (int i = 0; i < n; i++)
   {
     if (candies[i] % 2 == 0)
-    {
       mihaiCandies += candies[i];
-    }
     else
-    {
       biancaCandies += candies[i];
-    }
   }
 
   if (mihaiCandies > biancaCandies)
-  {
     cout << "YES" << endl;
-  }
   else
-  {
     cout << "NO" << endl;
-  }
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

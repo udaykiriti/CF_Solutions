@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-// Macros
 #define FastIO                      \
   ios_base::sync_with_stdio(false); \
   cin.tie(nullptr);                 \
@@ -13,7 +11,6 @@ using namespace std;
 #define sz(x) (int)(x).size()
 #define FOR(i, a, b) for (int i = 0; i < n; i++)
 
-// Helper function to check if character has been assigned before
 bool visited(const vector<pair<char, char>> &ans, char ch)
 {
   for (auto &p : ans)
@@ -24,7 +21,6 @@ bool visited(const vector<pair<char, char>> &ans, char ch)
   return false;
 }
 
-// Helper function to check if character is assigned to correct parity
 bool checkPos(const vector<pair<char, char>> &ans, char ch, char parity)
 {
   for (auto &p : ans)
@@ -37,39 +33,29 @@ bool checkPos(const vector<pair<char, char>> &ans, char ch, char parity)
 
 void solve()
 {
-  int n;
-  cin >> n;
-  string s;
-  cin >> s;
-
+  int n; cin >> n;
+  string s; cin >> s;
   vector<pair<char, char>> ans;
   bool sol = true;
 
   FOR(i, 0, n)
   {
     char parity = (i % 2 == 0) ? 'o' : 'e';
-
     if (!visited(ans, s[i]))
-    {
       ans.pb({s[i], parity});
-    }
-
     if (!checkPos(ans, s[i], parity))
     {
       sol = false;
       break;
     }
   }
-
   cout << (sol ? "YES" : "NO") << endl;
 }
 
 int32_t main()
 {
   FastIO;
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

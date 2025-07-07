@@ -8,7 +8,7 @@ const ll INF = 2e18 + 99;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
+  cin.tie(NULL); cout.tie(NULL);
   int t; cin>>t;
   while(t--){
     int n, s, r; cin>>n>>s>>r;

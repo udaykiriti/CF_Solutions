@@ -41,11 +41,9 @@ const ll INF = 2e18 + 99;
 int main()
 {
   FAST_IO;
-
   TESTS
   {
-    int n;
-    cin >> n;
+    int n; cin >> n;
     vector<int> arr(n);
     ll ans = 0;
     int neg_count = 0;

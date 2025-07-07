@@ -97,8 +97,7 @@ bool isPrime(int n)
 void solve()
 {
   // Write logic here
-  char ch;
-  cin >> ch;
+  char ch; cin >> ch;
   string s = "codefors";
   for (int i = 0; i < s.size(); i++)
   {
@@ -114,9 +113,7 @@ void solve()
 int main()
 {
   FAST_IO;
-  int t = 1;
-  cin >> t;
-  while (t--)
-    solve();
+  int t = 1; cin >> t;
+  while (t--) solve();
   return 0;
 }
