@@ -7,19 +7,14 @@ void solve()
 {
   string s; cin >> s;
   int countA = 0, countB = 0;
-
   FOR(i, 0, s.size())
   {
-    if (s[i] == 'A')
-      countA++;
-    else if (s[i] == 'B')
-      countB++;
+    if (s[i] == 'A') countA++;
+    else if (s[i] == 'B') countB++;
   }
 
-  if (countA > countB)
-    cout << "A" << endl;
-  else
-    cout << "B" << endl;
+  if (countA > countB) cout << "A" << endl;
+  else cout << "B" << endl;
 }
 
 int main()
