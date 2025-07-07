@@ -12,8 +12,7 @@ using namespace std;
 void fastIO()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
+  cin.tie(NULL); cout.tie(NULL);
 }
 
 void solve()
@@ -22,8 +21,7 @@ void solve()
   cin >> n;
   FOR(i, 0, n - 1)
   {
-    int freq;
-    cin >> freq;
+    int freq; cin >> freq;
     freqSum += freq;
   }
   cout << freqSum * (-1) << endl;
@@ -32,9 +30,7 @@ void solve()
 int main()
 {
   fastIO();
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  int t; cin >> t;
+  while (t--) solve();
   EXIT;
 }
