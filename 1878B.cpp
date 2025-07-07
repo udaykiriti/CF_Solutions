@@ -1,5 +1,3 @@
-
-
 /* Problem: Filling the Grid
 You are given `t` test cases. For each test case, you are given an integer `n`. You need to generate a sequence of `n` integers such that:
 1. The sequence starts from 3.
@@ -61,7 +59,6 @@ int main()
 {
   FastIO;
   int t; cin >> t;
-  while (t--)
-    solve();
+  while (t--) solve();
   BYE;
 }
