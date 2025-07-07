@@ -1,15 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 using i64 = long long;
 #define ln "\n"
 #define fast_io ios::sync_with_stdio(false); cin.tie(nullptr)
 #define FOR(i, a, b) for (int i = (a); i < (b); i++)
 #define scan(x) cin >> x
-#define multicase \
-    int t;        \
-    scan(t);      \
-    while (t--) solve();
 
 void solve() {
     i64 n;
@@ -32,6 +27,7 @@ void solve() {
 
 int main() {
     fast_io;
-    multicase
+    int t; cin>>t;
+    while(t--) solve();
     return 0;
 }

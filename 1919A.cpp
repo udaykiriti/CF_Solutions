@@ -7,17 +7,14 @@ void solve()
 {
   ll a, b; cin >> a >> b;
   ll sum = a + b;
-
-  if (sum & 1)
-    cout << "Alice\n";
-  else
-    cout << "Bob\n";
+  if (sum & 1) cout << "Alice\n";
+  else cout << "Bob\n";
 }
 
 int main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL); cout.tie(NULL);
-  ll T = 1; cin >> T;
-  while (T--) solve();
+  ll t = 1; cin >> t;
+  while (t--) solve();
 }
