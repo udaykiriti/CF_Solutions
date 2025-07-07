@@ -23,15 +23,12 @@ void solve()
   long long total = 0;
   FOR(i, 0, n - 1)
   {
-    int val;
-    cin >> val;
+    int val; cin >> val;
     total += val;
   }
 
-  if (isPerfectSquare(total))
-    cout << "YES" << endl;
-  else
-    cout << "NO" << endl;
+  if (isPerfectSquare(total)) cout << "YES" << endl;
+  else cout << "NO" << endl;
 }
 
 int main()

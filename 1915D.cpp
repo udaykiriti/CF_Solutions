@@ -12,10 +12,8 @@ const char nl = '\n';
 
 void solve()
 {
-  ll n;
-  string s, ans = ""; cin >> n >> s;
+  ll n; string s, ans = ""; cin >> n >> s;
   REVERSE(s);
-
   FOR(i, 0, n)
   {
     if (!isVowel(s[i]) && isVowel(s[i + 1]) && !isVowel(s[i + 2]))
@@ -44,7 +42,6 @@ int main()
 {
   FAST_IO;
   int T = 1; cin >> T;
-  while (T--)
-    solve();
+  while (T--) solve();
   return 0;
 }

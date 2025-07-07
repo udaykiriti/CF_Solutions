@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define FastIO()                    \
   ios_base::sync_with_stdio(false); \
   cin.tie(nullptr);                 \
-  cout.tie(nullptr);
+  cout.tie(nullptr)
 
 void solve()
 {
