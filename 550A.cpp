@@ -3,8 +3,7 @@ using namespace std;
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(nullptr);
+  cin.tie(NULL); cout.tie(nullptr);
   long int i, j, f, n, m, x, p, fnd;
   string s;
   while (getline(cin, s))
@@ -59,6 +58,5 @@ int main()
     else
       cout << "NO\n";
   }
-
   return 0;
 }

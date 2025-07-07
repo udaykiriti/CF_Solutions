@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 #define ll long long
 #define ull unsigned long long
-#define PRINT_YES cout << "YES" << endl
-#define PRINT_NO cout << "NO" << endl
 #define INPUT(x) cin >> x
 #define FOR(i, a, b) for (int i = a; i < b; i++)
 using namespace std;
@@ -10,7 +8,6 @@ using namespace std;
 int main()
 {
   int t, n, a[101]; INPUT(t);
-
   while (t--)
   {
     int even = 0, odd = 0, dif = 0, diff = 0;
@@ -36,20 +33,19 @@ int main()
 
     if (even % 2 == 0 && odd % 2 == 0)
     {
-      PRINT_YES;
+      cout << "YES" << endl;
     }
     else if (even % 2 == 1 && odd % 2 == 1)
     {
       if (diff >= 1)
-        PRINT_YES;
+        cout << "YES" << endl;
       else
-        PRINT_NO;
+        cout << "NO" << endl;
     }
     else
     {
-      PRINT_NO;
+      cout << "NO" << endl;
     }
   }
-
   return 0;
 }

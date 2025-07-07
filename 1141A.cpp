@@ -7,9 +7,7 @@ using namespace std;
 int main()
 {
   fastread();
-  ll n, m, ans = 0;
-  cin >> n >> m;
-
+  ll n, m, ans = 0; cin >> n >> m;
   if (n == m)
   {
     cout << 0 << endl;
@@ -35,6 +33,5 @@ int main()
       ans = -1;
     cout << ans << endl;
   }
-
   return 0;
 }

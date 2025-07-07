@@ -1,13 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define ll long long
 int main()
 {
-  long long int i, j, k;
-  long long int sum = 0, count = 0;
-  long long int n, b, d;
-
-  cin >> n >> b >> d;
-  long long int a[n];
+  ll int i, j, k;
+  ll int sum = 0, count = 0;
+  ll int n, b, d; cin >> n >> b >> d;
+  ll int a[n];
   for (i = 0; i < n; i++)
     cin >> a[i];
   for (i = 0; i < n; i++)

@@ -2,7 +2,6 @@
     Problem Number: 977A
     Problem Name: A. Wrong Subtraction
     Problem Link: https://codeforces.com/problemset/problem/977/A
-  
 
     Problem Description:
 

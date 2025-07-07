@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define endl "\n"
 #define debug(n) cout<<(n)<<endl;
@@ -14,10 +12,8 @@ long long npairs(ll n){
 }
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int n;
-  cin>>n;
+  cin.tie(NULL); cout.tie(NULL);
+  int n; cin>>n;
   unordered_map<ll, ll> mpx;
   unordered_map<ll, ll> mpy;
   map<pair<ll, ll>, ll> mpxy;
@@ -30,14 +26,11 @@ int main(){
   }
   long long ans = 0;
 
-  for(auto i : mpx){
+  for(auto i : mpx)
     ans += npairs(i.second);
-  }
-  for(auto i : mpy){
+  for(auto i : mpy)
     ans += npairs(i.second);
-  }
-  for(auto i : mpxy){
+  for(auto i : mpxy)
     ans -= npairs(i.second);
-  }
   cout<<ans<<endl;
 }

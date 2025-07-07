@@ -24,6 +24,5 @@ int main()
       cout << mn[i] << " " << mx[i] << endl;
     }
   }
-
   return 0;
 }

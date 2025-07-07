@@ -7,7 +7,7 @@ using namespace std;
   cin.tie(0);                   \
   cout.tie(0);
 
-long long int pairs(long long int n)
+ll int pairs(long long int n)
 {
   return n * (n - 1) / 2;
 }
@@ -15,10 +15,10 @@ long long int pairs(long long int n)
 int main()
 {
   fastio;
-  long long int n, m; cin >> n >> m;
-  long long int a(n / m), b(n % m);
-  long long int min = pairs(a) * (m - b) + pairs(a + 1) * b;
-  long long int max = pairs(n - m + 1);
+  ll int n, m; cin >> n >> m;
+  ll int a(n / m), b(n % m);
+  ll int min = pairs(a) * (m - b) + pairs(a + 1) * b;
+  ll int max = pairs(n - m + 1);
   cout << min << " " << max << endl;
   return 0;
 }

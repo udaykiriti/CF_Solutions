@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ll long long
-#define pb push_back
-#define fastread() (ios_base::sync_with_stdio(false), cin.tie(NULL))
-#define PRINT(x) cout << x << endl;
 
 void solve()
 {
@@ -12,12 +8,13 @@ void solve()
   ll A = 1;
   for (ll i = 2; i <= min(a, b); i++)
     A *= i;
-  PRINT(A)
+  cout<<A<<endl;
 }
 
 int main()
 {
-  fastread();
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   solve();
   return 0;
 }

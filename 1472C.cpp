@@ -48,7 +48,6 @@ int main()
     vector<int> dp(n);
     for (auto &u : a)
       cin >> u;
-
     for (i = n - 1; i >= 0; i--)
     {
       dp[i] = a[i];

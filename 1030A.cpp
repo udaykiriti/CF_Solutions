@@ -52,8 +52,7 @@ void FastIO()
 int main()
 {
   FastIO();
-  int n, m, r = 0;
-  cin >> n;
+  int n, m, r = 0; cin >> n;
   FOR(i, 0, n)
   {
     cin >> m;

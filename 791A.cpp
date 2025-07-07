@@ -46,23 +46,16 @@ In the third sample, Limak becomes larger than Bob after the first year. Their w
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
 #define FastIO()                \
   ios_base::sync_with_stdio(0); \
   cin.tie(0);                   \
   cout.tie(0);
 
-#define input2(x, y) cin >> x >> y
-#define Print(x) cout << x << endl
-#define EXIT return 0
-
 int main()
 {
   FastIO();
-  int a, b;
-  input2(a, b);
-
+  int a, b; cin>>a>>b;
   int years = 0;
   while (a <= b)
   {
@@ -70,7 +63,6 @@ int main()
     b *= 2;
     years++;
   }
-
-  Print(years);
-  EXIT;
+  cout<<years<<endl;
+  return 0;
 }

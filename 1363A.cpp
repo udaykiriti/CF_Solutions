@@ -3,9 +3,7 @@
 
 int main()
 {
-
-  l t;
-  scanf("%ld", &t);
+  l t; scanf("%ld", &t);
   while (t--)
   {
     l n, x; scanf("%ld %ld", &n, &x);

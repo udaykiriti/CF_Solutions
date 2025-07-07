@@ -16,7 +16,6 @@ int main(){
     sort(arr,arr+n);
     ll count = 0;
     for(ll i = 1; i < n; i++) count = __gcd(count, arr[i] - arr[i-1]);
-
     if(count == 0){
         cout<<-1<<endl;
         continue;

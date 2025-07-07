@@ -1,5 +1,3 @@
-
-
 /* Problem: String LCM
 Let's define a multiplication operation between a string a and a positive integer x: a⋅x is the string that is a result of writing x copies of a one after another. For example, "abc" ⋅ 2 = "abcabc", "a" ⋅ 5 = "aaaaa".
 
@@ -36,7 +34,7 @@ aaaaaa
 #define ll long long
 using namespace std;
 #define endl '\n'
-#define BYE return 0;
+#define BYE return 0
 
 void FastIO()
 {
@@ -57,9 +55,7 @@ string repeatString(string s, int k)
 // Function to solve a single test case
 void solve()
 {
-  string s, t;
-  cin >> s >> t;
-
+  string s, t; cin >> s >> t;
   // Find the GCD of the lengths of the two strings
   ll g = __gcd(s.length(), t.length());
 
@@ -73,9 +69,7 @@ void solve()
 int main()
 {
   FastIO();
-  ll t;
-  cin >> t;
-  while (t--)
-    solve();
-  BYE
+  ll t; cin >> t;
+  while (t--) solve();
+  BYE;
 }

@@ -31,8 +31,7 @@ int main()
 {
   //_time_
   // FAST_IO();
-  ll n;
-  cin >> n;
+  ll n; cin >> n;
   if (n % 2 == 1)
     cout << 0 << endl;
   else
@@ -43,8 +42,7 @@ int main()
 void FAST_IO()
 {
   ios_base::sync_with_stdio(0);
-  cin.tie(0);
-  cout.tie(0);
+  cin.tie(0); cout.tie(0);
   // cout.setf(ios::fixed);
   // cout.precision(20);
 #ifndef _offline

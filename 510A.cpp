@@ -3,10 +3,8 @@ using namespace std;
 
 void solve()
 {
-  int n, m;
-  cin >> n >> m;
+  int n, m; cin >> n >> m;
   bool right = true;
-
   for (int i = 1; i <= n; ++i)
   {
     if (i % 2 == 1)
@@ -37,7 +35,7 @@ void solve()
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(nullptr);
+  cin.tie(nullptr); cout.tie(NULL);
   solve();
   return 0;
 }

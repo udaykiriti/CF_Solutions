@@ -54,8 +54,7 @@ using namespace std;
 
 void solve()
 {
-  string s;
-  cin >> s;
+  string s; cin >> s;
   ll n = l(s);
   ll ans = inf;
 
@@ -76,24 +75,16 @@ void solve()
   }
 
   if (ans == inf)
-  {
     cout << 0 << endl; // No valid substring found
-  }
   else
-  {
     cout << ans << endl; // Output the smallest valid substring length
-  }
 }
 
 int main()
 {
   fast;
-  ll t;
-  cin >> t;
-  tcas(cs, t)
-  {
-    solve(); // Call solve function for each test case
-  }
+  ll t; cin >> t;
+  tcas(cs, t) solve(); // Call solve function for each test case
   return 0;
 }
 

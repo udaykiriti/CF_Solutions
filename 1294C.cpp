@@ -10,11 +10,8 @@ using namespace std;
 
 void solve()
 {
-  ll n;
-  cin >> n;
-
+  ll n; cin >> n;
   ll a = -1, b = -1, c = -1;
-
   for (ll i = 2; i * i <= n; ++i)
   {
     if (n % i == 0)
@@ -52,9 +49,7 @@ void solve()
 int main()
 {
   op();
-  int tc;
-  cin >> tc;
-  while (tc--)
-    solve();
+  int tc; cin >> tc;
+  while (tc--) solve();
   return 0;
 }

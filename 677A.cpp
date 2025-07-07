@@ -60,21 +60,15 @@ using namespace std;
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0);
-
+  cin.tie(0); cout.tie(0);
   int n, h, m, width = 0;
-
-  INPUT(n);
-  INPUT(h);
-
+  cin>>n>>h;
   for (int i = 0; i < n; i++)
   {
-    INPUT(m);
+    cin>>m;
     IF(m > h, width += 2);
     ELSE(width++);
   }
-
   cout << width;
   return 0;
 }

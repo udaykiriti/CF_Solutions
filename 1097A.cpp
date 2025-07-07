@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define endl '\n'
 #define debug(n) cout<<(n)<<endl;
@@ -9,10 +7,8 @@ const ll INF = 2e18 + 99;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  string a;
-  cin>>a;
+  cin.tie(NULL); cout.tie(NULL);
+  string a; cin>>a;
   string arr[5];
   for(int i = 0; i < 5; i++){
     cin>>arr[i];

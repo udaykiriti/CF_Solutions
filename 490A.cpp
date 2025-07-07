@@ -5,9 +5,7 @@ int main()
 {
     const int B = 3;
     std::vector<std::vector<int>> ability(B);
-
-    int n;
-    scanf("%d\n", &n);
+    int n; scanf("%d\n", &n);
     for (int p = 1; p <= n; p++)
     {
         int current;

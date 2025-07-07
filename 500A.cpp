@@ -14,7 +14,6 @@ int main()
   int curr = 1;
   while (curr < t)
     curr += a[curr - 1];
-
   if (curr == t)
     cout << "YES" << endl;
   else

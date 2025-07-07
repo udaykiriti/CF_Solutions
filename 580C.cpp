@@ -32,8 +32,7 @@ void dfs(int node, int parent, int catCount)
 void solve()
 {
   ios::sync_with_stdio(false);
-  cin.tie(nullptr);
-
+  cin.tie(nullptr); cout.tie(NULL);
   cin >> n >> m;
   cats.resize(n);
   for (int i = 0; i < n; ++i)
@@ -42,8 +41,7 @@ void solve()
   tree.resize(n);
   for (int i = 0; i < n - 1; ++i)
   {
-    int u, v;
-    cin >> u >> v;
+    int u, v; cin >> u >> v;
     u--, v--;
     tree[u].push_back(v);
     tree[v].push_back(u);
@@ -52,7 +50,6 @@ void solve()
   dfs(0, -1, 0);
   cout << result << '\n';
 }
-
 int main()
 {
   solve();

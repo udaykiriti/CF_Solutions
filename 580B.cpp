@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define pb push_back
 #define endl "\n"
@@ -35,11 +33,8 @@ int binary_search(vector<pair<ll, ll>>& arr, int low, int high, ll target){
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  ll n, d;
-  cin>>n>>d;
-
+  cin.tie(NULL); cout.tie(NULL);
+  ll n, d; cin>>n>>d;
   vector<pair<ll, ll>> friends;
   ll a, b, s = 0;
   vector<ll> suff;
@@ -54,7 +49,6 @@ int main(){
     suff.pb(s);
     // cout<<friends[i].first<<" "<<suff[i]<<endl;
     s -= friends[i].second;
-
   }
   suff.pb(0);
   ll ans = -1;
@@ -64,7 +58,5 @@ int main(){
     // cout<<i<<" "<<j<<endl;
     ans = max(ans, suff[i] - suff[j]);
   }
-
   cout<<ans<<endl;
-
 }

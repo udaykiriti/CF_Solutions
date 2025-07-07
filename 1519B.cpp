@@ -7,16 +7,14 @@ using namespace std;
   ios::sync_with_stdio(false); \
   cin.tie(nullptr);
 #define ll long long
-#define yes cout << "YES\n"
-#define no cout << "NO\n"
 
 void solve()
 {
   int n, m, k; cin >> n >> m >> k;
   if (k == (n - 1) + (m - 1) * n)
-    yes;
+    cout << "YES\n";
   else
-    no;
+    cout << "NO\n";
 }
 
 int main()

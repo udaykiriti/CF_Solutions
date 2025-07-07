@@ -68,11 +68,9 @@ int main (void)
                     break;
                 }
             }
-
             if (!k)
                 pf ("NO\n");
         }
     }
-
     return 0;
 }

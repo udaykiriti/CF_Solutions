@@ -29,7 +29,6 @@ int main()
 {
   FastIO();
   ll int t; cin >> t;
-  while (t--)
-    solve();
+  while (t--) solve();
   return 0;
 }

@@ -1,13 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define BYE return 0;
+#define BYE return 0
 int main()
 {
-  int n;
-  cin >> n;
-  string s;
-  cin >> s;
-
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int n; cin >> n;
+  string s; cin >> s;
   int j = 2;
   for (int i = 0; i < n;)
   {
@@ -16,5 +15,5 @@ int main()
     j++;
   }
   cout << endl;
-  BYE
+  BYE;
 }

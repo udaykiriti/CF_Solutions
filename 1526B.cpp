@@ -26,9 +26,7 @@ using namespace std;
   ios_base::sync_with_stdio(0); \
   cin.tie(0);                   \
   cout.tie(0);
-#define PRINT_YES cout << "YES" << endl
-#define PRINT_NO cout << "NO" << endl
-#define BYE return 0;
+#define BYE return 0
 
 int main() {
   FastIO;
@@ -45,9 +43,9 @@ int main() {
       }
     }
     if (ok)
-      PRINT_YES;
+      cout<<"YES"<<endl;
     else
-      PRINT_NO;
+      cout<<"NO"<<endl;
   }
   BYE;
 }

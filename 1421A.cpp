@@ -20,7 +20,6 @@ int main()
 {
   FastIO();
   ll t; cin >> t;
-  while (t--)
-    solve();
+  while (t--) solve();
   return 0;
 }

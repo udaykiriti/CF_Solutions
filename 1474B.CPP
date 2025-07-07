@@ -43,7 +43,6 @@ int32_t main()
 {
   FastIO;
   int t; cin >> t;
-  while (t--)
-    solve();
+  while (t--) solve();
   EXIT;
 }

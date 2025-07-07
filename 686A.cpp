@@ -1,13 +1,10 @@
 #include <bits/stdc++.h>
-
 int main()
 {
   unsigned char op;
   unsigned int n, d_ch = 0;
   unsigned long long i_cr, c;
-
   std::cin >> n >> i_cr;
-
   for (unsigned int i = 0; i < n; ++i)
   {
     std::cin >> op >> c;

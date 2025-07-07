@@ -3,12 +3,8 @@ using namespace std;
 typedef long long int ll;
 int main()
 {
-  ll a, b;
-  ll i, j, k;
-
-  cin >> a >> b;
+  ll a, b;ll i, j, k;cin >> a >> b;
   ll x[a], y[b];
-
   for (i = 0; i < a; i++)
     cin >> x[i];
 
@@ -16,11 +12,7 @@ int main()
     cin >> y[i];
 
   sort(x, x + a);
-
   for (i = 0; i < b; i++)
-  {
     cout << upper_bound(x, x + a, y[i]) - x << " ";
-  }
-
   return 0;
 }

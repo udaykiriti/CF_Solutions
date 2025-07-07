@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 using i64 = long long int;
 #define ln "\n"
 #define stop_sync ios::sync_with_stdio(false)
@@ -40,8 +39,7 @@ void solve()
 
 int main()
 {
-  stop_sync;
-  untie_ios;
+  stop_sync; untie_ios;
   solve();
   return 0;
 }

@@ -12,8 +12,7 @@ int main(){
 
   int t; cin>>t;
   while(t--){
-    int a[3];
-    cin>>a[0]>>a[1]>>a[2];
+    int a[3]; cin>>a[0]>>a[1]>>a[2];
     sort(a, a + 3, greater<int>());
     if(a[0] == a[1]){
       cout<<"YES"<<endl;

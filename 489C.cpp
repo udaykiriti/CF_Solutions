@@ -6,10 +6,8 @@ using namespace std;
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(0);
-  int m, s, t;
-  cin >> m >> s;
+  cin.tie(nullptr); cout.tie(0);
+  int m, s, t; cin >> m >> s;
   string a, b;
 
   if (s == 0)

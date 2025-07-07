@@ -9,10 +9,8 @@ const ll INF = 2e18 + 99;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  ll n, t;
-  cin>>n>>t;
+  cin.tie(NULL); cout.tie(NULL);
+  ll n, t; cin>>n>>t;
   if(n == 1 && t == 10){
     cout<<-1<<endl;
     return 0;
@@ -28,5 +26,4 @@ int main(){
   for(int i = 0; i < n-1; i++){
     cout<<0;
   }
-
 }

@@ -3,9 +3,7 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
-
+  int n; cin >> n;
   vector<pair<int, int>> trees(n);
   for (int i = 0; i < n; ++i)
   {
@@ -51,8 +49,7 @@ void solve()
 int main()
 {
   ios::sync_with_stdio(false);
-  cout.tie(NULL);
-  cin.tie(nullptr);
+  cout.tie(NULL); cin.tie(nullptr);
   solve();
   return 0;
 }

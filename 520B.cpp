@@ -17,15 +17,13 @@ void solve()
     steps++;
   }
   steps += (n - m);
-  //cout << steps << '\n';
   debug(steps);
 }
 
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(nullptr);
+  cin.tie(0); cout.tie(nullptr);
   solve();
   BYE__;
 }

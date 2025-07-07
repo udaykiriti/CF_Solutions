@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define endl "\n"
 #define debug(n) cout<<(n)<<endl;
@@ -9,11 +7,8 @@ using namespace std;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  ll n, p, q, r;
-  cin>>n>>p>>q>>r;
-
+  cin.tie(NULL); cout.tie(NULL);
+  ll n, p, q, r; cin>>n>>p>>q>>r;
   ll x, maxpx, maxpqx, maxpqrx, px, qx, rx;
   cin>>x;
   maxpx = p * x;
@@ -28,7 +23,5 @@ int main(){
     maxpqx = max(maxpqx, maxpx + qx);
     maxpqrx = max(maxpqrx, maxpqx + rx);
   }
-
   cout<<(maxpqrx)<<endl;
-
 }
