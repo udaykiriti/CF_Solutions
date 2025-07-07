@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
 #define FastIO()                    \
   ios_base::sync_with_stdio(false); \
@@ -13,11 +12,8 @@ using namespace std;
 
 void solve()
 {
-  long n, m;
-  cin >> n >> m;
-  string x, s;
-  cin >> x >> s;
-
+  long n, m; cin >> n >> m;
+  string x, s; cin >> x >> s;
   int cnt = -1;
   for (long p = 0; p <= 6; p++)
   {
@@ -28,18 +24,13 @@ void solve()
     }
     x = x + x;
   }
-
   cout << cnt << endl;
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }
