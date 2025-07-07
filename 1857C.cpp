@@ -3,8 +3,7 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   int size = n * (n - 1) / 2;
   vector<int> b(size);
   for (int i = 0; i < size; ++i)
@@ -25,11 +24,8 @@ void solve()
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(nullptr);
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  cin.tie(nullptr); cout.tie(nullptr);
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

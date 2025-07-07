@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
 bool is_sorted_by_parity(vector<int> &a)
@@ -32,18 +30,14 @@ bool is_sorted_by_parity(vector<int> &a)
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(NULL);
-  int t;
-  cin >> t;
+  cin.tie(nullptr); cout.tie(NULL);
+  int t; cin >> t;
   while (t--)
   {
-    int n;
-    cin >> n;
+    int n; cin >> n;
     vector<int> a(n);
     for (int &x : a)
       cin >> x;
-
     cout << (is_sorted_by_parity(a) ? "YES" : "NO") << '\n';
   }
   return 0;

@@ -1,5 +1,3 @@
-
-
 /*
 Problem: Forbidden Value
 You are given three integers n, k, x.
@@ -37,8 +35,8 @@ using namespace std;
 #define FastIO                  \
   ios_base::sync_with_stdio(0); \
   cin.tie(0);                   \
-  cout.tie(0);
-#define BYE return 0;
+  cout.tie(0)
+#define BYE return 0
 
 void solve()
 {
@@ -88,11 +86,10 @@ void solve()
 
 int main()
 {
-  FastIO int t;
-  cin >> t;
-  while (t--)
-    solve();
-  BYE
+  FastIO;
+  int t; cin >> t;
+  while (t--) solve();
+  BYE;
 }
 
 /*

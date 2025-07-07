@@ -45,12 +45,10 @@ using i64 = long long;
   cin >> t;       \
   while (t--)     \
     solve();
-#define GG return 0;
+#define GG return 0
 void solve()
 {
-  i64 n;
-  cin >> n;
-
+  i64 n; cin >> n;
   i64 res = 0;
   while (n)
   {
@@ -63,7 +61,8 @@ void solve()
 
 int main()
 {
-  stop_sync;
-  untie_ios;
-  multicase GG
+  stop_sync; untie_ios;
+  int t; cin>>t;
+  while(t--) solve();
+  GG;
 }

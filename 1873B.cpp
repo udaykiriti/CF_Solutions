@@ -1,19 +1,17 @@
 #include <cstdio>
+#define ll long long
 
 int main()
 {
-
-  long t;
-  scanf("%ld", &t);
+  long t; scanf("%ld", &t);
   while (t--)
   {
-    int n;
-    scanf("%d", &n);
-    long long prod(1);
+    int n; scanf("%d", &n);
+    ll prod(1);
     int m(10), z(0);
-    for (long p = 0; p < n; p++)
+    for (ll p = 0; p < n; p++)
     {
-      long x;
+      ll x;
       scanf("%ld", &x);
       if (x == 0)
       {
@@ -27,17 +25,8 @@ int main()
       }
     }
 
-    if (z > 1)
-    {
-      puts("0");
-    }
-    else if (z == 1)
-    {
-      printf("%lld\n", prod);
-    }
-    else
-    {
-      printf("%lld\n", prod * (m + 1) / m);
-    }
+    if (z > 1) puts("0");
+    else if (z == 1) printf("%lld\n", prod);
+    else printf("%lld\n", prod * (m + 1) / m);
   }
 }

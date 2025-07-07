@@ -1,5 +1,3 @@
-
-
 """
 Problem: Forbidden Value
 You are given three integers n, k, x.

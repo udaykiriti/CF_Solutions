@@ -5,15 +5,12 @@ typedef long long ll;
 #define FastIO             \
   ios::sync_with_stdio(0); \
   cin.tie(0);              \
-  cout.tie(0);
-#define BYE return 0;
+  cout.tie(0)
+#define BYE return 0
 
 void solve()
 {
-  int n;
-  string s;
-  cin >> n >> s;
-
+  int n; string s; cin >> n >> s;
   map<string, int> mp;
   for (int i = 0; i < n - 1; i++)
   {
@@ -30,11 +27,8 @@ int main()
 {
 #ifndef ONLINE_JUDGE
 #endif
-
-  FastIO int t = 1;
-  cin >> t;
-  while (t--)
-    solve();
-
-  BYE
+  FastIO;
+  int t = 1; cin >> t;
+  while (t--) solve();
+  BYE;
 }

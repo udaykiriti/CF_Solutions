@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ll long long int
 #define nline endl
 #define FOR(i, a, b) for (int i = (a); i < (b); i++)
@@ -20,28 +19,22 @@ ll scoreBoard[10][10] = {
 void solve()
 {
   ll score = 0;
-
   FOR(i, 0, 10)
-  FOR(j, 0, 10)
   {
-    char ch;
-    cin >> ch;
-
+    FOR(j, 0, 10)
+    {
+    char ch; cin >> ch;
     if (ch == 'X')
       score += scoreBoard[i][j];
+    }
   }
-
   cout << score << nline;
 }
 
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-
-  ll t = 1;
-  cin >> t;
-  while (t--)
-    solve();
+  cin.tie(NULL); cout.tie(NULL);
+  ll t = 1; cin >> t;
+  while (t--) solve();
 }

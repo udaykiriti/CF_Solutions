@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define FOR(i, a, b) for (int i = (a); i < (b); ++i)
 #define pb push_back
 #define ln "\n"
@@ -22,11 +21,8 @@ void solve()
 
 int main()
 {
-  stop_sync;
-  untie_ios;
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  stop_sync; untie_ios;
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

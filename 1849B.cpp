@@ -5,15 +5,11 @@ using namespace std;
 
 void solve()
 {
-  ll n, k;
-  cin >> n >> k;
-
+  ll n, k;  cin >> n >> k;
   vector<ll> arr(n);
   for (int i = 0; i < n; i++)
     cin >> arr[i];
-
   vector<pair<ll, ll>> hMap;
-
   for (int i = 0; i < n; i++)
   {
     ll res = arr[i] % k;
@@ -30,15 +26,12 @@ void solve()
 void fastIO()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
+  cin.tie(NULL); cout.tie(NULL);
 }
 int main()
 {
   fastIO();
-  ll T;
-  cin >> T;
-  while (T--)
-    solve();
+  ll T; cin >> T;
+  while (T--) solve();
   return 0;
 }

@@ -102,7 +102,6 @@ The smallest second smallest element is 3, so the sum becomes:
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define INF (1e9 + 7)
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
@@ -111,23 +110,16 @@ using namespace std;
 
 void solve()
 {
-  long n;
-  cin >> n;
-
+  long n; cin >> n;
   vector<pair<long, long>> v(n);
   long idx = -1, gmn = INF, gsmn = INF;
-
   FOR(p, 0, n)
   {
-    long m;
-    cin >> m;
-
+    long m; cin >> m;
     long mn = INF, smn = INF;
     FOR(q, 0, m)
     {
-      long x;
-      cin >> x;
-
+      long x; cin >> x;
       if (x <= mn)
       {
         smn = mn;
@@ -147,13 +139,11 @@ void solve()
       idx = p;
     }
   }
-
   long long sum = 0;
   FOR(p, 0, n)
   {
     sum += (p != idx) ? v[p].second : gmn;
   }
-
   cout << sum << "\n";
 }
 
@@ -166,14 +156,8 @@ void FastIO()
 
 int main()
 {
-
-  long t;
-  cin >> t;
-
-  while (t--)
-  {
-    solve();
-  }
-
+  FastIO();
+  long t; cin >> t;
+  while (t--) solve();
   return 0;
 }

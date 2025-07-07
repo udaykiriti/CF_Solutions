@@ -2,23 +2,16 @@
 using namespace std;
 #define endl "\n"
 #define ll long long
-#define pb push_back
-#define ff first
-#define ss second
-#define mp make_pair
+
 
 int main()
 {
   ios_base::sync_with_stdio(0);
-  cin.tie(0);
-  cout.tie(0);
-
-  int t;
-  cin >> t;
+  cin.tie(0); cout.tie(0);
+  int t; cin >> t;
   while (t--)
   {
-    int x, k;
-    cin >> x >> k;
+    int x, k;  cin >> x >> k;
     if (abs(x) % k != 0)
     {
       cout << "1" << endl;

@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
 #define FastIO()                    \
   ios_base::sync_with_stdio(false); \
@@ -13,14 +12,11 @@ using namespace std;
 
 void solve()
 {
-  int n, k;
-  cin >> n >> k;
+  int n, k; cin >> n >> k;
   vector<int> a(n);
-
   FOR(i, 0, n - 1)
       cin >> a[i];
   sort(a.begin(), a.end());
-
   int maxLen = 1, currLen = 1;
 
   FOR(i, 1, n - 1)
@@ -36,18 +32,13 @@ void solve()
     }
   }
   maxLen = max(maxLen, currLen);
-
   cout << n - maxLen << endl;
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

@@ -5,42 +5,28 @@ using i64 = long long;
 #define ln "\n"
 #define stop_sync ios::sync_with_stdio(false)
 #define untie_ios cin.tie(nullptr)
-#define multicase \
-  int t;          \
-  cin >> t;       \
-  while (t--)     \
-  {               \
-    solve();      \
-  }
-#define GG return 0;
+#define GG return 0
 #define PRINT(x) cout << x << ln
-#define LOOP(i, a, b) for (int i = (a); i < (b); i++)
+#define FOR(i, a, b) for (int i = (a); i < (b); i++)
 #define SORT(v) sort((v).begin(), (v).end())
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   vector<int> a(n);
-  LOOP(p, 0, n)
-  {
-    cin >> a[p];
-  }
+  FOR(p, 0, n) cin >> a[p];
 
   SORT(a);
   int cnt = 0;
-  LOOP(p, 0, (n + 1) / 2)
-  {
+  FOR(p, 0, (n + 1) / 2)
     cnt += a[n - 1 - p] - a[p];
-  }
-
   PRINT(cnt);
 }
 
 int main()
 {
-  stop_sync;
-  untie_ios;
-  multicase
-      GG;
+  stop_sync; untie_ios;
+  int t; cin>>t;
+  while(t--) solve();
+  GG;
 }

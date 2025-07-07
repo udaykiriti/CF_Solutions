@@ -13,8 +13,7 @@ using namespace std;
 
 void solve()
 {
-  long a, b, c;
-  cin >> a >> b >> c;
+  long a, b, c; cin >> a >> b >> c;
   if (a + (c % 2) > b)
     cout << "First" << endl;
   else
@@ -24,11 +23,7 @@ void solve()
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }
