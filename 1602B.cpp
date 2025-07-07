@@ -10,9 +10,7 @@ int main(){
   cin.tie(NULL); cout.tie(NULL);
   int t, n; cin>>t;
   while(t--){
-    cin>>n;
-    int arr[n];
-
+    cin>>n; int arr[n];
     int max = -1;
     for(int i = 0; i < n; i++){
       cin>>arr[i];
@@ -25,7 +23,6 @@ int main(){
       for (int i = 0; i < n; i++) mp[brr[j][i]]++;
       for(int i = 0; i < n; i++)  brr[j+1][i] = mp[brr[j][i]];
     }
-
     int q, a, b; cin>>q;
     while(q-- ){
       cin>>a>>b;
