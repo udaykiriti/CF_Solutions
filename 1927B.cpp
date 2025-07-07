@@ -1,22 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ln "\n"
 #define stop_sync ios::sync_with_stdio(false)
 #define untie_ios cin.tie(nullptr)
 #define FOR(i, a, b) for (long i = (a); i < (b); i++)
-#define multicase \
-  int t;          \
-  cin >> t;       \
-  while (t--)     \
-  {               \
-    solve();      \
-  }
 #define BYE return 0;
 void solve()
 {
-  long n;
-  cin >> n;
+  long n; cin >> n;
   map<long, vector<char>> mv;
   vector<char> res(n, ' ');
   char nxt = 'a';
@@ -44,7 +35,7 @@ void solve()
 
 int main()
 {
-  stop_sync;  
-  untie_ios;
-  multicase BYE
+  stop_sync; untie_ios;
+  int t; cin>>t;
+  while(t--) solve();
 }
