@@ -9,8 +9,7 @@ using namespace std;
 void FastIO()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(nullptr);
+  cin.tie(nullptr); cout.tie(nullptr);
 }
 
 void solve()
@@ -26,9 +25,7 @@ void solve()
 int main()
 {
   FastIO();
-  long t;
-  input(t);
-  while (t--)
-    solve();
+  long t; input(t);
+  while (t--) solve();
   EXIT;
 }

@@ -7,13 +7,8 @@ using namespace std;
 #define pb push_back
 #define sz(x) int((x).size())
 #define All(x) (x).begin(), (x).end()
-#define multicase \
-  int t;          \
-  cin >> t;       \
-  while (t--)
-
 using i64 = long long;
-#define BYE return 0;
+#define EXIT return 0
 
 void solve()
 {
@@ -38,11 +33,8 @@ void solve()
 
 int main()
 {
-  stop_sync;
-  untie_ios;
-  multicase
-  {
-    solve();
-  }
-  BYE
+  stop_sync; untie_ios;
+  int t; cin>>t;
+  while(t--) solve();
+  EXIT;
 }

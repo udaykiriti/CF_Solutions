@@ -13,10 +13,8 @@ void solve(){
       total_sum += a[i];
   }
 
-  if (total_sum == x * n) 
-      cout << "YES" << endl;
-  else 
-      cout << "NO" << endl;
+  if (total_sum == x * n) cout << "YES" << endl;
+  else cout << "NO" << endl;
 }
 
 int main(){

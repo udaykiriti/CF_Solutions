@@ -12,7 +12,6 @@ using i64 = long long int;
 void solve()
 {
   i64 a, b; cin >> a >> b;
-
   i64 dist = b - a;
   i64 left = 1, right = dist + 7, res = 1;
 

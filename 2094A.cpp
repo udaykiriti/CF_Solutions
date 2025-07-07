@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 using i64 = long long;
 #define ln "\n"
 #define stop_sync ios::sync_with_stdio(false)
@@ -15,8 +14,7 @@ using i64 = long long;
 #define PRINT(x) cout << x << ln
 
 void solve() {
-    string a, b, c;
-    cin >> a >> b >> c;
+    string a, b, c; cin >> a >> b >> c;
     PRINT(a[0] << b[0] << c[0]);
 }
 

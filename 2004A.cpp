@@ -53,9 +53,7 @@ void solve()
 {
   int n; cin >> n;
   vector<int> x(n);
-  for (int i = 0; i < n; i++)
-    cin >> x[i];
-
+  for (int i = 0; i < n; i++) cin >> x[i];
   if (n == 2 && x[0] + 2 <= x[1])
     cout << "YES";
   else

@@ -4,7 +4,7 @@ using namespace std;
   ios::sync_with_stdio(0); \
   cin.tie(0)
 #define endl '\n'
-#define BYE return 0;
+#define BYE return 0
 long long ara[100005];
 
 int main()
@@ -34,5 +34,5 @@ int main()
     else
       cout << ans << "\n";
   } 
-  BYE
+  BYE;
 }

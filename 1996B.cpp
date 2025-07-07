@@ -1,17 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define fast_io                \
+#define Fast_io                \
   ios::sync_with_stdio(false); \
   cin.tie(nullptr)
 #define FOR(i, a, b) for (int i = (a); i < (b); i++)
 #define print(x) cout << x << "\n"
 #define scan(x) cin >> x
-#define multicase \
-  int t;          \
-  scan(t);        \
-  while (t--)     \
-    solve();
 
 void solve()
 {
@@ -32,6 +27,8 @@ void solve()
 
 int main()
 {
-  fast_io;
-  multicase return 0;
+  Fast_io;
+  int t; cin>>t;
+  while(t--) solve();
+  return 0;
 }

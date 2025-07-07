@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
-
 #define endl '\n'
 #define debug(x) cout << (x) << endl
 #define vi vector<int>
@@ -16,7 +15,6 @@ const int I = 1e9;
 int main()
 {
   ios::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
-
   int t; cin >> t;
   vi q(t), a;
   a.reserve(t);

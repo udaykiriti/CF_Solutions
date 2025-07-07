@@ -79,8 +79,7 @@ int main()
   for (int i = 0; i < m; ++i)
   {
     int x, y;
-    long long z;
-    cin >> x >> y >> z;
+    long long z;cin >> x >> y >> z;
     --x;
     --y;
     graph[y].push_back({x, z});
@@ -93,32 +92,19 @@ int main()
       tarjan(i);
 
   vector<bool> scc_cycle(scc_count, false);
-  for (int i = 0; i < scc_count; ++i)
-  {
-    scc_cycle[i] = scc_has_cycle(scc_nodes[i], graph);
-  }
-
+  for (int i = 0; i < scc_count; ++i) scc_cycle[i] = scc_has_cycle(scc_nodes[i], graph);
   cin >> q;
   while (q--)
   {
-    long long k;
-    cin >> k;
+    long long k; cin >> k;
     vector<long long> a(n);
-    for (int i = 0; i < n; ++i)
-      cin >> a[i];
-
+    for (int i = 0; i < n; ++i) cin >> a[i];
     string ans(n, '0');
-
     for (int i = 0; i < n; ++i)
     {
-      if (scc_cycle[scc_id[i]] && k > 0)
-      {
-        ans[i] = '1';
-      }
+      if (scc_cycle[scc_id[i]] && k > 0) ans[i] = '1';
     }
-
     cout << ans << "\n";
   }
-
   return 0;
 }

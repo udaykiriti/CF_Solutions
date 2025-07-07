@@ -1,10 +1,9 @@
 #include <cstdio>
 #include <cstdlib>
 
-void s()
+void solve()
 {
-  int a, b, c;
-  scanf("%d %d %d", &a, &b, &c);
+  int a, b, c; scanf("%d %d %d", &a, &b, &c);
   bool d = false;
   for (int e = 1; e <= 100; e++)
     if (e != a)
@@ -18,8 +17,6 @@ void s()
 
 int main()
 {
-  int f;
-  scanf("%d", &f);
-  while (f--)
-    s();
+  int f; scanf("%d", &f);
+  while (f--) solve();
 }

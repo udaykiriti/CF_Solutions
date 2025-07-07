@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ll long long
 #define nline '\n'
 #define op()                    \

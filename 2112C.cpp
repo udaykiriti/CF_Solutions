@@ -13,8 +13,7 @@ void solve()
 {
   int n; cin >> n;
   vector<int> v(n);
-  FOR(i, 0, n)
-      cin >> v[i];
+  FOR(i, 0, n) cin >> v[i];
   sort(all(v));
   int g = v[n - 1], s = v[n - 2];
   ll a = 0;

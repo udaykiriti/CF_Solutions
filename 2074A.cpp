@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
-
 using namespace std;
 using namespace __gnu_pbds;
 
@@ -34,7 +33,7 @@ using pbds = tree<key, val, cmp, rb_tree_tag, tree_order_statistics_node_update>
 #define maxE(a) (*max_element(All(a)))
 #define FIXED(x) cout << fixed << setprecision(x)
 #define bug(x) cout << (#x) << ": " << (x) << ln
-#define EXIT return 0;
+#define EXIT return 0
 
 const long double PI = acos(-1.0L);
 struct
@@ -49,8 +48,7 @@ i64 binpow(i64 a, i64 b, i64 m)
   i64 ans = 1ll;
   while (b > 0)
   {
-    if (b & 1)
-      ans = ans * a % m;
+    if (b & 1) ans = ans * a % m;
     a = a * a % m;
     b >>= 1;
   }
@@ -59,8 +57,7 @@ i64 binpow(i64 a, i64 b, i64 m)
 
 void solve()
 {
-  int l, r, d, u;
-  cin >> l >> r >> d >> u;
+  int l, r, d, u; cin >> l >> r >> d >> u;
   if (l == r && r == d && d == u && l == u)
     cout << "Yes" << ln;
   else
@@ -69,12 +66,8 @@ void solve()
 
 int main(void)
 {
-  stop_sync;
-  untie_ios;
-
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
-  EXIT
+  stop_sync; untie_ios;
+  int t; cin >> t;
+  while (t--) solve();
+  EXIT;
 }

@@ -8,10 +8,8 @@ void solve()
 {
   int n; cin >> n;
   vi a(n), b(n);
-  FOR(i, n)
-      cin >> a[i];
-  FOR(i, n)
-      cin >> b[i];
+  FOR(i, n) cin >> a[i];
+  FOR(i, n) cin >> b[i];
 
   int total_m = 0, total_s = 0;
   FOR(i, n)

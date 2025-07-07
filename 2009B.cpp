@@ -15,9 +15,7 @@ void solve()
 {
   int n; cin >> n;
   vector<string> grid(n);
-
-  FOR(i, 0, n - 1)
-    cin >> grid[i];
+  FOR(i, 0, n - 1) cin >> grid[i];
 
   RFOR(i, n - 1, 0)
   {

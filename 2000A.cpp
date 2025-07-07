@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
 #define FastIO()                    \
   ios_base::sync_with_stdio(false); \
@@ -30,9 +29,7 @@ void solve()
 
 int main()
 {
-  FastIO();
-  precompute();
-
+  FastIO(); precompute();
   int t; cin >> t;
   while (t--) solve();
   return 0;
