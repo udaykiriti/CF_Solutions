@@ -27,7 +27,6 @@ int main(){
       else if(mp.find(a) == mp.end()){
         mp[a] = i;
       }
-
     }
     if(flag) cout<<"YES"<<endl; else cout<<"NO"<<endl;
   }
