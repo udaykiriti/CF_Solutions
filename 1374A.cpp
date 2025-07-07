@@ -1,12 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
+#define ll long long
 
 void solve()
 {
-  long long x, y, n; cin >> x >> y >> n;
-  long long m = (n - y) / x;
-  long long k = m * x + y;
+  ll x, y, n; cin >> x >> y >> n;
+  ll m = (n - y) / x;
+  ll k = m * x + y;
   cout << k << endl;
 }
 

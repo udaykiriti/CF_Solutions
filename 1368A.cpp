@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define endl '\n'
 #define debug(n) cout<<(n)<<endl;
@@ -41,5 +39,4 @@ int main(){
     }
     cout<<count<<endl;
   }
-
 }

@@ -3,8 +3,7 @@ using namespace std;
 
 void solve()
 {
-  int t;
-  cin >> t;
+  int t; cin >> t;
   while (t--)
   {
     string b; cin >> b;
@@ -18,7 +17,7 @@ void solve()
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(0);
+  cin.tie(0); cout.tie(NULL);
   solve();
   return 0;
 }
