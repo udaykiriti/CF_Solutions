@@ -4,8 +4,6 @@ using namespace std;
 void solve()
 {
   int t; cin >> t;
-  while (t--)
-  {
     int n; cin >> n;
     vector<int> a(n);
     for (int i = 0; i < n; ++i) cin >> a[i];
@@ -23,13 +21,13 @@ void solve()
       maxSum = max(maxSum, totalSum + currentNegateGain);
     }
     cout << maxSum << "\n";
-  }
 }
 
 int main()
 {
   ios::sync_with_stdio(false);
   cin.tie(0); cout.tie(NULL);
-  solve();
+  int t; cin>>t;
+  while(t--) solve();
   return 0;
 }
