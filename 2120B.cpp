@@ -6,7 +6,6 @@ using namespace std;
 #define in(x) cin >> x
 #define PRINT(x) cout << x << endl
 
-
 void solve() {
     int a, b;
     in(a); in(b);

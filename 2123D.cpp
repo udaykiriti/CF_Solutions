@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 #define all(a) (a).begin(), (a).end()
 #define endl "\n"
 #define vec std::vector

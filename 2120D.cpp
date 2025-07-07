@@ -1,13 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define M 1000000007LL
 #define FOR(i,a,b) for(int i=(a);i<=(b);++i)
 #define RFOR(i,a,b) for(int i=(a);i>=(b);--i)
 #define pb push_back
 #define all(x) (x).begin(),(x).end()
 #define debug(x) cout<<(x)<<endl
-
 typedef long long L;
 typedef tuple<L, L, L> T;
 
@@ -55,6 +53,5 @@ int main() {
         auto [a, b, c] = q[i++];
         solve(a, b, c);
     }
-
     return 0;
 }

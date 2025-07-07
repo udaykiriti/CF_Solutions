@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define F ios::sync_with_stdio(0);cin.tie(0);
+#define F ios::sync_with_stdio(0);cin.tie(0)
 #define rep(i,n) for(int i=0;i<(n);++i)
 #define all(x) begin(x), end(x)
 #define pb push_back
@@ -65,6 +65,6 @@ void solve(){
 }
 
 int main(){
-    F int t; cin>>t;
+    F; int t; cin>>t;
     while(t--) solve();
 }
