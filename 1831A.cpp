@@ -7,14 +7,10 @@ using namespace std;
 
 void solve()
 {
-  ll n;
-  input(n);
-
+  ll n; input(n);
   FOR(i, 1, n)
   {
-    ll temp;
-    input(temp);
-
+    ll temp; input(temp);
     cout << (n + 1) - temp << " ";
   }
   cout << endl;
@@ -23,16 +19,13 @@ void solve()
 void FastIO()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0);
+  cin.tie(0); cout.tie(0);
 }
 
 int main()
 {
   FastIO();
-  ll T;
-  input(T);
-  while (T--)
-    solve();
+  ll T; input(T);
+  while (T--) solve();
   return 0;
 }

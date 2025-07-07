@@ -1,8 +1,3 @@
-# Codeforces Username: Polymath__
-# Email: Udaykiriti9@gmail.com
-# Problem link: https://codeforces.com/problemset/problem/1811/A
-# github link: https://github.com/udaykiriti
-
 """
 Problem: Insert Digit
 You are given a positive integer n and a digit d (0 ≤ d ≤ 9). You are also given a string s of length n, consisting of digits.

@@ -1,8 +1,3 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-// Problem link: https://codeforces.com/problemset/problem/1811/A
-// github link: https://github.com/udaykiriti
-
 /*
 Problem: Insert Digit
 You are given a positive integer n and a digit d (0 ≤ d ≤ 9). You are also given a string s of length n, consisting of digits.
@@ -39,14 +34,12 @@ using namespace std;
 #define FastIO                  \
   ios_base::sync_with_stdio(0); \
   cin.tie(0);                   \
-  cout.tie(0);
+  cout.tie(0)
 #define FOR(i, a, b) for (ll i = a; i < b; i++)
-#define BYE return 0;
+#define BYE return 0
 void solve()
 {
-  int n;
-  char d;
-  string s;
+  int n; char d; string s;
   cin >> n >> d >> s;
   bool inserted = false;
   FOR(i, 0, n)
@@ -65,9 +58,8 @@ void solve()
 
 int main()
 {
-  FastIO int t;
-  cin >> t;
-  while (t--)
-    solve();
-  BYE
+  FastIO;
+  int t; cin >> t;
+  while (t--) solve();
+  BYE;
 }

@@ -3,7 +3,7 @@ using namespace std;
 #define fast_io                \
   ios::sync_with_stdio(false); \
   cin.tie(nullptr);            \
-  cout.tie(nullptr);
+  cout.tie(nullptr)
 #define endl '\n'
 #define debug(x) cout<<(x)<<endl
 #define FOR(i,a,b) for(int i=(a);i<(b);i++)
@@ -33,9 +33,8 @@ void solve()
 
 int main()
 {
-  fast_io int t;
-  cin >> t;
-  while (t--)
-    solve();
+  fast_io;
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }
