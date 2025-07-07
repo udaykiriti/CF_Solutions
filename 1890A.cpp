@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 using i64 = long long;
 #define ln "\n"
 #define fast_io                \
@@ -9,18 +8,12 @@ using i64 = long long;
 #define FOR(i, a, b) for (int i = (a); i < (b); i++)
 #define rFOR(i, a, b) for (int i = (a); i >= (b); i--)
 #define all(x) (x).begin(), (x).end()
-#define scan(x) cin >> x
-#define multicase \
-  int t;          \
-  scan(t);        \
-  while (t--)     \
-    solve();
 
 void solve()
 {
-  i64 n; scan(n);
+  i64 n; cin>>n;
   vector<i64> a(n);
-  FOR(i, 0, n) scan(a[i]);
+  FOR(i, 0, n) cin>>a[i];
 
   bool possible = true;
   i64 first = a[0], count_first = 1, second = 0, count_second = 0;
@@ -56,5 +49,7 @@ void solve()
 int main()
 {
   fast_io;
-  multicase return 0;
+  int t; cin>>t;
+  while(t--) solve();
+  return 0;
 }

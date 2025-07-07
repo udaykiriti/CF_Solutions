@@ -222,8 +222,7 @@ int main(void)
   cin >> t;
   while (++tcase, t--)
   {
-    string s;
-    cin >> s;
+    string s; cin >> s;
     int cnt0 = 0, cnt1 = 0, ans = 0;
     for (int i = 0; i < sz(s); ++i)
     {

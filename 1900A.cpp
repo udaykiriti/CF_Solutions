@@ -1,18 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 const char nl = '\n';
-#define BYE return 0;
-
+#define BYE return 0
 typedef long long ll;
-
 #define FastIO                      \
   ios_base::sync_with_stdio(false); \
   cin.tie(NULL);                    \
-  cout.tie(NULL);
-#define multicase \
-  int t;          \
-  cin >> t;       \
-  while (t--)
+  cout.tie(NULL)
 #define all(x) x.begin(), x.end()
 
 void solve()
@@ -49,9 +43,8 @@ void solve()
 
 int main()
 {
-  FastIO multicase
-  {
-    solve();
-  }
-  BYE
+  FastIO; 
+  int t; cin>>t;
+  while(t--) solve();
+  BYE;
 }
