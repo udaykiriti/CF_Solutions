@@ -8,7 +8,6 @@ void solve()
   string log; cin >> log;
   map<char, int> time_spent;
   for (char ch : log) time_spent[ch]++;
-
   int solved = 0;
   for (auto [ch, time] : time_spent)
   {
