@@ -1,9 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ll long long
-#define nline '\n'
-#define op()                    \
+#define endl '\n'
+#define Fast_IO()                    \
   ios_base::sync_with_stdio(0); \
   cin.tie(0);                   \
   cout.tie(0);
@@ -23,7 +22,7 @@ void solve()
 
   if (a == -1)
   {
-    cout << "NO" << nline;
+    cout << "NO" << endl;
     return;
   }
 
@@ -36,20 +35,19 @@ void solve()
       c = remaining / j;
       if (b != c && c > b)
       {
-        cout << "YES" << nline;
-        cout << a << " " << b << " " << c << nline;
+        cout << "YES" << endl;
+        cout << a << " " << b << " " << c << endl;
         return;
       }
     }
   }
-
-  cout << "NO" << nline;
+  cout << "NO" << endl;
 }
 
 int main()
 {
-  op();
-  int tc; cin >> tc;
-  while (tc--) solve();
+  Fast_IO();
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

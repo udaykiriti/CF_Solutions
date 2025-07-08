@@ -16,8 +16,7 @@ int main(){
     deck.push_back(x);
   }
   sort(deck.begin(), deck.end(), greater<int>());
-  ll hz = 0;
-  ll vt = 0;
+  ll hz = 0, vt = 0;
   bool check = false;
   for(int i = 0; i < n; i++){
     check = !check;
