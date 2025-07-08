@@ -4,27 +4,26 @@ using namespace std;
 
 void solve()
 {
-  int n; cin >> n;
-  vector<int> a(n);
-  for (int &x : a)
+  ll n; cin >> n;
+  vector<ll> a(n);
+  for (ll &x : a)
     cin >> x;
   ll sum = 0;
-  int current = a[0];
-
-  for (int i = 1; i < n; ++i)
+  ll curr = a[0];
+  for (ll i = 1; i < n; ++i)
   {
-    if ((a[i] > 0 && current > 0) || (a[i] < 0 && current < 0))
+    if ((a[i] > 0 && curr > 0) || (a[i] < 0 && curr < 0))
     {
-      current = max(current, a[i]);
+      curr = max(curr, a[i]);
     }
     else
     {
-      sum += current;
-      current = a[i];
+      sum += curr;
+      curr = a[i];
     }
   }
 
-  sum += current;
+  sum += curr;
   cout << sum << "\n";
 }
 
