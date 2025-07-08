@@ -47,7 +47,7 @@ using namespace std;
 #define ss second
 #define mem(a, i) memset(a, i, sizeof(a))
 #define pcas(i) cout << "Case " << i << ": " << endl
-#define fast                    \
+#define FastIO                  \
   ios_base::sync_with_stdio(0); \
   cin.tie(NULL);                \
   cout.tie(NULL)
@@ -82,7 +82,7 @@ void solve()
 
 int main()
 {
-  fast;
+  FastIO;
   ll t; cin >> t;
   tcas(cs, t) solve(); // Call solve function for each test case
   return 0;

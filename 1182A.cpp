@@ -31,6 +31,8 @@ int main()
 {
   //_time_
   // FAST_IO();
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   ll n; cin >> n;
   if (n % 2 == 1)
     cout << 0 << endl;

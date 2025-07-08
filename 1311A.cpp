@@ -1,11 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define ll long long
+
 int main(){
-  int t; cin>>t;
+  ll t; cin>>t;
   while(t--){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
-    int a, b; cin>>a>>b;
+    ll a, b; cin>>a>>b;
     if(a > b){
       if((a%2 == 0 && b%2 == 0) || (a%2 != 0 && b%2 != 0)){
         cout<<1<<endl;

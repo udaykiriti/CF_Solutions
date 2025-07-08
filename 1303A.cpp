@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define FOR(i, a, b) for (int i = a; i < b; i++)
-#define FOR_REV(i, a, b) for (int i = a; i >= b; i--)
+#define RFOR(i, a, b) for (int i = a; i >= b; i--)
 
 int main()
 {
@@ -19,7 +19,7 @@ int main()
       }
     }
 
-    FOR_REV(i, s.length() - 1, pos)
+    RFOR(i, s.length() - 1, pos)
     {
       if (s[i] == '1')
       {
