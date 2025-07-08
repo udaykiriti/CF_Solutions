@@ -4,10 +4,8 @@ using namespace std;
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0);
-  int n;
-  cin >> n;
+  cin.tie(0); cout.tie(0);
+  int n; cin >> n;
   vector<int> manager(n + 1);
   for (int i = 1; i <= n; ++i)
     cin >> manager[i];
@@ -25,10 +23,7 @@ int main()
 
   int maxDepth = 0;
   for (int i = 1; i <= n; ++i)
-  {
     maxDepth = max(maxDepth, getDepth(i));
-  }
-
   cout << maxDepth << endl;
   return 0;
 }

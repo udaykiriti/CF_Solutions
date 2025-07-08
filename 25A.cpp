@@ -1,5 +1,3 @@
-
-
 /* Problem: IQ test
 Bob is preparing to pass an IQ test. The most frequent task in this test is to find out which one of the given n numbers differs from the others. Bob observed that one number usually differs from the others in evenness. Help Bob — to check his answers, he needs a program that among the given n numbers finds one that is different in evenness.
 
@@ -32,28 +30,20 @@ using namespace std;
   ios_base::sync_with_stdio(0); \
   cin.tie(0);                   \
   cout.tie(0);
-#define BYE return 0;
 
 int main()
 {
   FastIO;
-
-  int n;
-  cin >> n;
+  int n; cin >> n;
   vector<int> nums(n);
-
   // Read the input numbers
   FOR(i, 0, n)
   cin >> nums[i];
-
   int even_count = 0;
-
   // Count the number of even numbers
   FOR(i, 0, n)
-  {
     if (nums[i] % 2 == 0)
       even_count++;
-  }
 
   // Find the index of the number that differs in evenness
   FOR(i, 0, n)
@@ -64,6 +54,5 @@ int main()
       break;
     }
   }
-
-  BYE;
+  return 0;
 }

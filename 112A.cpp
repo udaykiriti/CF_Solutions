@@ -42,9 +42,7 @@ using namespace std;
 int main()
 {
   FastIO;
-
-  string s1, s2;
-  cin >> s1 >> s2;
+  string s1, s2; cin >> s1 >> s2;
 
   // Convert both strings to uppercase for case-insensitive comparison
   transform(s1.begin(), s1.end(), s1.begin(), ::toupper);
@@ -57,6 +55,5 @@ int main()
     cout << "-1" << endl;
   else
     cout << "0" << endl;
-
-  BYE;
+  return 0;
 }

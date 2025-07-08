@@ -1,5 +1,3 @@
-
-
 /* Problem: Way Too Long Words
 Sometimes some words like "localization" or "internationalization" are so long that writing them many times in one text is quite tiresome.
 
@@ -41,19 +39,17 @@ using namespace std;
 void FastIO()
 {
   ios_base::sync_with_stdio(0);
-  cin.tie(0);
-  cout.tie(0);
+  cin.tie(0); cout.tie(0);
 }
 
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
+  int t; cin >> t;
   string s[t];
 
-  FOR(i, 0, t)
-  cin >> s[i];
+  FOR(i, 0, t) 
+     cin >> s[i];
 
   FOR(i, 0, t)
   if (s[i].size() > 10)
@@ -61,5 +57,5 @@ int main()
   else
     cout << s[i] << endl;
 
-  BYE
+  return 0;
 }

@@ -1,5 +1,3 @@
-
-
 /* Problem: cAPS lOCK
 Sometimes people accidentally leave the Caps Lock key on and type words in uppercase.
 Let us imagine that this mistake is corrected automatically by a program.
@@ -30,28 +28,22 @@ Lock
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ll long long
 #define endl '\n'
 #define debug(n) cout << (n) << endl;
 const ll INF = 2e18 + 99;
-#define BYE return 0;
 
 void FastIO()
 {
   ios_base::sync_with_stdio(0);
-  cin.tie(0);
-  cout.tie(0);
+  cin.tie(0); cout.tie(0);
 }
 
 int main()
 {
   FastIO();
-  string s;
-  cin >> s;
-
+  string s; cin >> s;
   bool check = true;
-
   // Check if all characters except the first one are uppercase
   for (int i = 1; i < s.length(); i++)
   {
@@ -77,6 +69,5 @@ int main()
   }
 
   cout << s << endl;
-
-  BYE
+  return 0;
 }

@@ -1,5 +1,3 @@
-
-
 /* Problem: Word Capitalization
 Petya has a string `s` of lowercase and uppercase Latin letters.
 Your task is to capitalize the first character of this string.
@@ -35,10 +33,7 @@ using namespace std;
 int main()
 {
   FastIO;
-
-  string s;
-  cin >> s;
-
+  string s; cin >> s;
   // Capitalize the first character if it is lowercase
   if (s[0] >= 'a' && s[0] <= 'z')
     s[0] = s[0] - ('a' - 'A'); // Convert to uppercase

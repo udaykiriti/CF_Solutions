@@ -6,9 +6,7 @@ int cmp(const void *a, const void *b) {
 }
 
 int main() {
-    int n;
-    scanf("%d", &n);
-
+    int n; scanf("%d", &n);
     int *arr = (int *)malloc(n * sizeof(int));
     for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
@@ -31,7 +29,6 @@ int main() {
             sum1 -= arr[n - i];
         }
     }
-
     free(arr);
     return 0;
 }

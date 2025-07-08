@@ -5,8 +5,9 @@ using namespace std;
 
 int main()
 {
-  int n;
-  cin >> n;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int n; cin >> n;
   int x, minindex, maxindex, maxi = 0, mini = 1000;
   FOR(i, 0, n)
   {

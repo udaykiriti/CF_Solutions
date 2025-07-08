@@ -1,5 +1,3 @@
-
-
 /* Problem: Domino piling
 You are given a rectangular board of M × N squares. Also you are given an unlimited number of standard domino pieces of 2 × 1 squares.
 You are allowed to rotate the pieces. You need to place as many dominoes as possible on the board so as to meet the following conditions:
@@ -39,13 +37,9 @@ using namespace std;
 int main()
 {
   FastIO;
-
-  int m, n;
-  cin >> m >> n;
-
+  int m, n; cin >> m >> n;
   // Calculate the maximum number of dominoes that can fit
   int domino_area = 2;
   cout << (m * n) / domino_area << endl;
-
-  BYE;
+  return 0;
 }

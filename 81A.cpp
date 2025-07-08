@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define endl "\n"
 #define debug(n) cout<<(n)<<endl;
@@ -12,17 +10,13 @@ int main(){
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
   stack<char> st;
-
-  string s;
-  cin>>s;
+  string s; cin>>s;
 
   for(int i = s.size() - 1; i >= 0; i--){
-    if(!st.empty() && st.top() == s[i]){
+    if(!st.empty() && st.top() == s[i])
       st.pop();
-    }
-    else{
+    else
       st.push(s[i]);
-    }
   }
 
   string ans = "";
@@ -31,5 +25,4 @@ int main(){
     st.pop();
   }
   cout<<ans<<endl;
-
 }

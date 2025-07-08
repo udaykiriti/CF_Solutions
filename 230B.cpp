@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
 #define FastIO()                    \
   ios_base::sync_with_stdio(false); \
@@ -28,12 +27,10 @@ void solve()
     if (is_prime[i])
       t_primes.insert((long long)i * i);
 
-  int n;
-  cin >> n;
+  int n; cin >> n;
   while (n--)
   {
-    long long x;
-    cin >> x;
+    long long x; cin >> x;
     if (t_primes.find(x) != t_primes.end())
       cout << "YES\n";
     else

@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define debug(n) cout<<(n)<<endl;
 const ll INF = 2e18 + 99;
@@ -27,10 +25,8 @@ int binary_search(ll arr[], int low, int high, ll target){
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  ll n, d;
-  cin>>n>>d;
+  cin.tie(NULL); cout.tie(NULL);
+  ll n, d; cin>>n>>d;
   ll arr[n];
   for(int i = 0; i < n; i++){
     cin>>arr[i];

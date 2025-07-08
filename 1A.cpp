@@ -21,32 +21,23 @@ Output:
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ll long long
 #define endl '\n'
 #define debug(n) cout << (n) << endl;
 const ll INF = 2e18 + 99;
-#define BYE return 0;
 
 void FastIO()
 {
   ios_base::sync_with_stdio(0);
-  cin.tie(0);
-  cout.tie(0);
+  cin.tie(0); cout.tie(0);
 }
 
 int main()
 {
   FastIO();
-  ll n, m, a;
-  cin >> n >> m >> a;
-
-  // Calculate the number of flagstones needed along the length and width
-  ll c = (m % a == 0) ? (m / a) : (m / a + 1); // Number of flagstones along the width
-  ll d = (n % a == 0) ? (n / a) : (n / a + 1); // Number of flagstones along the length
-
-  // Total number of flagstones is the product of c and d
+  ll n, m, a; cin >> n >> m >> a;
+  ll c = (m % a == 0) ? (m / a) : (m / a + 1); 
+  ll d = (n % a == 0) ? (n / a) : (n / a + 1); 
   debug(c * d);
-
-  BYE
+  return 0;
 }

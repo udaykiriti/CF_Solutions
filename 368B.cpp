@@ -8,7 +8,6 @@ void solve()
   vector<int> a(n);
   for (int i = 0; i < n; ++i)
     cin >> a[i];
-
   vector<int> distinct_count(n + 1, 0);
   unordered_set<int> seen;
 
@@ -17,7 +16,6 @@ void solve()
     seen.insert(a[i]);
     distinct_count[i] = seen.size();
   }
-
   while (m--)
   {
     int li;

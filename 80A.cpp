@@ -42,8 +42,7 @@ void solve(int now, int next)
 
 int main()
 {
-  int now, next;
-  cin >> now >> next;
+  int now, next; cin >> now >> next;
   sieve();
   solve(now, next);
 }

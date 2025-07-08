@@ -4,10 +4,8 @@ using namespace std;
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(0);
-
-  int n, x;
-  cin >> n;
+  cin.tie(0); cout.tie(NULL);
+  int n, x; cin >> n;
   vector<int> count(5, 0);
 
   for (int i = 0; i < n; ++i)
@@ -15,7 +13,6 @@ int main()
     cin >> x;
     ++count[x];
   }
-
   int taxis = count[4];
   taxis += count[3];
   count[1] = max(0, count[1] - count[3]);

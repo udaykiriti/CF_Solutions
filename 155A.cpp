@@ -1,5 +1,3 @@
-
-
 /* Problem: I_love_%username%
 Petya loves competitive programming and participates in contests regularly. His friend Vasya admires Petya's progress and keeps track of his performance. After each contest, Vasya writes down Petya's score. Over time, Vasya noticed that Petya's performance is sometimes extraordinary, breaking his previous records (either the highest or the lowest score).
 
@@ -29,29 +27,17 @@ Output:
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
-#define FastIO                  \
-  ios_base::sync_with_stdio(0); \
-  cin.tie(0);                   \
-  cout.tie(0);
 #define FOR(i, a, b) for (int i = a; i < b; i++)
-#define BYE return 0;
 
 int main()
 {
-  FastIO;
-
-  int n;
-  cin >> n;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int n; cin >> n;
   vector<int> vec(n);
-
-  // Read the scores
-  FOR(i, 0, n)
-  cin >> vec[i];
-
+  FOR(i, 0, n) cin >> vec[i];
   int count = 0;
   int max_score = vec[0], min_score = vec[0];
-
-  // Count the number of record-breaking performances
   FOR(i, 1, n)
   {
     if (vec[i] > max_score)
@@ -65,8 +51,6 @@ int main()
       min_score = vec[i];
     }
   }
-
   cout << count << endl;
-
-  BYE;
+  return 0;
 }

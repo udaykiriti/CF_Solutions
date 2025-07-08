@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
 #define FastIO()                    \
   ios_base::sync_with_stdio(false); \
@@ -13,8 +12,7 @@ using namespace std;
 
 void solve()
 {
-  int k;
-  cin >> k;
+  int k; cin >> k;
   vector<int> a(12);
   FOR(i, 0, 11)
       cin >> a[i];

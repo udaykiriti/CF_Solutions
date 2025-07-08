@@ -1,8 +1,6 @@
 /*
     Codeforces - 271A - Beautiful Year
     Problem link: https://codeforces.com/problemset/problem/271/A
-  
-
     ---------------------------------------------------------------
     Problem description:
 
@@ -39,15 +37,13 @@ using namespace std;
 void FastIO()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
+  cin.tie(NULL); cout.tie(NULL);
 }
 
 int main()
 {
   FastIO();
-  int n;
-  cin >> n;
+  int n; cin >> n;
   int a, b, c, d;
   while (true)
   {

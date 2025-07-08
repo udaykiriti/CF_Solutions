@@ -2,8 +2,6 @@
 
 Problem: B. Queue at the School
 Contest: Codeforces Round 163 (Div. 2)
-
-
 Description:
 During the break the schoolchildren, boys and girls, formed a queue of n people in the canteen.
 Initially the children stood in the order they entered the canteen. However, after a while the boys started feeling awkward for standing in front of the girls in the queue and they started letting the girls move forward each second.
@@ -45,27 +43,18 @@ GGGB
 // ...existing code...
 #include <bits/stdc++.h>
 using namespace std;
-#define endl '\n';
-#define FastIO             \
-  ios::sync_with_stdio(0); \
-  cin.tie(0);              \
-  cout.tie(0);
 #define endl '\n'
-#define BYE return 0;
-#define input1(a) cin >> a;
-#define input2(a, b) cin >> a >> b;
 #define FOR(i, a, b) for (int i = a; i < b; i++)
 
 int main()
 {
-  FastIO int n, t;
-  input2(n, t);
-  string s;
-  input1(s);
-
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int n,t; cin>>n>> t;
+  string s; cin>>s;
   while (t--)
   {
-    for (int i = 0; i < n - 1; ++i)
+    FOR (i,0,n - 1)
     {
       if (s[i] == 'B' && s[i + 1] == 'G')
       {
@@ -74,7 +63,6 @@ int main()
       }
     }
   }
-
   cout << s << endl;
-  BYE
+  return 0;
 }

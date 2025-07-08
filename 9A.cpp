@@ -1,5 +1,3 @@
-
-
 /*
     Codeforces Problem 9A - Die Roll
 
@@ -25,7 +23,6 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ll long long
 #define endl '\n'
 #define debug(n) cout << (n) << endl;
@@ -35,16 +32,13 @@ const ll INF = 2e18 + 99;
 void FastIO()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
+  cin.tie(NULL); cout.tie(NULL);
 }
 
 int main()
 {
   FastIO();
-  int a, b;
-  cin >> a >> b;
-
+  int a, b; cin >> a >> b;
   if (max(a, b) == 1)
     PRINT("1/1")
   else if (max(a, b) == 2)

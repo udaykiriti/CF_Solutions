@@ -1,5 +1,3 @@
-
-
 /*  
   Problem: Boy or Girl (Codeforces 236A)
   Link: https://codeforces.com/problemset/problem/236/A
@@ -52,13 +50,10 @@ using namespace std;
 int main()
 {
   FastIO();
-  string s;
-  input(s);
+  string s; cin>>s;
   sort(s.begin(), s.end());
-
   int count = 1;
   char elem = s[0];
-
   FOR(i, 0, s.size() - 1)
   if (s[i] != elem)
     elem = s[i], count++;

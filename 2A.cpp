@@ -1,5 +1,3 @@
-
-
 /*
     Problem: Codeforces 2A - Winner
     --------------------------------
@@ -63,10 +61,7 @@ void FastIO()
 int main()
 {
   FastIO();
-
-  int n;
-  input1(n);
-
+  int n; cin>>n;
   vector<psi> rounds;
   msi scores;
 
@@ -74,7 +69,7 @@ int main()
   {
     string name;
     int score;
-    input2(name, score);
+    cin>>name>>score;
     rounds.pb({name, score});
     scores[name] += score;
   }
@@ -93,7 +88,7 @@ int main()
     running_score[name] += score;
     if (scores[name] == max_score && running_score[name] >= max_score)
     {
-      output(name);
+      cout<<name<<endl;
       break;
     }
   }

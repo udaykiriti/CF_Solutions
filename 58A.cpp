@@ -37,16 +37,13 @@ const ll INF = 2e18 + 99;
 void FastIO()
 {
   ios_base::sync_with_stdio(0);
-  cin.tie(0);
-  cout.tie(0);
+  cin.tie(0); cout.tie(0);
 }
 
 int main()
 {
   FastIO();
-  string s, r = "";
-  cin >> s;
-
+  string s, r = ""; cin >> s;
   // Check if the word contains "hello" in order
   for (auto i : s)
   {
@@ -64,6 +61,5 @@ int main()
 
   // If the resulting string is "hello", print "YES", otherwise print "NO"
   (r == "hello") ? cout << "YES" << endl : cout << "NO" << endl;
-
-  BYE
+  return 0;
 }

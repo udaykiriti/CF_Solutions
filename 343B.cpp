@@ -13,10 +13,7 @@ const ll INF = 2e18 + 99;
 int main(){
   ios_base::sync_with_stdio(false);
   cin.tie(NULL); cout.tie(NULL);
-
-  stack<char> st;
-  string s; cin>>s;
-
+  stack<char> st; string s; cin>>s;
   FOR(i,0,s.size())
     if(!st.empty() && st.top() == s[i])
       st.pop();

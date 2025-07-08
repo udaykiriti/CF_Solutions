@@ -3,7 +3,6 @@ using namespace std;
 #define endl '\n'
 #define debug(x) cout<<(x)<<endl
 
-
 void solve()
 {
   int n; cin >> n;
@@ -22,7 +21,7 @@ void solve()
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
+  cin.tie(nullptr); cout.tie(nullptr);
   solve();
   return 0;
 }

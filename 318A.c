@@ -1,9 +1,8 @@
 #include <stdio.h>
+#define ull unsigned long long
 
 int main() {
-    unsigned long long n, m;
-    scanf("%llu %llu", &n, &m);
-
+    ull n, m; scanf("%llu %llu", &n, &m);
     if (n % 2 == 1) {
         if (m <= (n / 2 + 1))
             printf("%llu\n", 2 * m - 1);
@@ -15,6 +14,5 @@ int main() {
         else
             printf("%llu\n", 2 * (m - (n / 2)));
     }
-
     return 0;
 }

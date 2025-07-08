@@ -24,9 +24,7 @@ using namespace std;
 
 void solve()
 {
-  int n, a, b, c;
-  cin >> n >> a >> b >> c;
-
+  int n, a, b, c; cin >> n >> a >> b >> c;
   vector<int> dp(n + 1, -1);
   dp[0] = 0;
 
@@ -42,14 +40,13 @@ void solve()
         dp[i + c] = max(dp[i + c], dp[i] + 1);
     }
   }
-
   cout << dp[n] << "\n";
 }
 
 int main()
 {
   ios_base::sync_with_stdio(0);
-  cin.tie(0);
+  cin.tie(0); cout.tie(NULL);
   solve();
   return 0;
 }

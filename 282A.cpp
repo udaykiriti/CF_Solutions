@@ -1,5 +1,3 @@
-
-
 /*
     Codeforces Round 173 (Div. 2) - Problem A: Bit++
 
@@ -63,25 +61,23 @@ using namespace std;
 void FastIO()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(NULL);
+  cin.tie(nullptr); cout.tie(NULL);
 }
 
 int main()
 {
   FastIO();
-  int n;
-  input(n);
+  int n; cin>>n;
   string s;
   int x = 0;
   FOR(i, 0, n)
   {
-    input(s);
+    cin>>s;
     if (s == "++X" || s == "X++")
       x++;
     else
       x--;
   }
-  output(x);
+  cout<<x<<endl;
   EXIT;
 }

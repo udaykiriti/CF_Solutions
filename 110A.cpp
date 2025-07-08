@@ -32,7 +32,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
-#define EXIT return 0
 
 void FastIO()
 {
@@ -44,8 +43,7 @@ void FastIO()
 int main()
 {
   FastIO();
-  long long n;
-  cin >> n;
+  long long n; cin >> n;
   int check = 0;
   int rem;
   while (n != 0)
@@ -59,5 +57,5 @@ int main()
     cout << "NO";
   else
     cout << "YES";
-  EXIT;
+  return 0;
 }

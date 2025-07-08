@@ -28,22 +28,12 @@ YES
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-#define FOR(i, a, b) for (ll i = a; i < b; i++)
-#define FOR_REV(i, a, b) for (ll i = a; i >= b; i--)
-#define PRINT_YES cout << "YES" << endl
-#define PRINT_NO cout << "NO" << endl
-#define INPUT(x) cin >> x;
-#define FastIO                  \
-  ios_base::sync_with_stdio(0); \
-  cin.tie(0);                   \
-  cout.tie(0);
-#define BYE return 0;
 
 int main()
 {
-  FastIO int w;
-  INPUT(w);
-
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  ll w; cin>>w;
   // Check if the weight of the watermelon is even and greater than 2
   // Explanation:
   // 1. `w % 2 == 0`: This checks if the weight `w` is even.
@@ -51,9 +41,8 @@ int main()
   //    each with a positive even weight (e.g., 2 + 2, 4 + 4, etc.).
   // If both conditions are true, print "YES". Otherwise, print "NO".
   if (w % 2 == 0 && w > 2)
-    PRINT_YES;
+    cout<<"YES"<<endl;
   else
-    PRINT_NO;
-
-  BYE
+    cout<<"NO"<<endl;
+  return 0;
 }

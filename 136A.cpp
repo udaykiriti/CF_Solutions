@@ -1,5 +1,3 @@
-
-
 /* Problem: Presents
 Little Petya very much likes gifts. Recently he has received a gift from each of his n friends.
 Each friend has delivered exactly one gift to Petya. Now Petya wants to know who gave him which gift.
@@ -38,24 +36,15 @@ using namespace std;
 int main()
 {
   FastIO;
-
-  int n;
-  cin >> n;
+  int n; cin >> n;
   int arr[n], parr[n];
-
-  // Read input and map gifts to friends
   FOR(i, 0, n)
   {
     cin >> arr[i];
     parr[arr[i] - 1] = i + 1;
   }
-
-  // Output the permutation
   FOR(i, 0, n)
-  {
     cout << parr[i] << " ";
-  }
   cout << endl;
-
   BYE;
 }

@@ -1,4 +1,3 @@
-
 /*
 Codeforces Problem: 339A
 Problem: A. Helpful Maths

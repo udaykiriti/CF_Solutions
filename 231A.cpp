@@ -1,5 +1,3 @@
-
-
 /*
 Codeforces Round #143 (Div. 2) - Problem A: Team
 
@@ -32,7 +30,6 @@ Input:
 Output:
 2
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
@@ -41,17 +38,12 @@ using namespace std;
   ios_base::sync_with_stdio(false); \
   cin.tie(NULL);                    \
   cout.tie(NULL)
-#define input(x) cin >> x
-#define EXIT return 0
-#define output(x) cout << x << endl
 
 int main()
 {
   FastIO;
-  int n;
-  input(n);
+  int n; cin>>n;
   int count = 0;
-
   FOR(i, 0, n)
   {
     int sure = 0, surity;
@@ -65,7 +57,6 @@ int main()
       count++;
     }
   }
-
-  output(count);
-  EXIT;
+  cout<<count<<endl;
+  return 0;
 }

@@ -1,15 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
+#define ll long long
 
 int main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL); cout.tie(nullptr);
   int n; cin >> n;
-  vector<long long> a(n);
+  vector<ll> a(n);
   for (int i = 0; i < n; ++i) cin >> a[i];
-  long long totalSum = 0;
+  ll totalSum = 0;
   for (int i = 0; i < n; ++i) totalSum += a[i];
 
   if (totalSum % 3 != 0)
@@ -17,10 +18,10 @@ int main()
     cout << 0 << endl;
     return 0;
   }
-  long long partSum = totalSum / 3;
-  long long prefixSum = 0;
-  long long ways = 0;
-  long long countPartSum = 0;
+  ll partSum = totalSum / 3;
+  ll prefixSum = 0;
+  ll ways = 0;
+  ll countPartSum = 0;
 
   for (int i = 0; i < n - 1; ++i)
   {

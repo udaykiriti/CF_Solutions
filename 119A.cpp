@@ -1,11 +1,10 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int gcd(int a,int b){
     return a?gcd(b%a,a):b;
 }
 int main() {
-    int a,b,n;
-    cin>>a>>b>>n;
+    int a,b,n; cin>>a>>b>>n;
     int flag1=0;
     int val;
  //   cout<<gcd(3,9);
@@ -21,12 +20,10 @@ int main() {
            n-=val;
            flag1=0;
         }
-       // cout<<n<<" ";
     }
-    if(flag1==1){
+    if(flag1==1)
         cout<<"0";
-    }else{
+    else
         cout<<"1";
-    }
 	return 0;
 }

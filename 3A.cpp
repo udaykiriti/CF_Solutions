@@ -1,5 +1,3 @@
-
-
 /*
 --------------------------------------------
 Codeforces Problem 3A - "Shortest path of the king"
@@ -60,7 +58,6 @@ RU
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
 #define INPUT(s, t) cin >> s >> t
 #define OUTPUT(x) cout << x << endl
@@ -70,9 +67,7 @@ using namespace std;
 
 int main()
 {
-    string s, t;
-    INPUT(s, t);
-
+    string s, t; cin>>s>>t;
     OUTPUT(max(abs(s[0] - t[0]), abs(s[1] - t[1])));
 
     while (s != t)
@@ -81,7 +76,6 @@ int main()
         MOVE_X(s[1], t[1], "U", "D");
         cout << endl;
     }
-
     return 0;
 }
 

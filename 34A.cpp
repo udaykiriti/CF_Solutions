@@ -5,14 +5,11 @@ using namespace std;
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-  int n;
-  cin >> n;
+  cin.tie(NULL); cout.tie(NULL);
+  int n; cin >> n;
   vector<int> vec(n);
   for (int i = 0; i < n; i++)
     cin >> vec[i];
-
   int min_diff = abs(vec[0] - vec[n - 1]);
   int idx1 = 1, idx2 = n;
 
@@ -26,7 +23,6 @@ int main()
       idx2 = i + 2;
     }
   }
-
   cout << idx1 << " " << idx2 << endl;
   return 0;
 } 

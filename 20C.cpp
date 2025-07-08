@@ -34,22 +34,17 @@ const i64 INF = 1e18;
 void printPath(vector<i64> &parent, i64 node)
 {
   if (node != 1)
-  {
     printPath(parent, parent[node]);
-  }
   cout << node << " ";
 }
 
 void solve()
 {
-  i64 n, m;
-  cin >> n >> m;
-
+  i64 n, m; cin >> n >> m;
   vector<vector<pair<i64, i64>>> adj(n + 1);
   for (i64 i = 0; i < m; i++)
   {
-    i64 a, b, w;
-    cin >> a >> b >> w;
+    i64 a, b, w; cin >> a >> b >> w;
     adj[a].pb({b, w});
     adj[b].pb({a, w});
   }
@@ -93,10 +88,7 @@ void solve()
 
 int main()
 {
-  stop_sync;
-  untie_ios;
-
+  stop_sync; untie_ios;
   solve();
-
-  BYE
+  return 0;
 }

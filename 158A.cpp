@@ -28,38 +28,24 @@ Output:
 
 #include <bits/stdc++.h>
 using namespace std;
-
-#define endl '\n';
-#define FastIO                      \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(0);                       \
-  cout.tie(0);
-
-#define input1(x) cin >> x
-#define input2(x, y) cin >> x >> y
+#define endl '\n'
 #define FOR(i, a, b) for (int i = a; i < b; ++i)
-#define output1(x) cout << x << endl
 
 int main()
 {
-  FastIO int n, k;
-  input2(n, k);
-
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int n, k; cin>>n>>k;
   vector<int> scores(n);
   FOR(i, 0, n)
-  {
-    input1(scores[i]);
-  }
-
+    cin>>scores[i];
   int threshold = scores[k - 1];
   int count = 0;
 
   FOR(i, 0, n)
-  {
     if (scores[i] >= threshold && scores[i] > 0)
       ++count;
-  }
 
-  output1(count);
+  cout<<count<<endl;
   return 0;
 }

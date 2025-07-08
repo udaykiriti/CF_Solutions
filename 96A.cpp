@@ -46,9 +46,8 @@ using namespace std;
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  string s;
-  cin >> s;
+  cin.tie(NULL); cout.tie(NULL);
+  string s; cin >> s;
   char elem = '2';
   int maxi = 0, count = 0;
   for (auto i : s)

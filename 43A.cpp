@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 #define ll long long
 #define endl '\n'
 #define debug(n) cout<<(n)<<endl;
@@ -9,14 +7,11 @@ const ll INF = 2e18 + 99;
 
 int main(){
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int n;
-  cin>>n;
+  cin.tie(NULL); cout.tie(NULL);
+  int n; cin>>n;
   map<string, int> mp;
   while(n--){
-    string s;
-    cin>>s;
+    string s; cin>>s;
     mp[s]++;
   }
   int max = -1;
@@ -29,5 +24,4 @@ int main(){
     }
   }
   cout<<maxchar<<endl;
-
 }

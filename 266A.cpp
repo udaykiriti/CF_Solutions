@@ -37,37 +37,22 @@ Output:
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
-#define FAST_IO                     \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);                    \
-  cout.tie(NULL);
 #define FOR(i, a, b) for (int i = a; i < b; i++)
-#define READ_INT(x) \
-  int x;            \
-  cin >> x;
-#define READ_STRING(s) \
-  string s;            \
-  cin >> s;
 #define IF_EQUAL(a, b) if (a == b)
 #define PRINT(x) cout << x << endl;
 
 int main()
 {
-  FAST_IO;
-
-  READ_INT(n);
-  READ_STRING(s);
-
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int n; cin>>n;
+  string s; cin>>s;
   int count = 0;
   FOR(i, 0, n - 1)
   {
-    IF_EQUAL(s[i], s[i + 1])
-    count++;
+  if(s[i]== s[i + 1]) count++;
   }
-
-  PRINT(count);
-
+  cout<<count<<endl;
   return 0;
 }

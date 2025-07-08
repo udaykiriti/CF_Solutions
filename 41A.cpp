@@ -1,5 +1,3 @@
-
-
 /*
     Codeforces Beta Round 40 (Div. 2) - Problem A: Translation
 
@@ -50,21 +48,14 @@ using namespace std;
   ios_base::sync_with_stdio(false); \
   cin.tie(NULL);                    \
   cout.tie(NULL)
-#define input2(x, y) cin >> x >> y
-#define EXIT return 0
-#define REVERSE(s) reverse(s.begin(), s.end())
-
 int main()
 {
   FastIO();
-  string s, t;
-  input2(s, t);
-  REVERSE(s);
-
+  string s, t; cin>>s>>t;
+  reverse(s.begin(),s.end());
   if (s == t)
     cout << "YES" << endl;
   else
     cout << "NO" << endl;
-
-  EXIT;
+  return 0;
 }

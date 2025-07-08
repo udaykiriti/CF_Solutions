@@ -1,5 +1,3 @@
-
-
 /*
     Codeforces Beta Round 55 (Div. 2) - Problem A: Word
 
@@ -64,10 +62,7 @@ using namespace std;
 int main()
 {
   FastIO();
-
-  string s;
-  input(s);
-
+  string s; cin>>s;
   int low = 0, up = 0;
 
   FOR(i, 0, s.size())
@@ -82,6 +77,5 @@ int main()
     TO_LOWER(s);
   else
     TO_UPPER(s);
-
   output(s);
 }

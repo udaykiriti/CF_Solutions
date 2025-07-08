@@ -1,5 +1,3 @@
-
-
 """
     Codeforces Beta Round 63 (Div. 2) - Problem A: Young Physicist
 

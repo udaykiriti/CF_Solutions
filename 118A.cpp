@@ -3,7 +3,6 @@ Problem Number: 118A
 Contest: Codeforces Beta Round 89 (Div. 2)
 Problem Link: https://codeforces.com/problemset/problem/118/A
 
-
 Problem: A. String Task
 
 Petya started to attend programming lessons. On the first lesson his task was to write a simple program.
@@ -42,7 +41,6 @@ Output:
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ll long long
 #define endl '\n'
 #define debug(n) cout << (n) << endl;
@@ -51,11 +49,8 @@ const ll INF = 2e18 + 99;
 int main()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-
-  string s, r = "";
-  cin >> s;
+  cin.tie(NULL); cout.tie(NULL);
+  string s, r = ""; cin >> s;
   transform(s.begin(), s.end(), s.begin(), ::tolower);
   for (auto i : s)
   {

@@ -1,5 +1,3 @@
-
-
 """
     Codeforces Round 173 (Div. 2) - Problem A: Bit++
 

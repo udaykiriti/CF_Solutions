@@ -1,5 +1,3 @@
-
-
 /*
 Problem: 263A - Beautiful Matrix
 Link: https://codeforces.com/problemset/problem/263/A
@@ -29,28 +27,19 @@ Output:
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define FOR(i, a, b) for (int i = a; i < b; ++i)
-#define input(x) cin >> x
-#define ABS(x) ((x) >= 0 ? (x) : -(x))
-#define CENTER 2
-#define PRINT(x) cout << x << endl
 #define endl '\n'
-#define FastIO                      \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(0);                       \
-  cout.tie(0);
-#define GG return 0;
 
 int main()
 {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   int arr[5][5], m = 0, n = 0;
-
   FOR(i, 0, 5)
   {
     FOR(j, 0, 5)
     {
-      input(arr[i][j]);
+      cin>>arr[i][j];
       if (arr[i][j] == 1)
       {
         m = i;
@@ -59,7 +48,7 @@ int main()
     }
   }
 
-  int moves = ABS(m - CENTER) + ABS(n - CENTER);
-  PRINT(moves);
-  GG
+  int moves = abs(m - 2) + abs(n - 2);
+  cout<<moves<<endl;
+  return 0;
 }

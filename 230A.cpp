@@ -1,5 +1,3 @@
-
-
 /* Problem: Dragons
 Kirito is stuck in a video game and needs to defeat dragons to progress. Each dragon has a strength and a bonus.
 Kirito starts with an initial strength `s`. If Kirito's strength is greater than a dragon's strength, he defeats it
@@ -29,14 +27,12 @@ NO
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ll long long
 #define endl '\n'
 #define FastIO                  \
   ios_base::sync_with_stdio(0); \
   cin.tie(0);                   \
   cout.tie(0);
-#define BYE return 0;
 #define PRINT_YES cout << "YES" << endl
 #define PRINT_NO cout << "NO" << endl
 #define FOR(i, a, b) for (int i = a; i < b; i++)
@@ -44,16 +40,11 @@ using namespace std;
 int main()
 {
   FastIO;
-
-  int s, n;
-  cin >> s >> n;
+  int s, n; cin >> s >> n;
   multimap<int, int> dragons;
-
-  // Read the strength and bonus of each dragon
   FOR(i, 0, n)
   {
-    int a, b;
-    cin >> a >> b;
+    int a, b; cin >> a >> b;
     dragons.insert({a, b});
   }
 
@@ -67,10 +58,10 @@ int main()
     else
     {
       PRINT_NO;
-      BYE;
+      return;
     }
   }
 
   PRINT_YES;
-  BYE;
+  return 0;
 }

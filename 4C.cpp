@@ -1,5 +1,3 @@
-
-
 /*
 Problem: 4C - Registration System (Codeforces)
 Link: https://codeforces.com/problemset/problem/4/C
@@ -12,7 +10,6 @@ If the name is already taken, the system should append the smallest integer such
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define fast_io                     \
   ios_base::sync_with_stdio(false); \
   cin.tie(0);                       \
@@ -22,15 +19,11 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   unordered_map<string, int> usernames;
-
   while (n--)
   {
-    string name;
-    cin >> name;
-
+    string name; cin >> name;
     if (usernames.count(name) == 0)
     {
       cout << "OK" << endl;

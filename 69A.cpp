@@ -1,5 +1,3 @@
-
-
 /*
     Codeforces Beta Round 63 (Div. 2) - Problem A: Young Physicist
 
@@ -70,28 +68,26 @@ const ll INF = 2e18 + 99;
 int main()
 {
   FastIO();
-  int n;
-  input(n);
-
+  int n; cin>>n;
   int arr[n][3];
 
   FORR(i, n)
-  input(arr[i][0]), input(arr[i][1]), input(arr[i][2]);
+   input(arr[i][0]), input(arr[i][1]), input(arr[i][2]);
 
   int sum = 0;
   FOR(i, 0, 3)
   {
     sum = 0;
     FORR(j, n)
-    sum += arr[j][i];
+      sum += arr[j][i];
 
     if (sum)
     {
       output("NO\n");
-      EXIT;
+      return 0;
     }
   }
 
   output("YES\n");
-  EXIT;
+  return 0;
 }

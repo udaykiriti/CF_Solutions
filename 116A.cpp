@@ -33,11 +33,8 @@ using namespace std;
 int main()
 {
   FastIO;
-
-  int n;
-  cin >> n;
+  int n; cin >> n;
   int a, b, maxi = 0, current = 0;
-
   // Process each stop
   for (int i = 0; i < n; i++)
   {
@@ -46,8 +43,6 @@ int main()
     current += b;              // Passengers entering
     maxi = max(maxi, current); // Update max capacity
   }
-
   cout << maxi << endl;
-
   BYE;
 }
