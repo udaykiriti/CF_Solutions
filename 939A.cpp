@@ -10,7 +10,6 @@ int main() {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     */
-
     int n, i, arr[5001], a, b, c;
     while (scanf("%d", &n) != EOF) {
         set<int> mySet;

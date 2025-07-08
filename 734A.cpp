@@ -47,26 +47,18 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-#define endl '\n'
-#define IF(cond, stmt) \
-  if (cond)            \
-  stmt
-#define ELSE_IF(cond, stmt) else if (cond) stmt
-#define ELSE(stmt) else stmt
 
-int main()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL); cout.tie(NULL);
-  int n, a = 0, d = 0;
-  cin >> n; string s; cin >> s;
-  for (int i = 0; i < n; i++)
-  {
-    IF(s[i] == 'A', a++);
-    ELSE_IF(s[i] == 'D', d++);
-  }
-  IF(a > d, cout << "Anton");
-  ELSE_IF(a < d, cout << "Danik");
-  ELSE(cout << "Friendship");
-  return 0;
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    int n, a = 0, d = 0;
+    string s; cin >> n >> s;
+    for (char c : s) {
+        if (c == 'A') a++;
+        else if (c == 'D') d++;
+    }
+    if (a > d) cout << "Anton";
+    else if (a < d) cout << "Danik";
+    else cout << "Friendship";
+    return 0;
 }
