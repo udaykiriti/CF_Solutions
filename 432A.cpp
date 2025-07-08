@@ -16,7 +16,6 @@ int main()
     if (p <= 5 - k)
       c++;
   }
-
   cout << c / 3 << endl;
   return 0;
 }

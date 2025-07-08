@@ -39,5 +39,4 @@ int main(){
   }
   cout<<sereja<<" "<<dima<<endl;
   return 0;
-
 }

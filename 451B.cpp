@@ -7,8 +7,7 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int n; cin >> n;
   vector<int> a(n), b(n);
   FOR (i,0,n)
   {
@@ -39,8 +38,7 @@ void solve()
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0);
+  cin.tie(0); cout.tie(0);
   solve();
   return 0;
 }
