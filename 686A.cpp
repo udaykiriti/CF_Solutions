@@ -1,11 +1,15 @@
 #include <bits/stdc++.h>
+#define ull unsigned long long
+#define uc unsigned char
+#define ui unsigned int
+
 int main()
 {
-  unsigned char op;
-  unsigned int n, d_ch = 0;
-  unsigned long long i_cr, c;
+  uc op;
+  ui n, d_ch = 0;
+  ull i_cr, c;
   std::cin >> n >> i_cr;
-  for (unsigned int i = 0; i < n; ++i)
+  for (ui i = 0; i < n; ++i)
   {
     std::cin >> op >> c;
     if (op == '+')

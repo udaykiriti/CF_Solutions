@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
+using namespace std;
 #define ll long long
 #define FOR(i, a, b) for (ll i = a; i < b; i++)
 #define FOR_REV(i, a, b) for (ll i = a; i >= b; i--)
 #define MIN3(a, b, c) min(a, min(b, c))
 #define PRINT(x) cout << x << endl
-using namespace std;
 
 int main()
 {

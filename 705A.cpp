@@ -15,7 +15,6 @@ int main()
       result += "I hate";
     else
       result += "I love";
-
     if (i != n - 1)
       result += " that ";
   }
