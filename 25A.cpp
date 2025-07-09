@@ -36,16 +36,12 @@ int main()
   FastIO;
   int n; cin >> n;
   vector<int> nums(n);
-  // Read the input numbers
   FOR(i, 0, n)
-  cin >> nums[i];
+    cin >> nums[i];
   int even_count = 0;
-  // Count the number of even numbers
   FOR(i, 0, n)
     if (nums[i] % 2 == 0)
       even_count++;
-
-  // Find the index of the number that differs in evenness
   FOR(i, 0, n)
   {
     if ((even_count > 1 && nums[i] % 2 != 0) || (even_count == 1 && nums[i] % 2 == 0))
