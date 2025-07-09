@@ -1,5 +1,3 @@
-
-
 """
 Problem: Domino piling
 You are given a rectangular board of M × N squares. Also you are given an unlimited number of standard domino pieces of 2 × 1 squares.
@@ -30,9 +28,6 @@ Output:
 
 def main():
     m, n = map(int, input().split())
-    
-    # Calculate the maximum number of dominoes that can fit
     domino_area = 2
     print((m * n) // domino_area)
-
 main()

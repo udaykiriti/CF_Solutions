@@ -47,24 +47,17 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
-#define input(x) cin >> x
-#define output(x) cout << x
-#define FastIO()                    \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);                    \
-  cout.tie(NULL)
 #define FOR(i, a, b) for (int i = a; i < b; i++)
 #define TO_LOWER(s) transform(s.begin(), s.end(), s.begin(), ::tolower)
 #define TO_UPPER(s) transform(s.begin(), s.end(), s.begin(), ::toupper)
 
 int main()
 {
-  FastIO();
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   string s; cin>>s;
   int low = 0, up = 0;
-
   FOR(i, 0, s.size())
   {
     if (s[i] >= 'a')
@@ -77,5 +70,5 @@ int main()
     TO_LOWER(s);
   else
     TO_UPPER(s);
-  output(s);
+  cout<<s<<endl;
 }

@@ -28,17 +28,11 @@ Output:
 #include <bits/stdc++.h>
 using namespace std;
 
-#define FastIO                  \
-  ios_base::sync_with_stdio(0); \
-  cin.tie(0);                   \
-  cout.tie(0);
-#define BYE return 0;
-
 int main()
 {
-  FastIO;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   int m, n; cin >> m >> n;
-  // Calculate the maximum number of dominoes that can fit
   int domino_area = 2;
   cout << (m * n) / domino_area << endl;
   return 0;

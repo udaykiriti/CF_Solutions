@@ -1,5 +1,3 @@
-
-
 """
 Problem: Way Too Long Words
 Sometimes some words like "localization" or "internationalization" are so long that writing them many times in one text is quite tiresome.
@@ -34,20 +32,14 @@ p43s
 """
 
 def main():
-    # Read the number of words
     t = int(input())
     
-    # Process each word
     for _ in range(t):
         word = input()
-        
-        # Check if the word is too long
         if len(word) > 10:
-            # Abbreviate the word
             abbreviation = word[0] + str(len(word) - 2) + word[-1]
             print(abbreviation)
         else:
-            # Print the word as is
             print(word)
 
 if __name__ == "__main__":

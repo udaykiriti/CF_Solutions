@@ -1,5 +1,3 @@
-
-
 """
     Codeforces Beta Round 55 (Div. 2) - Problem A: Word
 
@@ -51,7 +49,6 @@ def main():
     s = input().strip()
     lower = sum(1 for ch in s if ch.islower())
     upper = len(s) - lower
-
     if lower >= upper:
         print(s.lower())
     else:

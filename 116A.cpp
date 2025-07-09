@@ -1,4 +1,3 @@
-
 /* Problem: Tram
 A tram has `n` stops, and at each stop, some passengers exit the tram, and some enter.
 You need to calculate the minimum tram capacity required so that no passenger is left behind at any stop.
@@ -24,25 +23,19 @@ Output:
 #include <bits/stdc++.h>
 using namespace std;
 
-#define FastIO                  \
-  ios_base::sync_with_stdio(0); \
-  cin.tie(0);                   \
-  cout.tie(0);
-#define BYE return 0;
-
 int main()
 {
-  FastIO;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   int n; cin >> n;
   int a, b, maxi = 0, current = 0;
-  // Process each stop
   for (int i = 0; i < n; i++)
   {
     cin >> a >> b;
-    current -= a;              // Passengers exiting
-    current += b;              // Passengers entering
-    maxi = max(maxi, current); // Update max capacity
+    current -= a;    
+    current += b;              
+    maxi = max(maxi, current); 
   }
   cout << maxi << endl;
-  BYE;
+  return 0;
 }

@@ -47,47 +47,23 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    int n; cin >> n;
+    int arr[n][3];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i][0] >> arr[i][1] >> arr[i][2];
 
-#define ll long long
-
-const ll INF = 2e18 + 99;
-
-#define endl '\n'
-#define FastIO()                    \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);                    \
-  cout.tie(NULL)
-#define input(x) cin >> x
-#define output(x) cout << x
-#define debug(x) cout << (x) << endl
-
-#define FOR(i, a, b) for (int i = a; i < b; i++)
-#define FORR(i, a) for (int i = 0; i < a; i++)
-#define EXIT return 0
-
-int main()
-{
-  FastIO();
-  int n; cin>>n;
-  int arr[n][3];
-
-  FORR(i, n)
-   input(arr[i][0]), input(arr[i][1]), input(arr[i][2]);
-
-  int sum = 0;
-  FOR(i, 0, 3)
-  {
-    sum = 0;
-    FORR(j, n)
-      sum += arr[j][i];
-
-    if (sum)
-    {
-      output("NO\n");
-      return 0;
+    for (int i = 0; i < 3; i++) {
+        int sum = 0;
+        for (int j = 0; j < n; j++)
+            sum += arr[j][i];
+        if (sum != 0) {
+            cout << "NO\n";
+            return 0;
+        }
     }
-  }
-
-  output("YES\n");
-  return 0;
+    cout << "YES\n";
+    return 0;
 }

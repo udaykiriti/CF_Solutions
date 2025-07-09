@@ -1,5 +1,3 @@
-
-
 """
 Problem: Tram
 A tram has `n` stops, and at each stop, some passengers exit the tram, and some enter.
@@ -24,21 +22,14 @@ Output:
 """
 
 def main():
-    # Read the number of stops
     n = int(input())
-    
-    # Initialize variables
     current_capacity = 0
-    max_capacity = 0
-    
-    # Process each stop
+    max_capacity = 0    
     for _ in range(n):
         a, b = map(int, input().split())
-        current_capacity -= a  # Passengers exiting
-        current_capacity += b  # Passengers entering
-        max_capacity = max(max_capacity, current_capacity)  # Update max capacity
-    
-    # Print the result
+        current_capacity -= a  
+        current_capacity += b  
+        max_capacity = max(max_capacity, current_capacity)
     print(max_capacity)
 
 main()

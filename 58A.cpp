@@ -27,22 +27,15 @@ NO
 
 #include <bits/stdc++.h>
 using namespace std;
-
-#define ll long long
 #define endl '\n'
+#define ll long long
 #define debug(n) cout << (n) << endl;
 const ll INF = 2e18 + 99;
-#define BYE return 0;
-
-void FastIO()
-{
-  ios_base::sync_with_stdio(0);
-  cin.tie(0); cout.tie(0);
-}
 
 int main()
 {
-  FastIO();
+  ios_base::sync_with_stdio(0);
+  cin.tie(0); cout.tie(0);
   string s, r = ""; cin >> s;
   // Check if the word contains "hello" in order
   for (auto i : s)
@@ -58,7 +51,6 @@ int main()
     else if (i == 'o' && r[r.length() - 1] == 'l' && r[r.length() - 2] == 'l' && r[r.length() - 3] == 'e')
       r += i;
   }
-
   // If the resulting string is "hello", print "YES", otherwise print "NO"
   (r == "hello") ? cout << "YES" << endl : cout << "NO" << endl;
   return 0;

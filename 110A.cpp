@@ -32,18 +32,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
-
-void FastIO()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
-}
+#define ll long long
 
 int main()
 {
-  FastIO();
-  long long n; cin >> n;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  ll n; cin >> n;
   int check = 0;
   int rem;
   while (n != 0)

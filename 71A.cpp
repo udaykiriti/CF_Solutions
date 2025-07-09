@@ -36,15 +36,10 @@ using namespace std;
 #define BYE return 0;
 #define FOR(i, a, b) for (int i = a; i < b; i++)
 
-void FastIO()
+int main()
 {
   ios_base::sync_with_stdio(0);
   cin.tie(0); cout.tie(0);
-}
-
-int main()
-{
-  FastIO();
   int t; cin >> t;
   string s[t];
 
@@ -56,6 +51,5 @@ int main()
     cout << s[i][0] << s[i].size() - 2 << s[i][s[i].size() - 1] << endl;
   else
     cout << s[i] << endl;
-
   return 0;
 }

@@ -40,17 +40,14 @@
     Output:
     NO
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
-#define FastIO()                    \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);                    \
-  cout.tie(NULL)
+
 int main()
 {
-  FastIO();
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   string s, t; cin>>s>>t;
   reverse(s.begin(),s.end());
   if (s == t)

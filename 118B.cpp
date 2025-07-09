@@ -3,15 +3,10 @@
 using namespace std;
 #define endl '\n'
 
-void FastIO()
+int main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL); cout.tie(NULL);
-}
-
-int main()
-{
-  FastIO();
   int n; cin >> n;
   for (int row = -n; row <= n; ++row)
   {

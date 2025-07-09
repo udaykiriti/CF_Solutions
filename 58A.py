@@ -1,5 +1,3 @@
-
-
 """
 Problem: Chat room
 Vasya has recently learned to type and log on to the Internet. He immediately entered a chat room and decided to say hello to everybody.
@@ -29,21 +27,14 @@ NO
 """
 
 def main():
-    # Read the input string
     s = input()
     target = "hello"
     index = 0
-
-    # Iterate through the characters of the input string
     for char in s:
-        # Check if the current character matches the target character
         if char == target[index]:
             index += 1
-        # If all characters of "hello" are found, break the loop
         if index == len(target):
             break
-
-    # If the entire "hello" is found, print "YES", otherwise print "NO"
     print("YES" if index == len(target) else "NO")
 
 if __name__ == "__main__":

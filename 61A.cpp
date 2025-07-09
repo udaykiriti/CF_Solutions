@@ -15,6 +15,5 @@ int main()
       s2 += '0';
   }
   cout << s2;
-
   return 0;
 }

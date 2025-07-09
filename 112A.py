@@ -1,7 +1,3 @@
-# Codeforces Username: Polymath__
-# Email: Udaykiriti9@gmail.com
-
-
 """
 Problem: Petya and Strings
 Petya loves comparing strings lexicographically. He has two strings `s1` and `s2` and wants to compare them in a case-insensitive manner.
@@ -31,15 +27,11 @@ Output:
 """
 
 def main():
-    # Read the two strings
     s1 = input().strip()
     s2 = input().strip()
-    
-    # Convert both strings to lowercase for case-insensitive comparison
     s1 = s1.lower()
     s2 = s2.lower()
     
-    # Compare the strings lexicographically
     if s1 > s2:
         print(1)
     elif s1 < s2:
