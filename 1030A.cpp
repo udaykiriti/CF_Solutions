@@ -41,12 +41,10 @@
 using namespace std;
 #define endl '\n'
 #define FOR(i, a, b) for (int i = a; i < b; i++)
-#define EXIT return 0
 void FastIO()
 {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
+  cin.tie(NULL); cout.tie(NULL);
 }
 
 int main()
@@ -64,5 +62,5 @@ int main()
     }
   }
   cout << "EASY";
-  EXIT;
+  return 0;
 }
