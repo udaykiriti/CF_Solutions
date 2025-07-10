@@ -319,15 +319,12 @@ int main(void)
   cout << "========================== compilation done ==========================\n";
 #endif
 
-  stop_sync;
-  untie_ios;
-
+  stop_sync; untie_ios;
   int t(1), tcase(0);
   cin >> t;
   while (++tcase, t--)
   {
-    i64 m, a, b, c;
-    cin >> m >> a >> b >> c;
+    i64 m, a, b, c; cin >> m >> a >> b >> c;
     i64 ans = 0;
     if (a >= m)
       ans += m;

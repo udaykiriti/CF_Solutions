@@ -1,15 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define FastIO             \
-  ios::sync_with_stdio(0); \
-  cin.tie(0)
 #define endl '\n'
 #define BYE return 0
 long long ara[100005];
 
 int main()
 {
-  FastIO;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   long long t, n, m, i, sum, p, ans;
   string s; cin >> t;
   while (t--)

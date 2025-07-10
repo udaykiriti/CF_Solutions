@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define stop_sync ios::sync_with_stdio(false)
 #define untie_ios cin.tie(nullptr)
 #define ln "\n"

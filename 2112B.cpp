@@ -3,6 +3,7 @@ using namespace std;
 #define endl '\n'
 #define pb push_back
 #define debug(x) cout << (x) << endl
+#define FOR(i, a, b) for (int i = a; i < b; i++)
 const int I = 1e9;
 
 int main()
@@ -14,7 +15,7 @@ int main()
   {
     int n; cin >> n;
     vector<int> a(n);
-    for (int i = 0; i < n; ++i)
+    FOR ( i, 0, n)
       cin >> a[i];
 
     if (n < 2)
@@ -24,7 +25,7 @@ int main()
     }
 
     bool b = false;
-    for (int i = 0; i < n - 1; ++i)
+    FOR (i,0, n - 1)
       if (abs(a[i] - a[i + 1]) <= 1)
       {
         b = true;
@@ -38,7 +39,7 @@ int main()
     }
 
     int m = I;
-    for (int j = 0; j < n - 1; ++j)
+    FOR ( j , 0, n - 1)
     {
       vector<int> r(n, I), R(n, -I);
       if (j + 1 < n)

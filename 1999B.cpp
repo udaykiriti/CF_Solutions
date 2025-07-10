@@ -36,7 +36,7 @@
 #define is(x) cout << ((x) ? "YES\n" : "NO\n");
 #define point(x) cout << fixed << setprecision(x);
 #define endd '\n'
-#define SEEYAH return;
+#define SEEYAH return
 #define BYE return 0
 using namespace std;
 vp directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
@@ -65,7 +65,7 @@ void solve()
       s++;
   }
   cout << s << endd;
-  SEEYAH
+  SEEYAH;
 }
 int main()
 {

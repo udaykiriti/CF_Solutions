@@ -1,21 +1,16 @@
 #include <bits/stdc++.h>
-#define FastIO                   \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(0), cout.tie(0)
 #define ll long long
 #define vi vector<int>
 #define vp vector<pair<int, int>>
 #define yes cout << "YES\n";
 #define no cout << "NO\n";
 #define is(x) cout << ((x) ? "YES\n" : "NO\n");
-#define THENGEY return;
-#define BYE return 0
+#define THENGEY return
 using namespace std;
 
 void solve()
 {
   int n, s, m; cin >> n >> s >> m;
-
   vector<pair<int, int>> intervals(n);
   for (auto &i : intervals)
     cin >> i.first >> i.second;
@@ -33,13 +28,14 @@ void solve()
     can = true;
 
   is(can)
-      THENGEY
+      THENGEY;
 }
 
 int main()
 {
-  FastIO;
-  ll t = 1; cin >> t;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  ll t; cin >> t;
   while (t--) solve();
-  BYE;
+  return 0;
 }

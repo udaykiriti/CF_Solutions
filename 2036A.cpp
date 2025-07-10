@@ -1,22 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define FOR(i,a,b) for(int i=a;i<b;i++)
 
 void solve()
 {
   int n; cin >> n;
   vector<int> notes(n);
-  for (int i = 0; i < n; ++i) cin >> notes[i];
+  FOR (i , 0, n) 
+    cin >> notes[i];
 
-  for (int i = 1; i < n; ++i)
+  FOR (i,1, n)
   {
     int diff = abs(notes[i] - notes[i - 1]);
     if (diff != 5 && diff != 7)
     {
-      cout << "NO\n";
+      cout << "NO"<<endl;
       return;
     }
   }
-  cout << "YES\n";
+  cout << "YES"<<endl;
 }
 
 int main()

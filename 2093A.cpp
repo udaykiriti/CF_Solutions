@@ -1,31 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
-#define EXIT return 0
-#define input(x) cin >> x
-#define YES cout << "YES" << endl
-#define NO cout << "NO" << endl
-
-void FastIO()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(nullptr); cout.tie(nullptr);
-}
 
 void solve()
 {
-  long k;
-  input(k);
+  long k; cin>>k;
   if (k % 2)
-    YES;
+    cout<<"YES"<<endl;
   else
-    NO;
+    cout<<"NO"<<endl;
 }
 
 int main()
 {
-  FastIO();
-  long t; input(t);
+  ios_base::sync_with_stdio(false);
+  cin.tie(nullptr); cout.tie(nullptr);
+  long t; cin>>t;
   while (t--) solve();
-  EXIT;
+  return 0;
 }

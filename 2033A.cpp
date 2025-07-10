@@ -1,18 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+#define endl '\n'
 #define stop_sync ios::sync_with_stdio(false)
 #define untie_ios cin.tie(nullptr)
-#define ln "\n"
-#define pb push_back
-#define sz(x) int((x).size())
-#define All(x) (x).begin(), (x).end()
-#define BYE return 0;
-#define multicase \
-  int t;          \
-  cin >> t;       \
-  while (t--)
-
+#define BYE return 0
 using i64 = long long;
 using vi = vector<int>;
 
@@ -33,16 +24,16 @@ void solve()
   }
 
   if (turn == 0)
-    cout << "Kosuke" << ln;
+    cout << "Kosuke" << endl;
 
   else
-    cout << "Sakurako" << ln;
+    cout << "Sakurako" <<endl;
 }
 
 int main()
 {
-  stop_sync;
-  untie_ios;
-  multicase solve();
-  BYE
+  stop_sync; untie_ios;
+  int t; cin>>t;
+  while(t--) solve();
+  BYE;
 }

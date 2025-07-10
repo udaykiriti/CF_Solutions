@@ -1,17 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define FOR(i, a, b) for (int i = a; i < b; i++)
 
 void solve()
 {
   int n, m; cin >> n >> m;
   vector<string> matrix(n);
-  for (int i = 0; i < n; ++i) cin >> matrix[i];
-
+  FOR (i, 0, n)
+    cin >> matrix[i];
   vector<int> rowXOR(n, 0), colXOR(m, 0);
 
-  for (int i = 0; i < n; ++i)
+  FOR (i, 0, n)
   {
-    for (int j = 0; j < m; ++j)
+    FOR ( j ,0, m)
     {
       int val = matrix[i][j] - '0';
       rowXOR[i] ^= val;

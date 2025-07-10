@@ -62,19 +62,17 @@ Explanation:
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define ln '\n'
 #define EXIT return 0
 #define FOR(i, a, b) for (int i = a; i < b; i++)
-#define input(x) cin >> x
 
 void solve()
 {
-  int n; input(n);
+  int n; cin>>n;
   map<int, int> freq;
   FOR(i, 0, n)
   {
-    int x; input(x);
+    int x; cin>>x;
     freq[x]++;
   }
   int score = 0;
@@ -82,15 +80,10 @@ void solve()
   cout << score << ln;
 }
 
-void FastIO()
+int main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr); cout.tie(nullptr);
-}
-
-int main()
-{
-  FastIO();
   int t; cin >> t;
   while (t--) solve();
   EXIT;
