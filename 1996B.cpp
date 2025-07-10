@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
 
 void solve()
 {
@@ -13,7 +14,7 @@ void solve()
             w[row / k][col / k] = v[row][col];
 
     for (int i = 0; i < w.size(); i++)
-        cout << w[i] << '\n';
+        cout << w[i] << endl;
 }
 
 int main()

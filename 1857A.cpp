@@ -18,10 +18,8 @@ void solve()
   ll sum = 0;
   FOR(i, 0, n - 1)
   {
-    cin >> arr[i];
-    sum += arr[i];
+    cin >> arr[i]; sum += arr[i];
   }
-
   if (sum % 2 == 0)
     cout << "YES" << endl;
   else

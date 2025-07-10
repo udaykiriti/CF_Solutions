@@ -9,7 +9,6 @@ using ll = long long;
 #define all(x) (x).begin(), (x).end()
 #define FOR(i, a, b) for (int i = (a); i < (b); ++i)
 #define FORE(i, a, b) for (int i = (a); i <= (b); ++i)
-
 const int I = 1e9;
 
 int main()

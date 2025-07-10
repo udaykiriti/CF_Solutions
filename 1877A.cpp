@@ -1,8 +1,3 @@
-/*
-Problem link: https://codeforces.com/problemset/problem/1877/A
-Problem name: 1877A - A. Goals of victory
-*/
-
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
@@ -17,8 +12,7 @@ void fastIO()
 
 void solve()
 {
-  int n, freqSum = 0;
-  cin >> n;
+  int n, freqSum = 0; cin >> n;
   FOR(i, 0, n - 1)
   {
     int freq; cin >> freq;

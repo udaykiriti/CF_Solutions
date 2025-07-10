@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ln "\n"
-#define pb push_back
-#define All(x) (x).begin(), (x).end()
+#define  pb push_back
 
 int main(){
     ios::sync_with_stdio(false);

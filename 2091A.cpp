@@ -327,10 +327,8 @@ int main(void)
   cin >> t;
   while (++tcase, t--)
   {
-    int n;
-    cin >> n;
-    vi a(n);
-    scanv(a);
+    int n; cin >> n;
+    vi a(n); scanv(a);
     map<int, int> m;
     int cnt = 1;
     for (int i = 0; i < n; ++i)

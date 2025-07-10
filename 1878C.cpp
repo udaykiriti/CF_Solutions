@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
 #define FastIO()                    \
   ios_base::sync_with_stdio(false); \
@@ -15,9 +14,7 @@ typedef long long ll;
 
 void solve()
 {
-  ll n, k, x;
-  cin >> n >> k >> x;
-
+  ll n, k, x; cin >> n >> k >> x;
   ll mn = k * (k + 1) / 2;
   ll mx = n * k - k * (k - 1) / 2;
 
@@ -30,11 +27,7 @@ void solve()
 int main()
 {
   FastIO();
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    solve();
-  }
+  int t; cin >> t;
+  while (t--) solve();
   return 0;
 }

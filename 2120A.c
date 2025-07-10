@@ -18,8 +18,7 @@ bool p(int *a, int n) {
 }
 
 int main() {
-    int t;
-    scanf("%d", &t);
+    int t; scanf("%d", &t);
     while (t--) {
         int r[N][2];
         LL a = 0;
@@ -27,7 +26,6 @@ int main() {
             scanf("%d %d", &r[i][0], &r[i][1]);
             a += 1LL * r[i][0] * r[i][1];
         }
-
         int s = (int)floor(sqrt(a));
         bool ok = false;
 
@@ -45,9 +43,7 @@ int main() {
 
             } while (p(q, N) && !ok);
         }
-
         printf("%s\n", ok ? "YES" : "NO");
     }
-
     return 0;
 }

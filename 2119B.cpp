@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
-#define F(i,a,b) for(int i=(a); i<(b); i++)
+#define FOR(i,a,b) for(int i=(a); i<(b); i++)
 #define MAX(a,b) ((a) > (b) ? (a) : (b))
 #define SUM(v) accumulate((v).begin(), (v).end(), 0LL)
 #define ll long long
@@ -12,7 +12,7 @@ void solve() {
     int p, q, r, s; cin >> p >> q >> r >> s;
     vector<int> v(n);
     int m = 0;
-    F(i,0,n) {
+    FOR(i,0,n) {
         cin >> v[i];
         m = MAX(m, v[i]);
     }

@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #define ll long long int
-#define nline '\n'
+#define endl '\n'
 using namespace std;
 
 void solve()
@@ -24,10 +24,10 @@ void solve()
     }
   }
 
-  cout << ans.size() << nline;
+  cout << ans.size() << endl;
   for (auto itr : ans)
     cout << itr << " ";
-  cout << nline;
+  cout << endl;
 }
 
 int main()

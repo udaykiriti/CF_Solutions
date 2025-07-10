@@ -42,11 +42,9 @@ using namespace std;
 vp directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
 void solve()
 {
-  ll a1, a2, b1, b2;
-  cin >> a1 >> a2 >> b1 >> b2;
+  ll a1, a2, b1, b2; cin >> a1 >> a2 >> b1 >> b2;
   int s = 0;
-  vp v = {
-      {a1, b1}, {a2, b2}, {a1, b2}, {a2, b1}, {a2, b1}, {a1, b2}, {a2, b2}, {a1, b1}};
+  vp v = {{a1, b1}, {a2, b2}, {a1, b2}, {a2, b1}, {a2, b1}, {a1, b2}, {a2, b2}, {a1, b1}};
 
   for (int i = 0; i < sz(v); i += 2)
   {

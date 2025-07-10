@@ -39,8 +39,7 @@ for tt in range(t):
                 break
             
     out = 'YES' if pos else 'NO'
-    outs.append(out)
-    
+    outs.append(out)  
     
 for out in outs:
     print(out)

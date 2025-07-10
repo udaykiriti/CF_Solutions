@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-#define F ios::sync_with_stdio(0);cin.tie(0)
-#define rep(i,n) for(int i=0;i<(n);++i)
+#define FOR(i,n) for(int i=0;i<(n);++i)
 #define all(x) begin(x), end(x)
 #define pb push_back
 #define R(x) reverse(all(x))
@@ -18,13 +16,13 @@ void solve(){
     N=2*n;
     G g(N),gr(N);
 
-    rep(z,k){
+    FOR(z,k){
         B a[300]; int m; cin>>m;
         while(m--){
             int u,v; cin>>u>>v; --u,--v;
             a[u][v]=a[v][u]=1;
         }
-        rep(u,n)rep(v,u){
+        FOR(u,n)FOR(v,u){
             B au=a[u],av=a[v];
             au[u]=au[v]=av[u]=av[v]=0;
             if(au!=av) continue;
@@ -49,7 +47,7 @@ void solve(){
         for(int y:g[x]) if(!vis[y]) dfs1(y);
         ord.pb(x);
     };
-    rep(i,N) if(!vis[i]) dfs1(i);
+    FOR(i,N) if(!vis[i]) dfs1(i);
 
     V<int> comp(N,-1); int cid=0;
     function<void(int)> dfs2=[&](int x){
@@ -60,11 +58,14 @@ void solve(){
     for(int x:ord) if(comp[x]==-1) dfs2(x), ++cid;
 
     bool ok=1;
-    rep(i,n) if(comp[Gt(i,0)]==comp[Gt(i,1)]) ok=0;
+    FOR(i,n) if(comp[Gt(i,0)]==comp[Gt(i,1)]) ok=0;
     cout<<(ok?"Yes\n":"No\n");
 }
 
 int main(){
-    F; int t; cin>>t;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    int t; if(!cin>>t) return 0;
     while(t--) solve();
+    return 0;
 }

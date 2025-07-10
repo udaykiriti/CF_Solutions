@@ -16,7 +16,6 @@ void solve()
       if (s[i] != "abc"[i])
         mismatches++;
     }
-
     if (mismatches == 2)
       cout << "YES" << endl;
     else

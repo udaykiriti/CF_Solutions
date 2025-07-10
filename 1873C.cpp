@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long int
-#define nline endl
+#define endl '\n'
 #define FOR(i, a, b) for (int i = (a); i < (b); i++)
 
 ll scoreBoard[10][10] = {
@@ -28,7 +28,7 @@ void solve()
       score += scoreBoard[i][j];
     }
   }
-  cout << score << nline;
+  cout << score << endl;
 }
 
 int main()

@@ -4,9 +4,6 @@ using i64 = long long int;
 #define ln "\n"
 #define stop_sync ios::sync_with_stdio(false)
 #define untie_ios cin.tie(nullptr)
-#define FIXED(x) cout << fixed << setprecision(x)
-#define FOR(i, a, b) for (int i = a; i < b; i++)
-#define BYE return 0
 
 void solve()
 {
@@ -37,5 +34,5 @@ int main()
   stop_sync; untie_ios;
   int t; cin >> t;
   while (t--) solve();
-  BYE;
+  return 0;
 }

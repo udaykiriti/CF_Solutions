@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
-#define FastIO()                    \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(nullptr);                 \
-  cout.tie(nullptr);
 #define FOR(i, a, b) for (int i = (a); i <= (b); i++)
 #define FORk(i, a, b, k) for (int i = (a); i <= (b); i += (k))
 #define RFOR(i, a, b) for (int i = (a); i >= (b); i--)
@@ -15,7 +11,7 @@ void solve()
   long n, m; cin >> n >> m;
   string x, s; cin >> x >> s;
   int cnt = -1;
-  for (long p = 0; p <= 6; p++)
+  FOR (p ,0,6)
   {
     if (x.find(s) != string::npos)
     {
@@ -29,7 +25,8 @@ void solve()
 
 int main()
 {
-  FastIO();
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   int t; cin >> t;
   while (t--) solve();
   return 0;

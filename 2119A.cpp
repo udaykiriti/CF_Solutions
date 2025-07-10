@@ -1,28 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-#define FAST_IO ios::sync_with_stdio(false); cin.tie(nullptr)
-#define TC int _t; cin >> _t; while (_t--)
-#define OUT(x) cout << (x) << '\n'
 
 void solve() {
-    int p, q, u, v; cin >> p >> q >> u >> v;
+    ll p, q, u, v; cin >> p >> q >> u >> v;
     if (p == q) {
-        OUT(0);
+        cout<<(0);
     } else if (p > q) {
-        OUT((p % 2 == 1 && q == p - 1) ? v : -1);
+        cout<<((p % 2 == 1 && q == p - 1) ? v : -1);
     } else {
-        int d = q - p;
-        int m = (d + (p % 2)) / 2;
-        int n = d - m;
-        OUT(m * u + n * min(u, v));
+        ll d = q - p;
+        ll m = (d + (p % 2)) / 2;
+        ll n = d - m;
+        cout<<(m * u + n * min(u, v));
     }
 }
 
 int main() {
-    FAST_IO;
-    TC {
-        solve();
-    }
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    ll t; cin>>t;
+    while(t--) solve();
     return 0;
 }

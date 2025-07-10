@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define pb push_back
 #define mp make_pair
 #define F first
@@ -9,15 +8,12 @@ using namespace std;
 #define pii pair<int, int>
 #define vpi vector<pii>
 #define all(x) x.begin(), x.end()
-#define fast                   \
-  ios::sync_with_stdio(false); \
-  cin.tie(0)
-
 const int N = 1e5 + 5;
 
 int main()
 {
-  fast;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   int t; cin >> t;
   while (t--)
   {
@@ -29,7 +25,6 @@ int main()
       a[u].pb(mp(v, i));
       a[v].pb(mp(u, i));
     }
-
     int p = -1;
     for (int i = 1; i <= n; ++i)
       if (a[i].size() == 2)
@@ -37,7 +32,6 @@ int main()
         p = i;
         break;
       }
-
     if (p == -1)
     {
       cout << "NO\n";
@@ -46,17 +40,13 @@ int main()
 
     int x = a[p][0].F, y = a[p][1].F;
     int ix = a[p][0].S, iy = a[p][1].S;
-
     vector<bool> v(n - 1);
     v[ix] = v[iy] = 1;
-
     vpi o;
-    o.pb(mp(x, p));
-    o.pb(mp(p, y));
+    o.pb(mp(x, p)); o.pb(mp(p, y));
 
     stack<tuple<int, int, bool>> s;
-    s.emplace(x, p, 1);
-    s.emplace(y, p, 0);
+    s.emplace(x, p, 1); s.emplace(y, p, 0);
 
     while (!s.empty())
     {

@@ -17,7 +17,7 @@ void solve()
       d++;
   }
   long cnt = std::min(a, n) + std::min(b, n) + std::min(c, n) + std::min(d, n);
-  std::cout << cnt << '\n';
+  std::cout << cnt << std::endl;
 }
 
 int main()

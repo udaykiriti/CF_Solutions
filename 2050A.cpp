@@ -2,13 +2,14 @@
 using namespace std;
 #define endl '\n'
 #define BYE return 0
-long long ara[100005];
+#define ll long long
+ll ara[100005];
 
 int main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL); cout.tie(NULL);
-  long long t, n, m, i, sum, p, ans;
+  ll t, n, m, i, sum, p, ans;
   string s; cin >> t;
   while (t--)
   {

@@ -1,7 +1,6 @@
 t = int(input())
 outs = []
 
-
 for tt in range(t):
     n, k = map(int, input().split())
     c = list(map(int, input().split()))
@@ -19,7 +18,6 @@ for tt in range(t):
             
     out = k-1 if pos else n
     outs.append(out)
-    
     
 for out in outs:
     print(out)

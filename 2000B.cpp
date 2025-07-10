@@ -12,7 +12,6 @@ using i64 = long long;
 void solve()
 {
   i64 n, x; cin >> n >> x;
-
   i64 left = x - 1, right = x + 1;
   bool rule = true;
 
@@ -26,7 +25,6 @@ void solve()
     else
       rule = false;
   }
-
   cout << (rule ? "YES" : "NO") << ln;
 }
 

@@ -12,8 +12,7 @@ int main()
     long prev; scanf("%ld", &prev);
     for (long p = 1; p < n; p++)
     {
-      long x;
-      scanf("%ld", &x);
+      long x; scanf("%ld", &x);
       if (prev <= x)
       {
         long num = 1 + (x - prev) / 2;
@@ -25,7 +24,6 @@ int main()
       }
       prev = x;
     }
-
     printf("%ld\n", sorted ? minnum : 0);
   }
 }

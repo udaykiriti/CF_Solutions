@@ -1,28 +1,7 @@
-#include <bits/stdc++.h>ss
-#define all(a) (a).begin(), (a).end()
-#define endl "\n"
-#define vec std::vector
-#define pii std::pair<int, int>
-#define se second
-#define fi first
-#define pb push_back
-#define maxel(v) *max_element(v.begin(), v.end())
-#define minel(v) *min_element(v.begin(), v.end())
-#define yes std::cout << "YES\n";
-#define m1 std::cout << "-1\n";
-#define no std::cout << "NO\n";
-
-typedef int64_t ll;
-typedef unsigned long long ull;
-typedef long double ld;
-
-const ll mod = 1e9 + 7;
-const ll mod2 = 1e9 + 9;
-const ll mod3 = 998244353;
-const double pi = 3.141592653589793238;
-const long double EPS = 1e-9;
-const int MAXN = 1e5 * 5;
+#include <bits/stdc++.h>
 using namespace std;
+using ll=long long; 
+#define endl "\n"
 
 void solve() {
     int n; ll k; cin >> n >> k;

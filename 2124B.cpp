@@ -3,7 +3,7 @@ using namespace std;
 #define ll long long
 
 void solve() {
-    int n; cin >> n;
+    ll n; cin >> n;
     vector<ll> a(n), m(n), s(n);
     for (int i = 0; i < n; i++) cin >> a[i];
     m[0] = a[0];

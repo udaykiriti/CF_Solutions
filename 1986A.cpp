@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n';
-typedef vector<int> vi;//using vi=vector<int> or #define vi vector<int>
+typedef vector<int> vi;//using vi=vector<int> || #define vi vector<int>
 
 void solve()
 {

@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
+#define ll long long
 
 void solve()
 {
-  long k; cin>>k;
+  ll k; cin>>k;
   if (k % 2)
     cout<<"YES"<<endl;
   else

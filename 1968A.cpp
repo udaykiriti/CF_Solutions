@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define debug(x) cout<<(x)<<endl
 
 void solve()
 {
@@ -14,7 +16,7 @@ void solve()
       bestY = y;
     }
   }
-  cout << bestY << '\n';
+  cout << bestY << endl;
 }
 
 int main()

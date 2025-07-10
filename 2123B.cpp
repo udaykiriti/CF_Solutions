@@ -19,6 +19,6 @@ void solve() {
 int main() {
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr); std::cout.tie(nullptr);
-    int t; std::cin >> t;
+    int t; if(!std::cin >> t) return 0;
     while (t--) solve();
 }

@@ -9,8 +9,7 @@ int main() {
     cin.tie(nullptr); cout.tie(NULL);
     int t; cin >> t;
     while (t--) {
-        ll n, res = 1;
-        cin >> n;
+        ll n, res = 1; cin >> n;
         while (n >= 4) n /= 4, res *= 2;
         cout << res << '\n';
     }

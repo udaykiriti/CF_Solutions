@@ -1,10 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define ll long long
 
 struct Edge
 {
   int to;
-  long long w;
+  ll w;
 };
 
 int n, m, q;
@@ -67,21 +69,17 @@ bool scc_has_cycle(const vector<int> &comp, const vector<vector<Edge>> &g)
 int main()
 {
   ios::sync_with_stdio(false);
-  cin.tie(nullptr);
-
+  cin.tie(nullptr); cout.tie(NULL);
   cin >> n >> m;
-  graph.assign(n, {});
-  scc_id.assign(n, -1);
-  dfn.assign(n, 0);
-  low.assign(n, 0);
+  graph.assign(n, {}); scc_id.assign(n, -1);
+  dfn.assign(n, 0); low.assign(n, 0);
   on_stack.assign(n, 0);
 
   for (int i = 0; i < m; ++i)
   {
     int x, y;
-    long long z;cin >> x >> y >> z;
-    --x;
-    --y;
+    ll z;cin >> x >> y >> z;
+    --x; --y;
     graph[y].push_back({x, z});
   }
 
@@ -96,8 +94,8 @@ int main()
   cin >> q;
   while (q--)
   {
-    long long k; cin >> k;
-    vector<long long> a(n);
+    ll k; cin >> k;
+    vector<ll> a(n);
     for (int i = 0; i < n; ++i) cin >> a[i];
     string ans(n, '0');
     for (int i = 0; i < n; ++i)

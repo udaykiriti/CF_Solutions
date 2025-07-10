@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
 #define FOR(i, a, b) for (int i = (a); i < (b); i++)
 
 void solve()
@@ -7,9 +8,9 @@ void solve()
   int n; cin >> n;
   int cows = n / 4;
   if (n % 4 == 2)
-    cout << cows + 1 << "\n";
+    cout << cows + 1 << endl;
   else
-    cout << cows << "\n";
+    cout << cows << endl;
 }
 
 int main()

@@ -17,8 +17,7 @@ for _ in range(t):
         tot += v//3
  
     out = [tot]
-    outs.append(out)
-    
+    outs.append(out)  
     
 for out in outs:
     print(*out)
