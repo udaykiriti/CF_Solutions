@@ -1,5 +1,3 @@
-
-
 /*Problem: Watermelon
 One hot summer day Pete and his friend Billy decided to buy a watermelon.
 They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed,
