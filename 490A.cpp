@@ -8,8 +8,7 @@ int main()
     int n; scanf("%d\n", &n);
     for (int p = 1; p <= n; p++)
     {
-        int current;
-        scanf("%d", &current);
+        int current; scanf("%d", &current);
         ability[current - 1].push_back(p);
     }
 

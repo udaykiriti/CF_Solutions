@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
-#define FastIO()                    \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(nullptr);                 \
-  cout.tie(nullptr);
 #define FOR(i, a, b) for (int i = (a); i <= (b); i++)
 #define FORk(i, a, b, k) for (int i = (a); i <= (b); i += (k))
 #define RFOR(i, a, b) for (int i = (a); i >= (b); i--)
@@ -27,7 +23,8 @@ void solve()
 
 int main()
 {
-  FastIO();
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   solve();
   return 0;
 }

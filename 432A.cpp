@@ -11,8 +11,7 @@ int main()
   int c = 0;
   for (int i = 0; i < n; ++i)
   {
-    int p;
-    cin >> p;
+    int p; cin >> p;
     if (p <= 5 - k)
       c++;
   }

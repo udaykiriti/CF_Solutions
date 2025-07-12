@@ -22,14 +22,9 @@ Output:
 import math
 
 def main():
-    # Read input values
     n, m, a = map(int, input().split())
-
-    # Calculate the number of flagstones needed along the length and width
-    c = math.ceil(m / a)  # Number of flagstones along the width
-    d = math.ceil(n / a)  # Number of flagstones along the length
-
-    # Total number of flagstones is the product of c and d
+    c = math.ceil(m / a) 
+    d = math.ceil(n / a) 
     print(c * d)
 
 if __name__ == "__main__":

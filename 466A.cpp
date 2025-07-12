@@ -107,10 +107,8 @@ void solve()
 
 int main()
 {
-  FAST_IO;
-  int t = 1;
+  FAST_IO; int t = 1;
   // cin >> t;
-  while (t--)
-    solve();
+  while (t--) solve();
   return 0;
 }

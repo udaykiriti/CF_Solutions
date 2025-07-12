@@ -1,25 +1,6 @@
-#include<iostream>
-#include<vector>
-#include<string>
-#include<cstring>
-#include<stack>
-#include<queue>
-#include<cstdio>
-#include<set>
-#include<unordered_set>
-#include<cmath>
-#include<algorithm>
-#include<functional>
-#include<utility>
-#include<cstdlib>
+#include<bits/stdc++.h>
 using namespace std;
-typedef long long int lli;
-typedef size_t idx;
-#define vi vector<int>
-#define pb(n) push_back(n)
-#define ln "\n"
-#define sp ends
-#define newline cout << ln
+#define endl '\n'
 
 int main(){
     ios_base::sync_with_stdio(false); 
@@ -31,6 +12,6 @@ int main(){
 		++arr[ai];
 	}
 	int mx = *max_element(arr, arr + 101);
-	cout << mx << ln;
+	cout << mx << endl;
 	return 0;
 }

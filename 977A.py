@@ -36,17 +36,12 @@
 # 1
 
 def main():
-    # Fast input handling
     n, k = map(int, input().split())
-
-    # Perform k subtractions
     for _ in range(k):
         if n % 10 == 0:
-            n //= 10  # Divide by 10 if the last digit is zero
+            n //= 10  
         else:
-            n -= 1  # Subtract 1 if the last digit is non-zero
-
-    # Output the result
+            n -= 1 
     print(n)
 
 if __name__ == "__main__":

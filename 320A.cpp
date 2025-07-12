@@ -1,35 +1,27 @@
 #include <bits/stdc++.h>
 typedef long long int ll;
 using namespace std;
-#define IO()                        \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(nullptr);                 \
-  cout.tie(nullptr);
+
 int main()
 {
-  IO()
-  ll i, j, k;
-  string s;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  ll i, j, k; string s; cin>>s;
   bool flag = true;
-
-  cin >> s;
   for (i = 0; i < s.length();)
   {
     if (s[i] == '1' && s[i + 1] == '4' && s[i + 2] == '4')
     {
       i += 3;
     }
-
     else if (s[i] == '1' && s[i + 1] == '4')
     {
       i += 2;
     }
-
     else if (s[i] == '1')
     {
       i++;
     }
-
     else
     {
       flag = false;
@@ -41,6 +33,5 @@ int main()
     cout << "YES";
   else
     cout << "NO";
-
   return 0;
 }

@@ -1,4 +1,3 @@
-
 """
 Problem: Watermelon
 One hot summer day Pete and his friend Billy decided to buy a watermelon.
@@ -27,7 +26,6 @@ YES
 
 def main():
     w = int(input())
-    
     # Check if the weight of the watermelon is even and greater than 2
     # Explanation:
     # 1. `w % 2 == 0`: This checks if the weight `w` is even.
@@ -38,6 +36,5 @@ def main():
         print("YES")
     else:
         print("NO")
-
 if __name__ == "__main__":
     main()

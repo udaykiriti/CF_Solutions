@@ -3,7 +3,6 @@ using namespace std;
 #define endl '\n'
 #define debug(x) cout<<(x)<<endl
 
-
 void solve()
 {
   int n, l; cin >> n >> l;

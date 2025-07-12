@@ -15,7 +15,7 @@ void solve()
   int k; cin >> k;
   vector<int> a(12);
   FOR(i, 0, 11)
-      cin >> a[i];
+    cin >> a[i];
 
   sort(a.rbegin(), a.rend());
 

@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int a[100000], mx[100000], mn[100000];
 int main()
 {
@@ -7,9 +8,7 @@ int main()
   while (cin >> n)
   {
     for (i = 0; i < n; i++)
-    {
       cin >> a[i];
-    }
     int st = a[0];
     int ed = a[n - 1];
     for (i = 0; i < n; i++)

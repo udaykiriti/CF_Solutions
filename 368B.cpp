@@ -18,8 +18,7 @@ void solve()
   }
   while (m--)
   {
-    int li;
-    cin >> li;
+    int li; cin >> li;
     cout << distinct_count[li - 1] << endl;
   }
 }

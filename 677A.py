@@ -45,24 +45,15 @@ Explanation:
 - In the third sample, all the persons have to bend, except the last one. The required minimum width of the road is equal to
   2 + 2 + 2 + 2 + 2 + 1 = 11."""
 
-
-# Python Code Implementation
-
 def solve():
-    # Read input values
-    n, h = map(int, input().split())  # Number of friends and the height of the fence
-    heights = list(map(int, input().split()))  # Heights of the friends
-    
-    width = 0
-    
-    # Calculate the minimum width of the road
+    n, h = map(int, input().split())  
+    heights = list(map(int, input().split()))  
+    width = 0    
     for m in heights:
         if m > h:
-            width += 2  # Person bends down
+            width += 2 
         else:
-            width += 1  # Person does not bend
+            width += 1 
     
-    print(width)  # Output the result
-
-# Call the solve function
+    print(width) 
 solve()

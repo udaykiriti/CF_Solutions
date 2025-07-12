@@ -6,9 +6,7 @@ void solve()
   int n; cin >> n;
   vector<pair<int, int>> trees(n);
   for (int i = 0; i < n; ++i)
-  {
     cin >> trees[i].first >> trees[i].second;
-  }
 
   if (n == 1)
   {

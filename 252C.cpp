@@ -11,12 +11,10 @@ int binary_search(ll arr[], int low, int high, ll target){
       high = mid -1;
     }
     else{
-      if(mid == high){
+      if(mid == high)
         return mid;
-      }
-      if(arr[mid+1] > target){
+      if(arr[mid+1] > target)
         return mid;
-      }
       low = mid +1;
     }
   }
@@ -28,9 +26,8 @@ int main(){
   cin.tie(NULL); cout.tie(NULL);
   ll n, d; cin>>n>>d;
   ll arr[n];
-  for(int i = 0; i < n; i++){
+  for(int i = 0; i < n; i++)
     cin>>arr[i];
-  }
   ll ans = 0;
   for(int i = 0; i < n; i++){
     ll j = binary_search(arr, i, n-1, arr[i]+d);

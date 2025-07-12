@@ -54,8 +54,7 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0); cout.tie(NULL);
-    int n, h, m, width = 0;
-    cin >> n >> h;
+    int n, h, m, width = 0; cin >> n >> h;
     while (n--) {
         cin >> m;
         width += (m > h ? 2 : 1);

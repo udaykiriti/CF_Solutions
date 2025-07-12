@@ -34,22 +34,16 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define endl '\n'
 #define FOR(i, a, b) for (int i = a; i <= b; i++)
-#define input(x) cin >> x
 #define ll long long
-#define ull unsigned long long
-#define FastIO()                    \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(0);                       \
-  cout.tie(0);
 #define YES cout << "CHAT WITH HER!"
 #define NO cout << "IGNORE HIM!"
 
 int main()
 {
-  FastIO();
+  ios_base::sync_with_stdio(false);
+  cin.tie(nullptr); cout.tie(nullptr);
   string s; cin>>s;
   sort(s.begin(), s.end());
   int count = 1;

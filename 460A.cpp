@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 #define ll long long
 #define endl '\n'
 #define debug(n) cout<<(n)<<endl;
@@ -12,8 +11,7 @@ int main(){
   int n, m; cin>>n>>m;
   int count = 0;
   while(n != 0){
-    count++;
-    n--;
+    count++; n--;
     if(count % m == 0) n++;
   }
   cout<<count<<endl;

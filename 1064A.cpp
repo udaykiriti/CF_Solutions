@@ -1,12 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-typedef long long int lli;
-typedef size_t idx;
-#define vi vector<int>
-#define pb(n) push_back(n)
 #define endl "\n"
-#define sp ends
-#define newline cout << endl
 
 int main(){
     ios_base::sync_with_stdio(false);

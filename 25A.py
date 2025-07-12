@@ -24,19 +24,12 @@ Output:
 """
 
 def main():
-    # Read the number of numbers
-    n = int(input())
-    
-    # Read the list of numbers
-    nums = list(map(int, input().split()))
-    
-    # Count the number of even numbers
-    even_count = sum(1 for num in nums if num % 2 == 0)
-    
-    # Find the index of the number that differs in evenness
+    n = int(input())    
+    nums = list(map(int, input().split()))    
+    even_count = sum(1 for num in nums if num % 2 == 0)    
     for i in range(n):
         if (even_count > 1 and nums[i] % 2 != 0) or (even_count == 1 and nums[i] % 2 == 0):
-            print(i + 1)  # Output the 1-based index
+            print(i + 1)
             break
 
 if __name__ == "__main__":

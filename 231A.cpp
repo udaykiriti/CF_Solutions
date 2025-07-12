@@ -41,7 +41,8 @@ using namespace std;
 
 int main()
 {
-  FastIO;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   int n; cin>>n;
   int count = 0;
   FOR(i, 0, n)
@@ -53,9 +54,7 @@ int main()
       sure += surity;
     }
     if (sure >= 2)
-    {
       count++;
-    }
   }
   cout<<count<<endl;
   return 0;

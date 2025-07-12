@@ -14,18 +14,15 @@ int binary_search(vector<pair<ll, ll>>& arr, int low, int high, ll target){
   while(low <= high){
     int mid = (low + high)/2;
     if(arr[mid].first < target){
-      if(mid == high){
+      if(mid == high)
         return high + 1;
-      }
       low = mid + 1;
     }
     else{
-      if(mid == low){
+      if(mid == low)
         return mid;
-      }
-      if(arr[mid-1].first < target){
+      if(arr[mid-1].first < target)
         return mid;
-      }
       high = mid -1;
     }
   }

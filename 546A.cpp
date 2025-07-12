@@ -50,14 +50,11 @@
 using namespace std;
 #define endl '\n'
 #define EXIT return 0
-#define FastIO                      \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(0);                       \
-  cout.tie(0)
 
 int main()
 {
-  FastIO; 
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL); 
   int k, n, w; cin >> k>>n>>w;
   int sum = 0;
   for (int i = 1; i <= w; i++)

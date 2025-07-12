@@ -6,7 +6,6 @@ int main()
   ios_base::sync_with_stdio(false);
   cin.tie(NULL); cout.tie(NULL);
   int n, m; cin >> n >> m;
-
   int count = 0;
   for (int a = 0; a <= 31; ++a)
     for (int b = 0; b <= 31; ++b)

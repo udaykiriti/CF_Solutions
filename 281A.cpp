@@ -23,16 +23,12 @@ Hello
 
 #include <bits/stdc++.h>
 using namespace std;
-
-#define FastIO                  \
-  ios_base::sync_with_stdio(0); \
-  cin.tie(0);                   \
-  cout.tie(0);
-#define BYE return 0;
+#define BYE return 0
 
 int main()
 {
-  FastIO;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   string s; cin >> s;
   // Capitalize the first character if it is lowercase
   if (s[0] >= 'a' && s[0] <= 'z')

@@ -1,11 +1,6 @@
 #include <bits/stdc++.h>
 #define BYE return 0;
 using namespace std;
-
-#define fastIO                      \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(nullptr);                 \
-  cout.tie(nullptr);
 #define FOR(i, a, b) for (int i = (a); i < (b); i++)
 #define sort(x) sort(x.begin(), x.end())
 #define PRINT(x) cout << x << endl;
@@ -15,10 +10,12 @@ using namespace std;
 
 int main()
 {
-  fastIO;
-  long n; scan(n);
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  long n; cin>>n;
   vector a(n);
-  FOR(p, 0, n) scan(a[p]);
+  FOR(p, 0, n) 
+    cin>>a[p];
   sort(a);
 
   string res = "NO";
@@ -30,6 +27,6 @@ int main()
       XX;
     }
   }
-  PRINT(res);
-  BYE;
+  cout<<res;
+  return 0;
 }

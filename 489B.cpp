@@ -12,9 +12,7 @@ int main()
   cin >> m; int b[m];
   FOR(i, 0, m) cin >> b[i];
 
-  sort(a, a + n);
-  sort(b, b + m);
-
+  sort(a, a + n); sort(b, b + m);
   FOR(i, 0, n)
   {
     FOR(j, 0, m)

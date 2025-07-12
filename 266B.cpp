@@ -1,5 +1,4 @@
 /*
-
 Problem: B. Queue at the School
 Contest: Codeforces Round 163 (Div. 2)
 Description:

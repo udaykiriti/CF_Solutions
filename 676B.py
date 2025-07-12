@@ -1,6 +1,5 @@
 n, t = map(int, input().split())
 
-
 def solve(r, t, n):
     frontier = [t]
     count = 0
@@ -17,9 +16,5 @@ def solve(r, t, n):
     for i in frontier:
         if i >= 1:
             count += 1
-
-
     return count
-
-
 print(solve(1, t, n))

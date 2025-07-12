@@ -1,5 +1,3 @@
-
-
 /*Problem: A. Stones on the Table
 Source: Codeforces Round 163 (Div. 2)
 
@@ -39,8 +37,6 @@ Output:
 using namespace std;
 #define endl '\n'
 #define FOR(i, a, b) for (int i = a; i < b; i++)
-#define IF_EQUAL(a, b) if (a == b)
-#define PRINT(x) cout << x << endl;
 
 int main()
 {
@@ -50,9 +46,8 @@ int main()
   string s; cin>>s;
   int count = 0;
   FOR(i, 0, n - 1)
-  {
-  if(s[i]== s[i + 1]) count++;
-  }
+    if(s[i]== s[i + 1]) 
+      count++;
   cout<<count<<endl;
   return 0;
 }

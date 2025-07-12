@@ -34,17 +34,11 @@
 using namespace std;
 #define endl '\n'
 
-void FastIO()
+int main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL); cout.tie(NULL);
-}
-
-int main()
-{
-  FastIO();
-  int n; cin >> n;
-  int a, b, c, d;
+  int n; cin >> n; int a, b, c, d;
   while (true)
   {
     n++;

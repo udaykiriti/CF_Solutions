@@ -1,5 +1,3 @@
-
-
 """
 Problem: Boy or Girl (Codeforces 236A)
 Link: https://codeforces.com/problemset/problem/236/A

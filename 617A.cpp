@@ -35,17 +35,13 @@ Note:
 
 #include <bits/stdc++.h>
 using namespace std;
-#define EXIT return 0
-void FastIO()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL); cout.tie(NULL);
-}
 
 int main()
 {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   int n; cin >> n;
   int steps = n % 5 == 0 ? n / 5 : (n / 5) + 1;
   cout << steps;
-  EXIT;
+  return 0;
 }

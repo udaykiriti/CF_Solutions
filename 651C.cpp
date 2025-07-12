@@ -4,7 +4,6 @@ using namespace std;
 #define endl "\n"
 #define debug(n) cout<<(n)<<endl;
 #define pb push_back
-
 const ll INF = 2e18 + 99;
 
 long long npairs(ll n){

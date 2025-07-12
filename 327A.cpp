@@ -18,7 +18,6 @@ int main()
   }
 
   int maxGain = -1; int current = 0;
-
   for (int i = 0; i < n; ++i)
   {
     int val = (a[i] == 0 ? 1 : -1);

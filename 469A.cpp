@@ -9,8 +9,7 @@ int main()
   set<int> x_levels;
   for (int i = 0; i < p; ++i)
   {
-    int level;
-    cin >> level;
+    int level; cin >> level;
     x_levels.insert(level);
   }
 
@@ -18,8 +17,7 @@ int main()
   set<int> y_levels;
   for (int i = 0; i < q; ++i)
   {
-    int level;
-    cin >> level;
+    int level; cin >> level;
     y_levels.insert(level);
   }
 

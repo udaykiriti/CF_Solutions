@@ -58,18 +58,12 @@ using namespace std;
 #define output(x) cout << x << endl
 #define EXIT return 0
 
-void FastIO()
+int main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr); cout.tie(NULL);
-}
-
-int main()
-{
-  FastIO();
   int n; cin>>n;
-  string s;
-  int x = 0;
+  string s; int x = 0;
   FOR(i, 0, n)
   {
     cin>>s;
