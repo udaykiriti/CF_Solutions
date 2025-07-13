@@ -1,7 +1,3 @@
-// Codeforces Username: Polymath__
-// Email: Udaykiriti9@gmail.com
-
-
 /* Problem: Petya and Strings
 Petya loves comparing strings lexicographically. He has two strings `s1` and `s2` and wants to compare them in a case-insensitive manner.
 
@@ -31,7 +27,6 @@ Output:
 
 #include <bits/stdc++.h>
 using namespace std;
-
 #define FastIO                  \
   ios_base::sync_with_stdio(0); \
   cin.tie(0);                   \
