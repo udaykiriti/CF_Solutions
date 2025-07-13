@@ -3,7 +3,6 @@ Problem Number: 118A
 Contest: Codeforces Beta Round 89 (Div. 2)
 Problem Link: https://codeforces.com/problemset/problem/118/A
 
-
 Problem: A. String Task
 
 Petya started to attend programming lessons. On the first lesson his task was to write a simple program.
