@@ -31,5 +31,4 @@ def main():
         current_capacity += b  
         max_capacity = max(max_capacity, current_capacity)
     print(max_capacity)
-
 main()
