@@ -49,7 +49,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
-#define EXIT return 0
 
 int main()
 {
@@ -61,5 +60,5 @@ int main()
     sum += i * k;
   int b = (sum - n) > 0 ? (sum - n) : 0;
   cout << b;
-  EXIT;
+  return 0;
 }
