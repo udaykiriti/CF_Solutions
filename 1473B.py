@@ -1,5 +1,3 @@
-
-
 """
 Problem: String LCM
 Let's define a multiplication operation between a string a and a positive integer x: a⋅x is the string that is a result of writing x copies of a one after another. For example, "abc" ⋅ 2 = "abcabc", "a" ⋅ 5 = "aaaaa".
@@ -35,26 +33,20 @@ aaaaaa
 
 from math import gcd
 
-# Function to repeat a string `s` `k` times
 def repeat_string(s, k):
     return s * k
 
-# Function to solve a single test case
 def solve():
     s = input().strip()
     t = input().strip()
-
-    # Find the GCD of the lengths of the two strings
     g = gcd(len(s), len(t))
 
-    # Check if the repeated strings match
     if repeat_string(s, len(t) // g) == repeat_string(t, len(s) // g):
         print(repeat_string(s, len(t) // g))
     else:
         print(-1)
 
 def main():
-    # Read the number of test cases
     t = int(input())
     for _ in range(t):
         solve()

@@ -43,6 +43,4 @@ def main():
         else:
             n -= 1 
     print(n)
-
-if __name__ == "__main__":
-    main()
+main()
