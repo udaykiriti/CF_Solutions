@@ -23,7 +23,6 @@ int main()
   {
     cout << a[k - 1] << endl;
   }
-  else
   {
     cout << -1 << endl;
   }

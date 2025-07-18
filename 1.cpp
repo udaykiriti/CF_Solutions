@@ -1,198 +1,175 @@
-// Standard Libraries
-#include <bits/stdc++.h>
-#include <chrono>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
+#include<bits/stdc++.h>
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/tree_policy.hpp>
 using namespace std;
 using namespace __gnu_pbds;
 
-//=======================TIMER========================
-#define START_TIMER auto start_time = chrono::high_resolution_clock::now();
-#define END_TIMER auto end_time = chrono::high_resolution_clock::now(); \
-    cerr << "Time: " << chrono::duration<double, milli>(end_time - start_time).count() << " ms\n";
-
-// Typedefs
-using ll = long long;
-using i64 = long long;
-using pii = pair<int, int>;
-using pll = pair<ll, ll>;
-using vi = vector<int>;
-using vll = vector<ll>;
-using vb = vector<bool>;
+#define i64 long long int
+#define uInt unsigned int
+#define ui64 unsigned i64
+using vi=vector<int>;
+using vii = vector<i64>;
+using vc = vector<char>;
+using udouble = long double;
+using vd = vector<double>;
 using vs = vector<string>;
-using mii = map<int, int>;
-using si = set<int>;
-using sc = set<char>;
 
-//input as 2d matrix
-#define matrix2d(name, rows, cols) vector<vector<int>> name(rows, vector<int>(cols))
+template<typename T> using vv = vector<vector<T>>;
+template<typename T> using pq = priority_queue<T>;  // high prec., pq<T> p;
+template<typename T> using pq_ = priority_queue<T, vector<T>, greater<T>>;  // dec. as: pq_<T> x;
+template<typename T1, typename T2> using vp = vector<pair<T1, T2>>;  // vp<T1, T2> ..
 
-// ========== PBDS Shortcuts ==========
-#define ordered_set(T) tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>
-#define ordered_set_splay(T) tree<T,null_type,less<T>,splay_tree_tag,tree_order_statistics_node_update>
-#define ordered_map(K, V) tree<K, V, less<K>, rb_tree_tag, tree_order_statistics_node_update>
-#define ordered_map_splay(K,V) tree<K,V, less<K>,splay_tree_tag,tree_order_statistics_node_update>
-#define ordered_multiset tree<pair<int, int>, null_type, less<pair<int, int>>, rb_tree_tag, tree_order_statistics_node_update>
-#define os_insert(s, val) s.insert(val)
-#define os_erase(s, val) s.erase(val)
-#define os_kth(s, k) *s.find_by_order(k)
-#define os_rank(s, val) s.order_of_key(val)
-#define os_size(s) ((int)s.size())
-#define oms_insert(ms, val) ms.insert({val, timer++})
-#define oms_erase(ms, val) ms.erase(ms.lower_bound({val, 0}))
-#define oms_kth(ms, k) ms.find_by_order(k)->first
-#define oms_rank(ms, val) ms.order_of_key({val, 0})
+/*---------- pbds -------------*/
+// *oset.find_by_order(idx ∈[0, n - 1]), oset.order_of_key(ai) + set/map fns
+// order_of_key(ai) -> no of elements less than ai
+// ordered_set/map:
+/*
+    pbds<int, null_type, less<int>> uset; -> ordered_set
+    pbds<int, null_type, greater<int>>  -> decr. order
+    pbds<int, null_type, less_equal<int>> -> multi-set(increasing)
+    pbds<int, null_type, greater_equal<int>> -> multi-set(decreasing)
+    pbds<int, int, less<int>> -> ordered_map
+    pbds<int, int, less_equal<int>> -> multi-map
+    ............
+    !! ALERT !! (for using less_equals<key>)
+    using less_equals<key> makes lower_bound works as upper_bound and vice-versa
+    for erase use: any.erase(any.find_by_order(any.order_of_key(val)));
+    don't use .find() because it will always return .end()
+*/
 
-// Fast I/O
-#define FastIO() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
+#define endl              '\n'
+#define flush_            endl
+#define FastIO()          ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
+#define pb                push_back
+#define ppb               pop_back
+#define mp                make_pair
+#define Fi(p)             get<0>(p)
+#define Sc(p)             get<1>(p)
+#define sz(x)             int ((x).size())
+#define All(x)            (x).begin(), (x).end()
+#define scanv(x)          for(auto &i: x) cin >> i
+#define bin_sc(a, x)      binary_search(All(a), x) // 0/1
+#define lbd(a, x)         lower_bound(All(a), x) // an iter.
+#define ubd(a, x)         upper_bound(All(a), x) // an iter.
+#define eq_seg(a, x)      equal_range(All(a), x) // a pair of lb, ub
+#define minE(a)           (*min_element(All(a)))
+#define maxE(a)           (*max_element(All(a)))
+#define FIXED(x)          cout << fixed << setprecision(x)
+#define mem(a, v)         memset(a, v, sizeof a) // 0,-1 for int, and all char
+#define filla(a, n, v)    fill(a, a + n, v) // for arr.
+#define fillv(a, v)       fill(All(a), v) // for vec.
+#define _fillv(a, n, v)   fill_n(a.begin(), n, v)
+#define glue(x, y)        x##y
+#define msg(x)            cout << (#x) << ln
+#define bug(x)            cout << (#x) << ": " << (x) << ln
+#define printv(v)         cout << "[ ";for(auto j: v) cout << j << ' '; cout << "]" << ln
+#define printvv(v)        cout << "["; for(auto i: v) {printv(i);} cout << "........]\n"
+#define printm(m)         cout << "[\n";for(auto i: m) cout << Fi(i) << " -> " << Sc(i) << ln; cout << "...]\n"
+#define prints(s)         cout << "{"; for(auto i: s) cout << i << ' '; cout << "}\n"
+#define uceil(a, b)       ((a + b - 1) / (b))
+#define unq_v(a)          a.resize(distance(a.begin(), unique(All(a)))) // for same valued consec. grp
+#define mk_upper(s)       transform(s.begin(), s.end(), s.begin(), ::toupper)
+#define mk_lower(s)       transform(s.begin(), s.end(), s.begin(), ::tolower)
+#define valid(nx, ny)     (nx >= 1 && nx <= row && ny >= 1 && ny <= col)
+#define dbug(args...)     {string s = #args;replace(All(s), ',', ' '); stringstream s2; s2 << s; vs ss;\
+while(s2){string now;     s2 >> now; ss.pb(now);} debug(ss, args);} // string sucks :(, don't know why!
 
-// Output Utilities
-#define FIXED(x) cout << fixed << setprecision(x)
-#define _flush endl
-#define endl '\n'
-#define debug(x) cout << (x) << endl
-#define debugVec(v) do { cout << #v << " = "; for (auto u : v) cout << u << " "; cout << endl; } while(0)
-#define printm(m) do { cout << "[\n"; for (auto i : m) cout << i.first << " -> " << i.second << endl; cout << "...]\n"; } while(0)
-#define prints(s) do { cout << "{"; for (auto i : s) cout << i << ' '; cout << "}\n"; } while(0)
+#define FOR(i,a,b)        for (int i = (a); i <= (b); i++)
+#define FORk(i,a,b,k)     for (int i = (a); i <= (b); i += (k))
+#define RFOR(i,a,b)       for (int i = (a); i >= (b); i--)
+#define RFORK(i,a,b,k)    for (int i = (a); i >= (b); i -= (k))
 
-// Macros & Constants
-#define MOD 1000000000
-#define PI 3.141592653589793
-#define INF 1000000000000000000LL
-#define EPS 1e-9
-#define MAX 10000000000000000LL
-#define MIN -10000000
-
-// STL Shorthand
-#define pb push_back
-#define eb emplace_back
-#define f first
-#define s second
-#define all(a) (a).begin(), (a).end()
-#define rall(a) (a).rbegin(), (a).rend()
-
-// Looping Macros
-#define FOR(i, a, b) for (int i = (a); i < (b); ++i)
-#define FORk(i, a, b, k) for (int i = (a); i < (b); i += k)
-#define RFOR(i, a, b) for (int i = (a); i >= (b); --i)
-#define RFORK(i, a, b, k) for (int i = (a); i >= (b); i -= k)
-#define FORA(a) for (auto u : a)
-#define scanv(x) for (auto &i : x) cin >> i
-
-// Math Utilities
-#define gcd(a, b) __gcd(a, b)
-#define lcm(a, b) ((a) * ((b) / gcd((a), (b))))
-#define popcount(x) __builtin_popcountll(x)
-#define ctz(x) __builtin_ctzll(x)
-#define clz(x) __builtin_clzll(x)
-#define parity(x) __builtin_parityll(x)
-#define sqr(x) ((x) * (x))
-#define cube(x) ((x) * (x) * (x))
-#define isEven(x) ((x) % 2 == 0)
-#define isOdd(x) ((x) % 2 != 0)
-#define uceil(a, b) ((a + b - 1) / (b))
-
-// Binary Search Shorthand
-#define bin_sc(a, x) binary_search(all(a), x)
-#define lbd(a, x) lower_bound(all(a), x)
-#define ubd(a, x) upper_bound(all(a), x)
-
-// Utility Functions
-ll gcd(ll a, ll b) { return b == 0 ? a : gcd(b, a % b); }
-bool isPrime(int n) {
-    if (n <= 1) return false;
-    for (int i = 2; i * i <= n; ++i)
-        if (n % i == 0) return false;
-    return true;
+const auto start_time = chrono::high_resolution_clock::now();
+void _timer_(){
+    const auto end_time = std::chrono::high_resolution_clock::now();
+    double delta = (double) chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count();
+    FIXED(2);
+    cout << "[time: "<< delta <<" ms]\n";
 }
-bool isUp(char ch) { locale loc; return isupper(ch, loc); }
+void input_output_file() { freopen("in.txt", "r", stdin); freopen("out.txt", "w", stdout);}
+vector<int> dx = {1,-1,0,0,1,-1,-1,1}; // (4 ed. + 4 dia.)
+vector<int> dy = {0,0,1,-1,1,1,-1,-1}; // first four are ed.
 
-// Power & Combinatorics
-ll binpow(ll a, ll b) {
-    ll res = 1;
-    while (b > 0) {
-        if (b & 1) res *= a;
-        a *= a;
-        b >>= 1;
-    }
-    return res;
-}
+const string yms[]{"YES", "Yes", "yes"};
+const string nms[]{"NO", "No", "no"};
+const long double PI = acos(-1.0L);
+struct{const int i = (1e9) + 7; const i64 l = (i64)(1e9) + 7ll;}MOD;
+struct{const int i = INT_MAX; const i64 l = LLONG_MAX;}inf;
 
-ll binpow(ll a, ll b, ll m) {
-    a %= m;
-    ll res = 1;
-    while (b > 0) {
-        if (b & 1) res = res * a % m;
-        a = a * a % m;
-        b >>= 1;
-    }
-    return res;
-}
+bool isUp(char ch){locale loc; return isupper(ch, loc);}
+void debug(vs s) {cout << "#------------------#\n";if(sz(s)){};}
+int ffs(int x){return __builtin_ffs(x);}  // 1 based idx from right of one
+int ffs(i64 x){return __builtin_ffsll(x);}
+int clz(uInt x){return __builtin_clz(x);}  // leading zeros from left ....
+int clz(ui64 x){return __builtin_clzll(x);}
+int ctz(uInt x){return __builtin_ctz(x);}  // trailing zeros from right ....
+int ctz(ui64 x){return __builtin_ctzll(x);}
+int cto(uInt x){return __builtin_popcount(x);}  // no of 1 or set bit
+int cto(ui64 x){return __builtin_popcountll(x);}
+int parity(uInt x){return __builtin_parity(x);}  // cto % 2
+int parity(ui64 x){return __builtin_parityll(x);}
+auto pow2(uInt x){return (1u) << x;}  /* returning unsigned */
+auto pow2(ui64 x){return (1ull) << x;}  // x <= 63
 
-ll powerMod(ll base, ll exp, ll mod) { return binpow(base, exp, mod); }
-
-ll factorialMod(ll n, ll mod) {
-    ll res = 1;
-    for (ll i = 1; i <= n; ++i)
-        res = (res * i) % mod;
-    return res;
+i64 binpow(i64 a, i64 b){i64 ans = 1ll; while(b > 0){if(b & 1) ans *= a; a *= a; b >>= 1;} return ans;}
+i64 binpow(i64 a, i64 b, i64 m){a %= m; i64 ans = 1ll; while(b > 0){if(b & 1) ans = ans * a % m; a = a * a % m; b >>= 1;} return ans;}
+i64 NcR(i64 n, i64 r){i64 x = 1ll, y = 1ll;if(n - r < r) r = n - r; while(r){x *= n;y *= r; i64 cm = gcd(x, y);x /= cm;y /= cm;--n;--r;}return x;}
+i64 lcm(i64 a, i64 b){ if(a > b) swap(a, b); return (a * (b / gcd(a, b)));}
+i64 NpR(i64 n, i64 r){i64 x = 1ll;while(r){x *= n; --n;--r;}return x;}
+int XOR1toN(int N){ int md = N % 4; return md == 0? N:(md == 3? 0:(md == 2? N + 1:1));} // O(1) T.C.
+int XORLtoR(int L, int R){return XOR1toN(R) ^ XOR1toN(max(L - 1, 0));} // xor from range L to R - O(1)
+template<typename T> T getMod(T a, T b){assert(("b = 0", b != 0));return ((a % b) + b) % b;}//a ∈ Z, b ∈ Z
+template<typename type> type Nsum(type n){return (n * (n + 1)) / (type)2;}
+template<typename T> T LOG(T base, T power){return log2(power) / log2(base);}
+template<typename type> type Round(type a, type b) {if(a < b) return 1; if(a % b) return 1 + a / b; return a / b;}
+template<typename T, typename... param> void debug(vs ss, T a, param... args){
+    cout << ss.front() << " = " << a << '\n'; ss.erase(ss.begin()); debug(ss, args...);
 }
 
-i64 NcR(i64 n, i64 r) {
-    i64 x = 1, y = 1;
-    if (n - r < r) r = n - r;
-    while (r) {
-        x *= n;
-        y *= r;
-        i64 cm = gcd(x, y);
-        x /= cm;
-        y /= cm;
-        --n;
-        --r;
-    }
-    return x;
+//--------- overloaded << operator to print stl containers.. cout << container << ln
+// for vector(1D, 2D), vector of pair & set....
+template<typename T>
+ostream& operator<< (ostream& out, const vector<T>& v){out << "[";size_t last = v.size() - 1;for(size_t i = 0; i < v.size(); ++i){out << v[i];if (i != last)out << ", ";}out << "]";return out;}
+
+// for set & set of ....
+template <typename T> 
+ostream& operator<<(ostream& os, const set<T>& v){os << "{";for(auto it : v){os << it;if(it != *v.rbegin()) os << ", ";}os << "}";return os;}
+
+// for map, map of vector & .....
+template <typename T, typename S> ostream& operator<<(ostream& os, const map<T, S>& v){for(auto it : v) os << it.first << " : " << it.second << "\n";return os;}
+
+// for pair & pair of .......
+template <typename T, typename S> ostream& operator<<(ostream& os, const pair<T, S>& v){os << "("; os << v.first << ", " << v.second << ")";return os;}
+
+// array<T, n> a = {}
+
+#define ONPC
+
+void solve(void){
+    //solution   
+    i64 sum = 0;
+    for (i64 i = 0; i < 1e7; ++i)
+        sum += i;
+    cout<<endl;
 }
 
-i64 NpR(i64 n, i64 r) {
-    i64 res = 1;
-    while (r--) res *= n--;
-    return res;
-}
-
-// XOR Range Queries
-int XOR1toN(int N) {
-    int md = N % 4;
-    if (md == 0) return N;
-    if (md == 1) return 1;
-    if (md == 2) return N + 1;
-    return 0;
-}
-
-int XORLtoR(int L, int R) { return XOR1toN(R) ^ XOR1toN(max(L - 1, 0)); }
-
-// Solution Function
-void solve() {
-    // Write your solution logic here
-    int n; cin>>n;
-    // ordered_set(int) os;
-    // unordered_set<int> os1(n);
-    // unordered_map<int,string> os2(n);
-    
-    // FOR(i,0,n){
-    //     int val; cin>>val;
-    //     os.insert(val);
-    // }
-    // prints(os);
-    // cout<<*os.find_by_order(2)<<endl;
-    // cout<<os.order_of_key(10)<<endl;
-    unordered_map<int, string> om;
-
-}
-
-// Main Function
-int main() {
+int main(void){
+    #ifdef ONPC
+        input_output_file();
+        cout << "========================== compilation done ==========================\n";
+    #endif
     FastIO();
-    int t; cin >> t;
-    while (t--) solve();
+    int t(1), tcase(0);
+    t=1; cin >> t;
+    while(++tcase, t--){
+        #ifdef ONPC
+            cout << "[testcase: " << tcase << "] ~~~~~~~~~~~~~~~~~~~~~~~~~ ";
+            _timer_();
+        #endif
+        solve();
+    }
+    #ifdef ONPC
+        cout << "\nfinished in " << clock() * 1.0 / CLOCKS_PER_SEC << " sec\n";
+    #endif
     return 0;
 }
