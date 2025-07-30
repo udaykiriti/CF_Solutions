@@ -2,7 +2,7 @@
 using namespace std;
 #define stop_sync ios::sync_with_stdio(false)
 #define untie_ios cin.tie(nullptr)
-#define ln "\n"
+#define endl "\n"
 #define pb push_back
 #define sz(x) int((x).size())
 #define All(x) (x).begin(), (x).end()
@@ -25,7 +25,7 @@ void solve()
   i64 result = 0;
   if (distinct == maxFreq) result = distinct - 1;
   else result = min(distinct, maxFreq);
-  cout << result << ln;
+  cout << result << endl;
 }
 
 int main()
