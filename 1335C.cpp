@@ -1,13 +1,14 @@
+#pragma GCC optimize("O3")
+#pragma GCC target("avx,avx2,fma")
+#pragma GCC optimize("unroll-loops")
+
 #include <bits/stdc++.h>
 using namespace std;
-#define stop_sync ios::sync_with_stdio(false)
-#define untie_ios cin.tie(nullptr)
-#define endl "\n"
-#define pb push_back
-#define sz(x) int((x).size())
-#define All(x) (x).begin(), (x).end()
-using i64 = long long;
-#define EXIT return 0;
+#define endl    '\n'
+#define pb      push_back
+#define sz(x)   int((x).size())
+#define All(x)  (x).begin(), (x).end()
+using i64 =     long long;
 
 void solve()
 {
@@ -28,10 +29,9 @@ void solve()
   cout << result << endl;
 }
 
-int main()
-{
-  stop_sync; untie_ios;
+int main(){
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   int t; cin>>t;
   while(t--) solve();
-  EXIT;
 }
