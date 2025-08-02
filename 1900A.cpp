@@ -1,13 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-const char nl = '\n';
-#define BYE return 0
-typedef long long ll;
-#define FastIO                      \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);                    \
-  cout.tie(NULL)
-#define all(x) x.begin(), x.end()
+#define ll long long
 
 void solve()
 {
@@ -35,16 +28,16 @@ void solve()
   max_dots = max(max_dots, curr_dots);
 
   if (max_dots >= 3)
-    cout << 2 << nl;
+    cout << 2 << endl;
 
   else
-    cout << no_of_dots << nl;
+    cout << no_of_dots << endl;
 }
 
 int main()
 {
-  FastIO; 
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL); 
   int t; cin>>t;
   while(t--) solve();
-  BYE;
 }
