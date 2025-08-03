@@ -10,13 +10,8 @@ If the name is already taken, the system should append the smallest integer such
 
 #include <bits/stdc++.h>
 using namespace std;
-#define fast_io                     \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(0);                       \
-  cout.tie(0)
 #define endl '\n'
 #define int long long
-
 void solve()
 {
   int n; cin >> n;
@@ -44,9 +39,9 @@ void solve()
   }
 }
 
-int32_t main()
+int32_t main(int argc , char *argv[])
 {
-  fast_io;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
   solve();
-  return 0;
 }
