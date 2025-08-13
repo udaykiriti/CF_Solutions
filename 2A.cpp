@@ -9,7 +9,6 @@
     Input:
     - The first line contains an integer n (1 ≤ n ≤ 1000) — the number of rounds.
     - The next n lines contain a player's name and the score he earned in that round.
-
     Output:
     - Output the name of the winner.
 
